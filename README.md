@@ -24,7 +24,14 @@ question paper + marks sheet
 - **Bloom's Engine** — reads PDF/DOCX/photographed papers (MarkItDown, pdf-parse, mammoth, Tesseract OCR), splits questions and tags Bloom's levels with a verb-rule engine; only low-confidence questions go to the local LLM.
 - **ShadSync** — imports DIU CIA marks sheets (.xls/.xlsx) and computes CLO, CO and PO attainment.
 - **Syllabus Doctor** — checks whether the weekly plan covers each course outcome.
-- **Chat** — plain-English (and Banglish) commands routed to 19 tools.
+- **DASH** — the AI brain behind the chat: plain-English and Banglish commands routed to 19 tools (99.1% routed correctly on a held-out test).
+- **Email** — Gmail inbox sorted by DASH (category and priority), with draft replies the teacher reviews before sending.
+- **Vault** — passwords, notes and links encrypted on the laptop (AES-256-GCM), PIN-locked; secrets are never sent to any AI.
+
+## Videos & design
+
+- Pitch video and demo walkthrough: see the competition submission
+- UI design: 7 screens including the animated DASH brain
 
 ## AI, locally
 
