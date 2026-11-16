@@ -1,0 +1,399 @@
+/* ══════════════════════════════════════════════════════════════════════════
+   FACULTYMIND — SCHEDULE + SHADSYNC SCREENS
+   Section 5.3 + 5.4 of FacultyMind_UI_Redesign_Prompt.md
+   ══════════════════════════════════════════════════════════════════════════ */
+
+/* ── Page Header (shared) ────────────────────────────────────────────────── */
+.page-header {
+  padding: 28px 32px 0 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+
+.page-header h1 {
+  font-size: var(--font-xl);
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.page-header .header-actions {
+  display: flex;
+  gap: var(--space-2);
+  align-items: center;
+}
+
+/* ── 5.3 Schedule — Week Grid ────────────────────────────────────────────── */
+.week-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-top: var(--space-6);
+  padding: 0 28px;
+}
+
+.week-col {
+  min-height: 200px;
+  padding: var(--space-2) var(--space-2);
+  border-right: 1px solid var(--border-subtle);
+}
+
+.week-col:last-child {
+  border-right: none;
+}
+
+.week-col-header {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  font-size: var(--font-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-tertiary);
+}
+
+.week-col-header.today {
+  color: var(--accent-primary);
+}
+
+.week-col-header.today::after {
+  content: '●';
+  font-size: 6px;
+}
+
+.week-col-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  color: var(--text-disabled);
+  font-size: var(--font-sm);
+}
+
+/* Class cards */
+.class-card {
+  background: var(--accent-primary-subtle);
+  border: 1px solid rgba(20, 184, 166, 0.2);
+  border-left: 3px solid var(--accent-primary);
+  border-radius: var(--radius-md);
+  padding: 10px 12px;
+  margin-bottom: 6px;
+  cursor: pointer;
+  transition: var(--transition-base);
+}
+
+.class-card:hover {
+  background: rgba(20, 184, 166, 0.18);
+  border-left-color: var(--accent-primary-hover);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
+}
+
+.class-card .cc-code {
+  font-size: var(--font-sm);
+  font-weight: 600;
+  color: var(--accent-primary);
+}
+
+.class-card .cc-time {
+  font-size: var(--font-xs);
+  color: var(--text-secondary);
+  margin-top: 3px;
+}
+
+.class-card .cc-room {
+  font-size: var(--font-xs);
+  color: var(--text-tertiary);
+  margin-top: 2px;
+}
+
+/* Color variants for different courses */
+.class-card.color-info {
+  background: var(--color-info-subtle);
+  border-color: rgba(59, 130, 246, 0.2);
+  border-left-color: var(--color-info);
+}
+.class-card.color-info .cc-code { color: var(--color-info); }
+.class-card.color-info:hover { background: rgba(59, 130, 246, 0.15); }
+
+.class-card.color-success {
+  background: var(--color-success-subtle);
+  border-color: rgba(34, 197, 94, 0.2);
+  border-left-color: var(--color-success);
+}
+.class-card.color-success .cc-code { color: var(--color-success); }
+.class-card.color-success:hover { background: rgba(34, 197, 94, 0.15); }
+
+.class-card.color-warning {
+  background: var(--color-warning-subtle);
+  border-color: rgba(245, 158, 11, 0.2);
+  border-left-color: var(--color-warning);
+}
+.class-card.color-warning .cc-code { color: var(--color-warning); }
+.class-card.color-warning:hover { background: rgba(245, 158, 11, 0.15); }
+
+/* ── 5.3 Schedule — Lesson Log ───────────────────────────────────────────── */
+.lesson-log-section {
+  margin-top: var(--space-8);
+  padding: 0 28px 28px 28px;
+}
+
+.lesson-log-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-4);
+}
+
+.lesson-log-header h2 {
+  font-size: var(--font-lg);
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.lesson-entry {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-lg);
+  padding: 16px 20px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: var(--transition-base);
+}
+
+.lesson-entry:hover {
+  border-color: var(--card-hover-border);
+  box-shadow: var(--shadow-sm);
+}
+
+.lesson-entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lesson-entry-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.lesson-entry-code {
+  font-size: var(--font-sm);
+  font-weight: 600;
+  color: var(--accent-primary);
+}
+
+.lesson-entry-date {
+  font-size: var(--font-xs);
+  color: var(--text-tertiary);
+}
+
+.lesson-entry-label {
+  font-size: var(--font-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-tertiary);
+  margin-top: var(--space-1);
+}
+
+.lesson-entry-content {
+  font-size: var(--font-sm);
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.lesson-entry-content.muted {
+  color: var(--text-tertiary);
+}
+
+/* ── 5.4 ShadSync — Main Grid ────────────────────────────────────────────── */
+.shadsync-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+  padding: var(--space-6) 28px 0;
+}
+
+.shadsync-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+}
+
+.shadsync-card h3 {
+  font-size: var(--font-lg);
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 var(--space-5) 0;
+}
+
+/* CLO rows */
+.clo-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.clo-row:last-child {
+  border-bottom: none;
+}
+
+.clo-row .clo-label {
+  font-size: var(--font-base);
+  color: var(--text-primary);
+}
+
+.clo-row .clo-right {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+/* Progress bar */
+.progress-bar {
+  width: 120px;
+  height: 6px;
+  background: var(--border-subtle);
+  border-radius: 99px;
+  overflow: hidden;
+}
+
+.progress-bar .progress-fill {
+  height: 100%;
+  border-radius: 99px;
+  width: 0; /* animated on mount */
+  transition: width 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: width;
+}
+
+.progress-fill.success { background: var(--color-success); }
+.progress-fill.warning { background: var(--color-warning); }
+.progress-fill.danger  { background: var(--color-danger); }
+
+.clo-row .clo-percent {
+  font-size: var(--font-sm);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  min-width: 44px;
+  text-align: right;
+}
+
+.clo-percent.success { color: var(--color-success); }
+.clo-percent.warning { color: var(--color-warning); }
+.clo-percent.danger  { color: var(--color-danger); }
+
+/* CO/PO columns */
+.co-po-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-5);
+}
+
+.co-po-col h4 {
+  font-size: var(--font-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-tertiary);
+  margin: 0 0 var(--space-3) 0;
+}
+
+.co-po-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.co-po-row:last-child {
+  border-bottom: none;
+}
+
+.co-po-row .co-label {
+  font-size: var(--font-sm);
+  color: var(--text-primary);
+}
+
+.co-po-row .co-value {
+  font-size: var(--font-sm);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  min-width: 44px;
+  text-align: right;
+}
+
+/* At-Risk section */
+.at-risk-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  margin: var(--space-4) 28px 28px;
+}
+
+.at-risk-card h3 {
+  font-size: var(--font-lg);
+  font-weight: 600;
+  color: var(--color-warning);
+  margin: 0 0 var(--space-4) 0;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.at-risk-empty {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) 0;
+}
+
+.at-risk-empty .check-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--color-success-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-success);
+  font-size: 16px;
+}
+
+.at-risk-empty p {
+  font-size: var(--font-sm);
+  color: var(--color-success);
+  margin: 0;
+}
+
+/* Course dropdown */
+.course-select {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  padding: 7px 12px;
+  font-size: var(--font-base);
+  color: var(--text-primary);
+  appearance: none;
+  min-width: 140px;
+  cursor: pointer;
+  font-family: var(--font-family);
+  transition: var(--transition-base);
+}
+
+.course-select:focus {
+  border-color: var(--accent-primary);
+  box-shadow: var(--input-focus-shadow);
+  outline: none;
+}

@@ -1,0 +1,66 @@
+﻿/* ── 2.1 Color System — Dark Mode (Midnight Aurora) ─────────────────────────────── */
+:root {
+  /* Base Backgrounds */
+  --bg-void: #020617;
+  --bg-base: #0f172a;
+  --bg-surface: #1e293b;
+  --bg-elevated: #334155;
+  --bg-overlay: rgba(2, 6, 23, 0.8);
+  --bg-float: #1e293b;
+
+  /* Sidebar */
+  --sidebar-bg: #0f172a;
+  --sidebar-border: #1e293b;
+  --sidebar-item-hover: rgba(255, 255, 255, 0.05);
+  --sidebar-item-active: rgba(20, 184, 166, 0.15);
+  --sidebar-item-active-border: #14b8a6;
+
+  /* Cards */
+  --card-bg: #1e293b;
+  --card-border: #334155;
+  --card-hover-bg: #1e293b;
+  --card-hover-border: #475569;
+
+  /* Primary Brand (Teal) */
+  --accent-primary: #14b8a6;
+  --accent-primary-hover: #0d9488;
+  --accent-primary-subtle: rgba(20, 184, 166, 0.12);
+  --accent-primary-glow: rgba(20, 184, 166, 0.35);
+
+  /* Semantic Colors */
+  --color-success: #10b981;
+  --color-success-subtle: rgba(16, 185, 129, 0.1);
+  --color-warning: #f59e0b;
+  --color-warning-subtle: rgba(245, 158, 11, 0.1);
+  --color-danger: #ef4444;
+  --color-danger-subtle: rgba(239, 68, 68, 0.1);
+  --color-info: #0ea5e9;
+  --color-info-subtle: rgba(14, 165, 233, 0.1);
+
+  /* Text */
+  --text-primary: rgba(255, 255, 255, 0.95);
+  --text-secondary: #94a3b8;
+  --text-tertiary: #64748b;
+  --text-disabled: #475569;
+
+  /* Borders */
+  --border-subtle: #1e293b;
+  --border-default: #334155;
+  --border-strong: #475569;
+
+  /* Input */
+  --input-bg: #0f172a;
+  --input-border: #334155;
+  --input-focus-border: #14b8a6;
+  --input-focus-shadow: 0 0 0 3px rgba(20, 184, 166, 0.2);
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.4), 0 1px 2px rgba(0,0,0,0.3);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.5), 0 2px 4px rgba(0,0,0,0.3);
+  --shadow-lg: 0 20px 40px rgba(0,0,0,0.6), 0 8px 16px rgba(0,0,0,0.4);
+  --shadow-glow: 0 0 20px rgba(20, 184, 166, 0.15);
+
+  /* Scrollbar */
+  --scrollbar-thumb: rgba(255,255,255,0.1);
+  --scrollbar-thumb-hover: rgba(255,255,255,0.2);
+}

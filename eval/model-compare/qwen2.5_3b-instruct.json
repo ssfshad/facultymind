@@ -1,0 +1,196 @@
+{
+ "model": "qwen2.5:3b-instruct",
+ "at": "2026-11-11T03:28:07.484Z",
+ "routing": {
+  "n": 328,
+  "correct": 269,
+  "accuracy": 0.8201219512195121,
+  "byTag": {
+   "clean": "147/163",
+   "typo": "65/81",
+   "banglish": "57/84"
+  },
+  "medianMs": 2382,
+  "freshCalls": 328
+ },
+ "entities": {
+  "n": 50,
+  "correct": 30,
+  "accuracy": 0.6,
+  "byIntent": {
+   "REMINDER_SET": {
+    "n": 14,
+    "ok": 4
+   },
+   "VAULT_SAVE": {
+    "n": 10,
+    "ok": 9
+   },
+   "VAULT_SEARCH": {
+    "n": 8,
+    "ok": 0
+   },
+   "SHADSYNC_QUERY": {
+    "n": 8,
+    "ok": 8
+   },
+   "MODEL_SWITCH": {
+    "n": 6,
+    "ok": 5
+   },
+   "PORTAL_OPEN": {
+    "n": 4,
+    "ok": 4
+   }
+  },
+  "medianMs": 2478,
+  "failures": [
+   "\"Remind me to submit the marks sheet by Thursday\": datetime=undefined",
+   "\"remind me tomorrow morning to print the question papers\": datetime=undefined",
+   "\"don't let me forget to upload the syllabus on Sunday\": datetime=undefined",
+   "\"please remind me to grade the quizzes tonight\": datetime=undefined",
+   "\"set a reminder: send the attendance report on Wednesday\": datetime=undefined",
+   "\"remind me next Tuesday to book the seminar hall\": datetime=undefined",
+   "\"alert me before the thesis defence on Thursday\": datetime=undefined",
+   "\"remind me to email the dean today at 2pm\": datetime=undefined",
+   "\"amake kal sokal 9 tay quiz er kotha mone koriye dio\": datetime=undefined",
+   "\"thesis defence er age amake janio\": reminder_text=undefined lacks thesis",
+   "\"keep this password safe: Maple#55 for the library portal\": password=\"Maple#55 for the library portal\"",
+   "\"Find my saved notes about the midterm\": query=undefined lacks midterm",
+   "\"search the vault for the wifi password\": query=undefined lacks wifi",
+   "\"where is the syllabus file I saved\": query=undefined lacks syllabus",
+   "\"look up the link I stored for the library\": query=undefined lacks library",
+   "\"what did I save about recursion\": query=undefined lacks recursion",
+   "\"do I have a password saved for the lab server\": query=undefined lacks lab",
+   "\"vault e antenna design er note khuje dao\": query=undefined lacks antenna",
+   "\"locate my note on Fourier series\": query=undefined lacks fourier",
+   "\"use GPT-4o from now on\": model=\"GPT-4o\""
+  ]
+ },
+ "explain": {
+  "n": 8,
+  "passedAll": 8,
+  "jsonValid": 8,
+  "allWeakCovered": 8,
+  "explainedFineClos": 0,
+  "scenariosWithMadeUpNumbers": 0,
+  "madeUpNumbers": 0,
+  "medianMs": 7194,
+  "detail": [
+   {
+    "id": "exp-1-one-weak-midterm",
+    "ok": true,
+    "json": true,
+    "weak": [
+     "CLO2"
+    ],
+    "missing": [],
+    "extra": [],
+    "unsupported": [],
+    "unknownClo": [],
+    "actionsOk": true,
+    "ms": 7643
+   },
+   {
+    "id": "exp-2-two-weak",
+    "ok": true,
+    "json": true,
+    "weak": [
+     "CLO1",
+     "CLO4"
+    ],
+    "missing": [],
+    "extra": [],
+    "unsupported": [],
+    "unknownClo": [],
+    "actionsOk": true,
+    "ms": 9396
+   },
+   {
+    "id": "exp-3-none-weak",
+    "ok": true,
+    "json": true,
+    "weak": [],
+    "missing": [],
+    "extra": [],
+    "unsupported": [],
+    "unknownClo": [],
+    "actionsOk": true,
+    "ms": 2861
+   },
+   {
+    "id": "exp-4-borderline-share",
+    "ok": true,
+    "json": true,
+    "weak": [
+     "CLO2"
+    ],
+    "missing": [],
+    "extra": [],
+    "unsupported": [],
+    "unknownClo": [],
+    "actionsOk": true,
+    "ms": 6013
+   },
+   {
+    "id": "exp-5-all-weak",
+    "ok": true,
+    "json": true,
+    "weak": [
+     "CLO1",
+     "CLO2",
+     "CLO3"
+    ],
+    "missing": [],
+    "extra": [],
+    "unsupported": [],
+    "unknownClo": [],
+    "actionsOk": true,
+    "ms": 14035
+   },
+   {
+    "id": "exp-6-small-class",
+    "ok": true,
+    "json": true,
+    "weak": [
+     "CLO3"
+    ],
+    "missing": [],
+    "extra": [],
+    "unsupported": [],
+    "unknownClo": [],
+    "actionsOk": true,
+    "ms": 5747
+   },
+   {
+    "id": "exp-7-single-assessment",
+    "ok": true,
+    "json": true,
+    "weak": [
+     "CLO2"
+    ],
+    "missing": [],
+    "extra": [],
+    "unsupported": [],
+    "unknownClo": [],
+    "actionsOk": true,
+    "ms": 7194
+   },
+   {
+    "id": "exp-8-attendance",
+    "ok": true,
+    "json": true,
+    "weak": [
+     "CLO1"
+    ],
+    "missing": [],
+    "extra": [],
+    "unsupported": [],
+    "unknownClo": [],
+    "actionsOk": true,
+    "ms": 6184
+   }
+  ]
+ },
+ "memoryMB": 2063
+}

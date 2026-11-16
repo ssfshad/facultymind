@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: blob:; connect-src 'self' https://openrouter.ai; font-src 'self' data: https://fonts.gstatic.com;" />
+  <title>FacultyMind</title>
+  <!-- Design System Foundation (load first) -->
+  <link rel="stylesheet" href="styles/theme.css" />
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/components.css" />
+  <!-- Screen-specific styles -->
+  <link rel="stylesheet" href="styles/shell.css" />
+  <link rel="stylesheet" href="styles/screens.css" />
+  <link rel="stylesheet" href="styles/schedule-shadsync.css" />
+  <link rel="stylesheet" href="styles/blooms-email.css" />
+  <link rel="stylesheet" href="styles/vault-portal.css" />
+  <link rel="stylesheet" href="styles/diu-portal.css" />
+  <link rel="stylesheet" href="styles/settings.css" />
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/bento-theme.css" />
+</head>
+<body>
+
+  <!-- Global Drop Overlay for Smart Analysis -->
+  <div id="global-drop-overlay" class="hidden" style="position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(15,15,19,0.9);z-index:9999;display:flex;flex-direction:column;align-items:center;justify-content:center;box-sizing:border-box;box-shadow:inset 0 0 0 2px var(--accent-primary);">
+    <div style="font-size:48px;margin-bottom:16px;">✨</div>
+    <h2 style="color:#fff;margin:0 0 8px 0;">Drop to DASH AI</h2>
+    <p style="color:var(--text-secondary);font-size:16px;margin:0;">DASH AI will read the file and route it automatically</p>
+  </div>
+
+  <!-- ── Custom Titlebar ─────────────────────────────────────────── -->
+  <div id="titlebar">
+    <div id="titlebar-left">
+      <div class="titlebar-logo-mark">FM</div>
+      <span id="app-title">FacultyMind</span>
+    </div>
+    <div id="titlebar-drag"></div>
+    <div id="window-controls">
+      <button class="win-btn" id="btn-minimize" title="Minimize">&#8211;</button>
+      <button class="win-btn" id="btn-maximize" title="Maximize">&#9633;</button>
+      <button class="win-btn" id="btn-close"    title="Close">&#10005;</button>
+    </div>
+  </div>
+
+  <!-- ── Onboarding Screen (First Launch) ────────────────────────── -->
+  <div id="screen-onboarding" class="screen hidden">
+    <div class="onboard-wrap">
+      <div class="onboard-logo">
+        <div class="logo-glow">FM</div>
+        <h1>FacultyMind</h1>
+        <p class="onboard-sub">AI-powered academic management — powered by ShadSync</p>
+      </div>
+
+      <!-- Step 1: Create PIN -->
+      <div id="onboard-step-pin" class="onboard-card">
+        <h2>Create Your PIN</h2>
+        <p>This PIN encrypts your database and secures the app on startup.</p>
+        <div class="pin-inputs" id="pin-create-inputs">
+          <input type="password" class="pin-digit" maxlength="1" inputmode="numeric" />
+          <input type="password" class="pin-digit" maxlength="1" inputmode="numeric" />
+          <input type="password" class="pin-digit" maxlength="1" inputmode="numeric" />
+          <input type="password" class="pin-digit" maxlength="1" inputmode="numeric" />
+          <input type="password" class="pin-digit" maxlength="1" inputmode="numeric" />
+          <input type="password" class="pin-digit" maxlength="1" inputmode="numeric" />
+        </div>
+        <p class="pin-label">Confirm PIN</p>
+        <div class="pin-inputs" id="pin-confirm-inputs">
+          <input type="password" class="pin-digit" maxlength="1" inputmode="numeric" />
+          <input type="password" class="pin-digit" maxlength="1" inputmode="numeric" />
+          <input type="password" class="pin-digit" maxlength="1" inputmode="numeric" />
+          <input type="password" class="pin-digit" maxlength="1" inputmode="numeric" />
+          <input type="password" class="pin-digit" maxlength="1" inputmode="numeric" />
+          <input type="password" class="pin-digit" maxlength="1" inputmode="numeric" />
+        </div>
+        <div id="onboard-pin-error" class="error-msg hidden"></div>
+        <button class="btn-primary" id="btn-setup-pin">Set PIN &amp; Continue →</button>
+      </div>
+
+      <!-- Step 2: API Keys -->
+      <div id="onboard-step-keys" class="onboard-card hidden">
+        <h2>Connect Your AI Models</h2>
+        <p>Enter your API keys. They are stored securely in Windows Credential Manager — never in any file.</p>
+        <div class="key-field">
+          <label>Anthropic (Claude) API Key <span class="badge-default">Default</span></label>
+          <input type="password" id="key-claude" placeholder="sk-ant-..." autocomplete="off" />
+        </div>
+        <div class="key-field">
+          <label>OpenAI API Key <span class="badge-alt">GPT-4o + Whisper</span></label>
+          <input type="password" id="key-openai" placeholder="sk-..." autocomplete="off" />
+        </div>
+        <div class="key-field">
+          <label>Google Gemini API Key <span class="badge-alt">Gemini</span></label>
+          <input type="password" id="key-gemini" placeholder="AIza..." autocomplete="off" />
+        </div>
+        <div id="onboard-key-error" class="error-msg hidden"></div>
+        <button class="btn-primary" id="btn-save-keys">Save &amp; Launch FacultyMind →</button>
+        <button class="btn-ghost" id="btn-skip-keys">Skip for now (limited functionality)</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── PIN Lock Screen ──────────────────────────────────────────── -->
+  <div id="screen-pin-lock" class="screen hidden">
+    <div class="pin-lock-wrap">
+      <div class="logo-glow small">FM</div>
+      <h2>Enter PIN to unlock</h2>
+      <div class="pin-inputs" id="pin-lock-inputs">
+        <input type="password" class="pin-digit" maxlength="1" inputmode="numeric" />
+        <input type="password" class="pin-digit" maxlength="1" inputmode="numeric" />
+        <input type="password" class="pin-digit" maxlength="1" inputmode="numeric" />
+        <input type="password" class="pin-digit" maxlength="1" inputmode="numeric" />
+        <input type="password" class="pin-digit" maxlength="1" inputmode="numeric" />
+        <input type="password" class="pin-digit" maxlength="1" inputmode="numeric" />
+      </div>
+      <div id="pin-lock-error" class="error-msg hidden"></div>
+    </div>
+  </div>
+
+  <!-- ── Main App ─────────────────────────────────────────────────── -->
+  <div id="screen-main" class="screen hidden">
+
+    <!-- Sidebar -->
+    <nav id="sidebar">
+      <div id="sidebar-logo">
+        <div class="logo-glow xsmall">FM</div>
+        <span class="sidebar-logo-text">FacultyMind</span>
+      </div>
+
+      <ul id="nav-items">
+        <li class="nav-item active" data-view="chat">
+          <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.912 5.813a2 2 0 0 0 1.275 1.275L21 12l-5.813 1.912a2 2 0 0 0-1.275 1.275L12 21l-1.912-5.813a2 2 0 0 0-1.275-1.275L3 12l5.813-1.912a2 2 0 0 0 1.275-1.275L12 3z"/></svg></span>
+          <span class="nav-label">DASH AI</span>
+        </li>
+        <li class="nav-item" data-view="schedule">
+          <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></svg></span>
+          <span class="nav-label">Schedule</span>
+        </li>
+        <li class="nav-item" data-view="shadsync">
+          <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 16l4-8 4 5 4-9"/></svg></span>
+          <span class="nav-label">ShadSync OBE</span>
+        </li>
+        <li class="nav-item" data-view="blooms">
+          <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></span>
+          <span class="nav-label">Bloom's Engine</span>
+        </li>
+        <li class="nav-item" data-view="email">
+          <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 16 12 14 15 10 9 8 12 2 12"/></svg></span>
+          <span class="nav-label">Email Intel</span>
+        </li>
+        <li class="nav-item" data-view="vault">
+          <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span>
+          <span class="nav-label">Local Vault</span>
+        </li>
+        <li class="nav-item" data-view="portal">
+          <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg></span>
+          <span class="nav-label">Quick Portal</span>
+        </li>
+        <li class="nav-item" data-view="diu-portal">
+          <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></span>
+          <span class="nav-label">DIU Teachers Portal</span>
+        </li>
+      </ul>
+
+      <div id="sidebar-bottom">
+        <div class="sidebar-divider"></div>
+        <button class="nav-item" id="btn-theme-toggle" title="Toggle theme">
+          <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9z"/></svg></span>
+          <span class="nav-label">Theme</span>
+        </button>
+        <li class="nav-item" data-view="settings">
+          <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg></span>
+          <span class="nav-label">Settings</span>
+        </li>
+        <div class="sidebar-avatar" style="display:none;">D</div>
+      </div>
+    </nav>
+
+    <!-- Content Area -->
+    <main id="content-area">
+
+      <!-- ── Chat (NL Interface) ──────────────────────────── -->
+      <section id="view-chat" class="view dash-screen">
+        <div id="chat-header" class="dash-topbar">
+          <h2 class="dash-topbar-title">DASH AI</h2>
+          <div id="model-badge-wrap">
+            <span id="model-badge" class="model-chip"><span class="status-dot"></span>claude</span>
+          </div>
+        </div>
+        <div id="chat-messages" class="dash-messages"></div>
+        <div id="chat-input-area" class="dash-input-bar">
+          <button id="btn-mic" class="dash-mic-btn" title="WhisperFlow — press and hold to record">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="22"/>
+            </svg>
+          </button>
+          <input type="text" id="chat-input" class="dash-input" placeholder="Ask anything — schedule, marks, CLO attainment, draft an email…" />
+          <button id="btn-send" class="dash-send-btn" title="Send (Enter)">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m5 12 7-7 7 7"/><path d="M12 19V5"/>
+            </svg>
+          </button>
+        </div>
+        <div id="recording-indicator" class="hidden">
+          <span class="pulse-dot"></span> Recording… release to transcribe
+        </div>
+      </section>
+
+      <!-- ── Schedule ─────────────────────────────────────── -->
+      <section id="view-schedule" class="view hidden">
+        <div class="view-header page-header">
+          <div>
+            <h2>Smart Schedule Manager</h2>
+          </div>
+          <div class="header-actions">
+            <button class="btn-primary" id="btn-add-class">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+              Add Class
+            </button>
+          </div>
+        </div>
+
+        <!-- Timetable grid -->
+        <div id="timetable-grid"></div>
+
+        <!-- Add/Edit modal -->
+        <div id="modal-schedule" class="modal hidden">
+          <div class="modal-card">
+            <h3 id="modal-schedule-title">Add Class</h3>
+            <div class="form-row">
+              <label>Course Code</label>
+              <input type="text" id="sch-course-code" placeholder="ICE301" />
+            </div>
+            <div class="form-row">
+              <label>Course Name</label>
+              <input type="text" id="sch-course-name" placeholder="Data Structures" />
+            </div>
+            <div class="form-row">
+              <label>Day</label>
+              <select id="sch-day">
+                <option value="0">Sunday</option>
+                <option value="1">Monday</option>
+                <option value="2">Tuesday</option>
+                <option value="3">Wednesday</option>
+                <option value="4">Thursday</option>
+                <option value="5">Friday</option>
+                <option value="6">Saturday</option>
+              </select>
+            </div>
+            <div class="form-row two-col">
+              <div>
+                <label>Start Time</label>
+                <input type="time" id="sch-start" />
+              </div>
+              <div>
+                <label>End Time</label>
+                <input type="time" id="sch-end" />
+              </div>
+            </div>
+            <div class="form-row">
+              <label>Room</label>
+              <input type="text" id="sch-room" placeholder="Room 301-B" />
+            </div>
+            <div class="form-row">
+              <label>Zoom Link (optional)</label>
+              <input type="url" id="sch-zoom" placeholder="https://zoom.us/j/..." />
+            </div>
+            <div class="modal-actions">
+              <button class="btn-ghost"    id="btn-schedule-cancel">Cancel</button>
+              <button class="btn-primary"  id="btn-schedule-save">Save</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lesson Log Panel -->
+        <div class="lesson-log-section">
+          <div class="lesson-log-header">
+            <h3>Lesson Log</h3>
+            <button class="btn-secondary" id="btn-add-lesson">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+              Log Lesson
+            </button>
+          </div>
+          <div id="lesson-log-list"></div>
+        </div>
+
+        <div id="modal-lesson" class="modal hidden">
+          <div class="modal-card">
+            <h3>Log Lesson</h3>
+            <div class="form-row">
+              <label>Course</label>
+              <select id="lesson-course"></select>
+            </div>
+            <div class="form-row">
+              <label>Date</label>
+              <input type="date" id="lesson-date" />
+            </div>
+            <div class="form-row">
+              <label>Topic Covered</label>
+              <textarea id="lesson-covered" rows="2" placeholder="What was taught today"></textarea>
+            </div>
+            <div class="form-row">
+              <label>Next Topic</label>
+              <textarea id="lesson-next" rows="2" placeholder="What to cover next class"></textarea>
+            </div>
+            <div class="form-row">
+              <label>Notes</label>
+              <textarea id="lesson-notes" rows="2" placeholder="Any notes…"></textarea>
+            </div>
+            <div class="modal-actions">
+              <button class="btn-ghost"   id="btn-lesson-cancel">Cancel</button>
+              <button class="btn-primary" id="btn-lesson-save">Save</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Print Container (Hidden) ─────────────────────────── -->
+        <div id="print-container" style="display:none;position:absolute;top:0;left:0;width:800px;background:#fff;color:#000;padding:40px;z-index:-1000;">
+        </div>
+      </section>
+
+      <!-- ── ShadSync Dashboard ─────────────────────────────── -->
+      <section id="view-shadsync" class="view hidden">
+        <div class="view-header page-header">
+          <div>
+            <h2>ShadSync OBE Engine</h2>
+          </div>
+          <div class="header-actions">
+            <select id="shadsync-course-sel" class="course-select"></select>
+            <button class="btn-primary" id="btn-shadsync-refresh">Refresh Data</button>
+            <button class="btn-secondary" id="btn-shadsync-manage" onclick="document.getElementById('modal-shadsync-data').classList.remove('hidden'); if(window.ShadSyncModule && window.ShadSyncModule.renderDataForm) window.ShadSyncModule.renderDataForm()">Manage Data</button>
+            <button class="btn-secondary" id="btn-shadsync-import" title="Import a marks sheet (.xls / .xlsx)">Import marks sheet</button>
+            <input type="file" id="ss-import-file" accept=".xls,.xlsx" style="display:none" />
+            <button class="btn-secondary" id="btn-shadsync-report">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Export BAETE
+            </button>
+          </div>
+        </div>
+        
+        <div id="shadsync-loading" class="hidden" style="padding:2rem;text-align:center;color:var(--text-secondary)">
+          Loading OBE Attainment Data...
+        </div>
+
+        <div id="shadsync-content">
+          <div class="shadsync-grid">
+            <!-- CLO Attainment Card -->
+            <div class="card shadsync-card">
+              <h3 class="shadsync-card-title">CLO Attainment</h3>
+              <div id="shadsync-clo-list"></div>
+            </div>
+
+            <!-- CO/PO Attainment Card -->
+            <div class="card shadsync-card">
+              <h3 class="shadsync-card-title">CO & PO Attainment</h3>
+              <div class="co-po-grid">
+                <div>
+                  <h4 class="co-po-col-header">Course Outcomes</h4>
+                  <div id="shadsync-co-list"></div>
+                </div>
+                <div>
+                  <h4 class="co-po-col-header">Program Outcomes</h4>
+                  <div id="shadsync-po-list"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Students Below Threshold -->
+          <div class="card at-risk-card">
+            <h3 class="at-risk-title">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>
+              At-Risk Students
+            </h3>
+            <div id="shadsync-at-risk"></div>
+          </div>
+        </div>
+
+        <!-- Import marks sheet modal -->
+        <div id="modal-shadsync-import" class="modal hidden">
+          <div class="modal-card" style="width:600px;max-width:92vw">
+            <h3>Import marks sheet</h3>
+            <div id="ss-import-body" style="max-height:60vh;overflow:auto;margin-top:8px"></div>
+            <div class="modal-actions" style="margin-top:16px">
+              <button class="btn-ghost" id="btn-ss-import-cancel">Cancel</button>
+              <button class="btn-primary" id="btn-ss-import-confirm" disabled>Import</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Manage Data Modal -->
+        <div id="modal-shadsync-data" class="modal hidden">
+          <div class="modal-card" style="width:400px">
+            <h3>Manage ShadSync Data</h3>
+            <div class="form-row">
+              <label>Data Type</label>
+              <select id="ss-data-type">
+                <option value="student">Student Enrolment</option>
+                <option value="marks">OBE Marks Form</option>
+                <option value="attendance">Daily Attendance</option>
+                <option value="clo">Define CLO</option>
+                <option value="co">Define CO</option>
+                <option value="po">Define PO</option>
+              </select>
+            </div>
+            <div id="ss-form-container" style="margin-top:15px; border-top:1px solid var(--border); padding-top:15px;">
+              <!-- Javascript populates fields here based on dropdown -->
+            </div>
+            <div class="modal-actions" style="margin-top:20px">
+              <button class="btn-ghost" id="btn-ss-cancel">Cancel</button>
+              <button class="btn-primary" id="btn-ss-save">Save Record</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Bloom's Engine ───────────────────────────────── -->
+      <section id="view-blooms" class="view hidden">
+        <div class="view-header page-header">
+          <div><h2>Bloom's Engine</h2></div>
+        </div>
+        
+        <div id="blooms-upload-area" class="blooms-drop-zone" onclick="document.getElementById('blooms-file-input').click()">
+          <button class="btn-primary" style="pointer-events: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:8px; vertical-align:middle;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+            Upload Document
+          </button>
+          <p style="margin-top:16px; font-size:14px; color:var(--text-secondary); font-weight: 500;">Or drag and drop any file here</p>
+          <p style="margin-top:4px; font-size:12px; color:var(--text-tertiary);">Supports PDF, DOCX, PNG, JPG up to 50MB</p>
+          <input type="file" id="blooms-file-input" accept=".pdf,.docx,.png,.jpg,.jpeg,.webp,.bmp,.tiff,.tif" style="display:none" />
+        </div>
+
+        <div id="blooms-loading" class="hidden blooms-loading-state">
+          <div class="model-chip" id="blooms-loading-text">AI Thinking...</div>
+          <p class="blooms-loading-desc">Analyzing PDF contents and mapping to Bloom's cognitive levels...</p>
+        </div>
+
+        <div id="blooms-result" class="hidden blooms-result-area">
+          <div class="blooms-result-header">
+             <h3 id="blooms-topic-title"></h3>
+             <span id="blooms-duration" class="badge-duration"></span>
+          </div>
+          <p class="blooms-clo-summary-text"><strong>CLO Coverage Summary:</strong> <span id="blooms-clo-summary"></span></p>
+          <div class="divider-line"></div>
+          <div id="blooms-lesson-plan" class="blooms-plan-content"></div>
+        </div>
+      </section>
+
+      <!-- ── Email Intel ────────────────────────────────────── -->
+      <section id="view-email" class="view hidden email-screen">
+        
+        <!-- Gmail Connection Card -->
+        <div class="card gmail-card">
+           <div class="gmail-card-layout">
+              <div class="gmail-avatar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+              </div>
+              <div class="gmail-info">
+                 <div class="profile-name gmail-title">Not connected</div>
+                 <div class="profile-email gmail-sub">Connect Gmail to see your account</div>
+              </div>
+              <div class="gmail-status">
+                 <span class="badge badge-default" id="badge-gmail-status">Checking Gmail...</span>
+                 <span class="badge badge-default">Local DB Connected</span>
+              </div>
+           </div>
+           
+           <div id="gmail-connect-area" class="hidden" style="margin-top:16px;">
+              <p class="gmail-hint">Gmail access is needed to sync your emails. Authorize locally to begin fetching and AI categorizing.</p>
+              <button class="btn-primary" id="btn-gmail-connect">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                Connect Gmail Account
+              </button>
+           </div>
+        </div>
+
+        <!-- Inbox Section -->
+        <div class="inbox-header">
+           <h2>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 16 12 14 15 10 9 8 12 2 12"/></svg>
+              Smart Inbox
+           </h2>
+           <div class="header-actions">
+              <button class="btn-ghost" id="btn-email-refresh" disabled>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/></svg>
+                Refresh
+              </button>
+              <button class="btn-ghost" id="btn-gmail-signout" style="display:none;color:var(--danger);">Sign out</button>
+           </div>
+        </div>
+
+        <div id="email-inbox-list">
+           <!-- Empty state -->
+           <div class="empty-state" id="email-empty-state">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="empty-icon"><path d="M18.8 4A6.3 8.7 0 0 1 20 9"/><path d="M9 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v2"/><path d="m2 5 8.9 5.2a2 2 0 0 0 2.2 0L22 5"/><path d="M22 17h-6"/></svg>
+              <div class="empty-title">No emails yet</div>
+              <p class="empty-desc">Connect your Gmail above, or click Refresh to fetch the latest 50 emails and run the AI categorization.</p>
+           </div>
+        </div>
+      </section>
+
+
+      <!-- ── Vault (Stashboard-Style) ─────────────────────── -->
+      <section id="view-vault" class="view hidden vault-view">
+
+        <!-- Drag overlay -->
+        <div id="vault-drag-overlay" class="vault-drag-overlay hidden">
+          <div class="vault-drag-content">
+            <span style="font-size:48px">📥</span>
+            <p>Drop files here to add to your vault</p>
+          </div>
+        </div>
+
+        <!-- Layout: Sidebar + Main -->
+        <div class="vault-layout">
+
+          <!-- ── Vault Sidebar ── -->
+          <aside class="vault-sidebar">
+            <nav class="vault-nav">
+              <!-- All Items -->
+              <button class="vault-nav-item active" data-vfilter="all">
+                <span class="vault-nav-icon">📋</span>
+                <span class="vault-nav-text">All Items</span>
+              </button>
+              <!-- Favorites -->
+              <button class="vault-nav-item" data-vfilter="favorites">
+                <span class="vault-nav-icon">⭐</span>
+                <span class="vault-nav-text">Favorites</span>
+              </button>
+
+              <!-- Categories -->
+              <div class="vault-section">
+                <div class="vault-section-header">
+                  <span class="vault-section-title">Categories</span>
+                </div>
+                <div class="vault-section-items">
+                  <button class="vault-nav-item" data-vfilter="password">
+                    <span class="vault-nav-icon">🔑</span><span class="vault-nav-text">Passwords</span>
+                    <span class="vault-nav-dot" style="background:var(--accent-primary)"></span>
+                  </button>
+                  <button class="vault-nav-item" data-vfilter="note">
+                    <span class="vault-nav-icon">📝</span><span class="vault-nav-text">Notes</span>
+                    <span class="vault-nav-dot" style="background:var(--success)"></span>
+                  </button>
+                  <button class="vault-nav-item" data-vfilter="link">
+                    <span class="vault-nav-icon">🔗</span><span class="vault-nav-text">Links</span>
+                    <span class="vault-nav-dot" style="background:var(--warning)"></span>
+                  </button>
+                </div>
+              </div>
+            </nav>
+
+            <!-- Sidebar Footer -->
+            <div class="vault-sidebar-footer">
+              <button class="vault-footer-btn" id="btn-vault-lock" title="Lock Vault">🔒 Lock</button>
+              <button class="vault-footer-btn" id="btn-vault-open-location" title="Open Vault Location">📂</button>
+            </div>
+          </aside>
+
+          <!-- ── Vault Main ── -->
+          <div class="vault-main">
+
+            <!-- Top Bar -->
+            <div class="vault-topbar">
+              <div class="vault-topbar-left">
+                <h2 class="vault-page-title" id="vault-page-title">📋 All Items</h2>
+                <span class="vault-item-count" id="vault-item-count"></span>
+              </div>
+              <div class="vault-topbar-center">
+                <button class="vault-search-trigger" id="btn-vault-search-trigger">
+                  <span>🔍</span>
+                  <span class="vault-search-text">Search vault...</span>
+                  <kbd class="vault-search-kbd">Ctrl+K</kbd>
+                </button>
+              </div>
+              <div class="vault-topbar-right">
+                <button class="btn-primary" id="btn-vault-add">➕ Add Item</button>
+              </div>
+            </div>
+
+            <!-- Stats Strip -->
+            <div class="vault-stats-strip" id="vault-stats-strip">
+              <div class="vault-stat-card">
+                <span class="vault-stat-value" id="stat-vault-total">0</span>
+                <span class="vault-stat-label">Total Items</span>
+              </div>
+              <div class="vault-stat-card">
+                <span class="vault-stat-value" id="stat-vault-passwords">0</span>
+                <span class="vault-stat-label">Passwords</span>
+              </div>
+              <div class="vault-stat-card">
+                <span class="vault-stat-value" id="stat-vault-favorites">0</span>
+                <span class="vault-stat-label">Favorites</span>
+              </div>
+              <div class="vault-stat-card">
+                <span class="vault-stat-value" id="stat-vault-storage">0 B</span>
+                <span class="vault-stat-label">Storage</span>
+              </div>
+            </div>
+
+            <!-- Items Content -->
+            <div class="vault-content" id="vault-content">
+              <!-- Empty state -->
+              <div id="vault-empty-state" class="vault-empty hidden">
+                <span class="vault-empty-icon">📭</span>
+                <h3 class="vault-empty-title">No items yet</h3>
+                <p>Click "Add Item" or drag &amp; drop files to get started.</p>
+                <button class="btn-primary" id="btn-vault-add-empty">➕ Add Your First Item</button>
+              </div>
+              <!-- Items Grid -->
+              <div id="vault-items-grid" class="vault-grid"></div>
+            </div>
+          </div>
+
+        </div><!-- end vault-layout -->
+
+        <!-- ── Search Overlay (Ctrl+K) ── -->
+        <div id="vault-search-overlay" class="vault-search-overlay hidden">
+          <div class="vault-search-dialog">
+            <div class="vault-search-input-wrap">
+              <span>🔍</span>
+              <input type="text" id="vault-search-input" placeholder="Search vault items..." autocomplete="off" />
+              <kbd onclick="document.getElementById('vault-search-overlay').classList.add('hidden')">Esc</kbd>
+            </div>
+            <div id="vault-search-results" class="vault-search-results"></div>
+          </div>
+        </div>
+
+        <!-- ── Add/Edit Modal ── -->
+        <div id="modal-vault-add" class="modal hidden">
+          <div class="modal-card" style="max-width:520px">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;">
+              <h3 style="margin:0">🔐 Secure Vault Entry</h3>
+              <button class="btn-ghost small" id="btn-vault-cancel">✕</button>
+            </div>
+
+            <div class="form-row">
+              <label>Title</label>
+              <input type="text" id="v-title" placeholder="e.g. GitHub Credentials" />
+            </div>
+
+            <div class="form-row">
+              <label>Type</label>
+              <select id="v-type">
+                <option value="note">📝 Secure Note</option>
+                <option value="password">🔑 Password / Credential</option>
+                <option value="link">🔗 Web Link</option>
+              </select>
+            </div>
+
+            <!-- URL field (for links) -->
+            <div class="form-row hidden" id="v-url-field">
+              <label>URL</label>
+              <input type="url" id="v-url" placeholder="https://..." />
+            </div>
+
+            <!-- Username + Password (for credentials) -->
+            <div class="form-row hidden" id="v-cred-fields">
+              <div style="display:flex; gap:10px;">
+                <div style="flex:1">
+                  <label>Username</label>
+                  <input type="text" id="v-username" autocomplete="off" />
+                </div>
+                <div style="flex:1">
+                  <label>Password (AES-256)</label>
+                  <input type="password" id="v-password" autocomplete="new-password" />
+                </div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <label>Content / Notes (Encrypted)</label>
+              <textarea id="v-content" rows="4" placeholder="Stored securely with AES-256-GCM..."></textarea>
+            </div>
+
+            <div class="form-row">
+              <label style="display:flex; align-items:center; gap:8px; text-transform:none; font-size:13px;">
+                <input type="checkbox" id="v-favorite" /> ⭐ Mark as Favorite
+              </label>
+            </div>
+
+            <div class="modal-actions" style="margin-top:20px;">
+              <button class="btn-ghost" id="btn-vault-cancel-2">Cancel</button>
+              <button class="btn-primary" id="btn-vault-save">🔒 Encrypt &amp; Save</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── PIN Unlock Modal ── -->
+        <div id="modal-vault-unlock" class="modal hidden">
+          <div class="modal-card" style="max-width:360px; text-align:center;">
+            <div style="font-size:40px; margin-bottom:12px;">🔑</div>
+            <h3 style="margin:0 0 8px 0;">Master Unlock</h3>
+            <p style="font-size:13px; color:var(--text-dim); margin-bottom:20px;">Enter your session PIN to decrypt this vault entry.</p>
+            <input type="password" id="vault-unlock-pin" inputmode="numeric" placeholder="• • • • • •"
+              style="font-size:28px; letter-spacing:10px; text-align:center; padding:14px; border-radius:10px;
+              border:2px solid var(--border-primary); background:var(--bg-tertiary); color:var(--text-primary); width:100%;" />
+            <div class="modal-actions" style="margin-top:20px; justify-content:center;">
+              <button class="btn-ghost" onclick="document.getElementById('modal-vault-unlock').classList.add('hidden')">Cancel</button>
+              <button class="btn-primary" id="btn-vault-confirm-unlock">🔓 Decrypt</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Vault View Item Modal ── -->
+        <div id="modal-vault-view" class="modal hidden">
+          <div class="modal-card" style="max-width:520px">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;">
+              <h3 style="margin:0" id="vault-view-title">Item</h3>
+              <button class="btn-ghost small" onclick="document.getElementById('modal-vault-view').classList.add('hidden')">✕</button>
+            </div>
+            <div id="vault-view-body" style="display:flex;flex-direction:column;gap:12px;font-size:14px;"></div>
+            <div class="modal-actions" style="margin-top:20px;">
+              <button class="btn-ghost" onclick="document.getElementById('modal-vault-view').classList.add('hidden')">Close</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Vault Location Modal ── -->
+        <div id="modal-vault-location" class="modal hidden">
+          <div class="modal-card" style="max-width:460px">
+            <h3 style="margin:0 0 16px 0;">📂 Vault Location</h3>
+            <div class="vault-location-box">
+              <span class="vault-location-path" id="vault-location-path">Loading...</span>
+              <button class="btn-ghost small" id="btn-vault-change-location">📁 Change</button>
+            </div>
+            <p style="font-size:12px; color:var(--text-dim); margin-top:12px;">
+              The vault database is stored at the path above inside your system's user data directory.
+            </p>
+            <div class="modal-actions" style="margin-top:16px;">
+              <button class="btn-ghost" onclick="document.getElementById('modal-vault-location').classList.add('hidden')">Close</button>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+
+      <!-- ── DIU Teachers Portal ──────────────────────────── -->
+      <section id="view-diu-portal" class="view hidden">
+        <div class="diu-layout">
+
+          <!-- DIU-style Sidebar -->
+          <nav class="diu-sidebar">
+            <div class="diu-sidebar-header">
+              <div class="diu-logo-badge">DIU</div>
+              <div class="diu-brand-text">Daffodil<br>International<br>University</div>
+            </div>
+            <ul class="diu-nav">
+              <li class="diu-nav-item active" data-sec="dashboard">
+                <span class="diu-nav-icon">⊞</span> Dashboard
+              </li>
+              <li class="diu-nav-item" data-sec="attendance">
+                <span class="diu-nav-icon">📅</span> Student Attendance
+              </li>
+              <li class="diu-nav-item" data-sec="result">
+                <span class="diu-nav-icon">📊</span> Result
+              </li>
+              <li class="diu-nav-item diu-stub" data-sec="accounts">
+                <span class="diu-nav-icon">💳</span> Accounts Clearance
+              </li>
+              <li class="diu-nav-item diu-stub" data-sec="mentor">
+                <span class="diu-nav-icon">👤</span> Mentor Clearance
+              </li>
+              <li class="diu-nav-item" data-sec="marks">
+                <span class="diu-nav-icon">📝</span> Marks Entry
+              </li>
+              <li class="diu-nav-item" data-sec="course-reg">
+                <span class="diu-nav-icon">📋</span> Course Registration
+              </li>
+              <li class="diu-nav-item diu-stub" data-sec="gradesheet">
+                <span class="diu-nav-icon">📄</span> Gradesheet Approval
+              </li>
+              <hr class="diu-nav-divider" />
+              <li class="diu-nav-item diu-stub" data-sec="logout" style="margin-top:auto">
+                <span class="diu-nav-icon">⏻</span> Logout
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Content -->
+          <div class="diu-content">
+            <div class="diu-topbar">
+              <h2 id="diu-topbar-title">Dashboard</h2>
+              <div class="diu-course-select">
+                <label for="diu-course-sel">Course:</label>
+                <select id="diu-course-sel"><option>Loading...</option></select>
+              </div>
+            </div>
+
+            <!-- Dashboard -->
+            <div class="diu-section" id="diu-sec-dashboard"></div>
+
+            <!-- Attendance -->
+            <div class="diu-section hidden" id="diu-sec-attendance"></div>
+
+            <!-- Result -->
+            <div class="diu-section hidden" id="diu-sec-result"></div>
+
+            <!-- Marks Entry -->
+            <div class="diu-section hidden" id="diu-sec-marks"></div>
+
+            <!-- Course Registration -->
+            <div class="diu-section hidden" id="diu-sec-course-reg"></div>
+
+            <!-- Stub sections -->
+            <div class="diu-section hidden" id="diu-sec-accounts">
+              <div class="diu-stub-msg">
+                <div class="stub-icon">💳</div>
+                <h3>Accounts Clearance</h3>
+                <p>This feature is available on the live DIU Teachers Portal.</p>
+              </div>
+            </div>
+            <div class="diu-section hidden" id="diu-sec-mentor">
+              <div class="diu-stub-msg">
+                <div class="stub-icon">👤</div>
+                <h3>Mentor Clearance</h3>
+                <p>This feature is available on the live DIU Teachers Portal.</p>
+              </div>
+            </div>
+            <div class="diu-section hidden" id="diu-sec-gradesheet">
+              <div class="diu-stub-msg">
+                <div class="stub-icon">📄</div>
+                <h3>Gradesheet Approval</h3>
+                <p>This feature is available on the live DIU Teachers Portal.</p>
+              </div>
+            </div>
+          </div><!-- /.diu-content -->
+
+        </div><!-- /.diu-layout -->
+      </section>
+
+      <!-- ── Quick Portals ─────────────────────────────────── -->
+      <section id="view-portal" class="view hidden portal-screen">
+        <div class="portal-tabs">
+          <button class="portal-tab active" id="btn-portal-diu">DIU Teacher Portal</button>
+          <button class="portal-tab" id="btn-portal-blc">BLC Portal</button>
+        </div>
+        <div class="portal-nav-bar">
+          <button class="portal-nav-btn" title="Back">←</button>
+          <button class="portal-nav-btn" title="Forward">→</button>
+          <button class="portal-nav-btn" title="Reload">↻</button>
+          <span class="portal-url">https://teacherportal.diu.edu.bd/</span>
+          <button class="portal-nav-btn" title="Open in browser">↗</button>
+        </div>
+        <div class="portal-iframe-wrap">
+           <webview id="webview-diu" src="https://teacherportal.diu.edu.bd/" style="width:100%; height:100%;"></webview>
+           <webview id="webview-blc" src="https://elearn.daffodilvarsity.edu.bd/" class="hidden" style="width:100%; height:100%;"></webview>
+        </div>
+      </section>
+
+      <!-- ── Settings ──────────────────────────────────────── -->
+      <section id="view-settings" class="view hidden settings-screen">
+        <div class="page-header" style="padding-bottom:20px;">
+          <div><h2>Settings</h2></div>
+        </div>
+
+        <div class="settings-group">
+          <h3>AI Model</h3>
+          <div class="model-switcher model-pills">
+            <button class="model-btn model-pill active" data-model="claude">Claude</button>
+            <button class="model-btn model-pill"        data-model="gpt4o">GPT-4o</button>
+            <button class="model-btn model-pill"        data-model="gemini">Gemini</button>
+            <button class="model-btn model-pill"        data-model="openrouter">OpenRouter</button>
+            <button class="model-btn model-pill"        data-model="ollama">Local AI</button>
+          </div>
+          <p class="settings-hint" id="model-switch-status"></p>
+
+          <!-- Ollama config — visible only when Local AI is active or available -->
+          <div id="ollama-config" class="openrouter-config hidden">
+            <div id="ollama-status" style="margin-bottom:10px; font-size:13px;"></div>
+            <label class="or-label">Local Model</label>
+            <div class="or-model-row">
+              <input type="text" id="ollama-model-input" class="or-select"
+                placeholder="e.g. gemma4:e2b" autocomplete="off" style="flex:1"
+                title="Model name as shown in: ollama list" />
+              <button class="btn-ghost small" id="btn-ollama-model-save">Apply</button>
+            </div>
+            <p class="settings-hint">
+              Default: <strong>gemma4:e2b</strong> (~4.6 GB RAM) &nbsp;|&nbsp;
+              Lighter, for 8 GB machines: <strong>qwen2.5:3b-instruct</strong> (~2.1 GB)<br/>
+              Install: <a href="https://ollama.com" style="color:var(--accent)">ollama.com</a>
+              → then run: <code style="background:var(--bg-input);padding:1px 5px;border-radius:3px;">ollama pull gemma4:e2b</code>
+            </p>
+          </div>
+
+          <!-- OpenRouter sub-model selector — visible only when OpenRouter is active -->
+          <div id="openrouter-config" class="openrouter-config hidden">
+            <label class="or-label">OpenRouter Model</label>
+            <div class="or-model-row">
+              <select id="or-model-select" class="or-select">
+                <option value="">— loading models… —</option>
+              </select>
+            </div>
+            <p class="settings-hint" style="margin:4px 0">Or type any model ID from openrouter.ai/models:</p>
+            <div class="or-model-row">
+              <input type="text" id="or-model-custom" class="or-select" placeholder="e.g. qwen/qwen-plus or qwen/qwq-32b" autocomplete="off" style="flex:1" />
+              <button class="btn-ghost small" id="btn-or-model-save">Apply</button>
+            </div>
+            <p class="settings-hint">Get a free API key at <strong>openrouter.ai</strong> — free models cost $0.</p>
+          </div>
+        </div>
+
+        <div class="settings-group">
+          <h3>API Keys</h3>
+          <div id="key-status-list"></div>
+          <button class="btn-ghost small" id="btn-update-keys">Update API Keys</button>
+        </div>
+
+        <div class="settings-group">
+          <h3>Google OAuth (Gmail)</h3>
+          <p class="settings-hint">Required for Email Intelligence. Get credentials from <strong>console.cloud.google.com</strong> → APIs &amp; Services → Credentials → Create OAuth 2.0 Client ID (Desktop app). Add <code>http://localhost:3000/oauth2callback</code> as an authorized redirect URI.</p>
+          <div class="form-row" style="margin-bottom:8px;">
+            <label style="font-size:12px;font-weight:600;color:var(--text-dim);text-transform:uppercase;">Client ID</label>
+            <input type="password" id="google-client-id" placeholder="162140…apps.googleusercontent.com" autocomplete="off"
+              style="width:100%;margin-top:4px;padding:8px 12px;border-radius:6px;border:1px solid var(--border);background:var(--bg-input);color:var(--text);font-size:13px;box-sizing:border-box;" />
+          </div>
+          <div class="form-row" style="margin-bottom:12px;">
+            <label style="font-size:12px;font-weight:600;color:var(--text-dim);text-transform:uppercase;">Client Secret</label>
+            <input type="password" id="google-client-secret" placeholder="GOCSPX-…" autocomplete="off"
+              style="width:100%;margin-top:4px;padding:8px 12px;border-radius:6px;border:1px solid var(--border);background:var(--bg-input);color:var(--text);font-size:13px;box-sizing:border-box;" />
+          </div>
+          <button class="btn-primary small" id="btn-save-google-creds">Save Google Credentials</button>
+          <p class="settings-hint" id="google-creds-status" style="margin-top:6px;"></p>
+        </div>
+
+        <div class="settings-group">
+          <h3>OpenRouter API Key</h3>
+          <p class="settings-hint">Paste your OpenRouter key to use free open-source models (Gemma, Qwen, LLaMA, Mistral, DeepSeek…). Get one free at <strong>openrouter.ai</strong>.</p>
+          <div class="rule-input-row">
+            <input type="password" id="or-key-input" placeholder="sk-or-v1-…" autocomplete="off" />
+            <button class="btn-primary small" id="btn-save-or-key">Save</button>
+          </div>
+          <p class="settings-hint" id="or-key-status"></p>
+        </div>
+
+        <div class="settings-group">
+          <h3>Database</h3>
+          <div class="settings-row">
+            <div>
+              <strong>Export Database</strong>
+              <p>Save a backup of all your data for transfer to another machine.</p>
+            </div>
+            <button class="btn-ghost small" id="btn-db-export">Export</button>
+          </div>
+          <div class="settings-row">
+            <div>
+              <strong>Import Database</strong>
+              <p>Restore data from a backup file.</p>
+            </div>
+            <button class="btn-ghost small" id="btn-db-import">Import</button>
+          </div>
+        </div>
+
+        <div class="settings-group">
+          <h3>Student Data Key</h3>
+          <p class="settings-hint">Student names and IDs are encrypted with a key stored in Windows Credential Manager. Save a recovery file somewhere safe (USB drive, cloud folder) — without it, a reinstall or new Windows profile cannot read your student data.</p>
+          <p class="settings-hint" id="student-key-status"></p>
+          <div class="settings-row">
+            <div>
+              <strong>Save Recovery File</strong>
+              <p>Protected by a passphrase you choose. Keep the passphrase separate from the file.</p>
+            </div>
+            <button class="btn-ghost small" id="btn-key-save-recovery">Save</button>
+          </div>
+          <div class="settings-row">
+            <div>
+              <strong>Restore From Recovery File</strong>
+              <p>Use when this computer has lost the key.</p>
+            </div>
+            <button class="btn-ghost small" id="btn-key-restore">Restore</button>
+          </div>
+        </div>
+
+        <div class="settings-group">
+          <h3>Portable Mode</h3>
+          <p>Enable this before moving FacultyMind to a USB drive or another PC without Windows Credential Manager.</p>
+          <label class="toggle-row">
+            <input type="checkbox" id="toggle-portable" />
+            <span class="toggle-label">Enable portable mode (API keys in encrypted file)</span>
+          </label>
+        </div>
+
+        <div class="settings-group">
+          <h3>Security</h3>
+          <div class="settings-row">
+            <div>
+              <strong>Change PIN</strong>
+              <p>Requires entering your current PIN before setting a new one.</p>
+            </div>
+            <button class="btn-ghost small" id="btn-change-pin" onclick="window.openChangePinModal()">Change PIN</button>
+          </div>
+        </div>
+
+        <!-- ── Memory & Intelligence ──────────────────────────────── -->
+        <div class="settings-group">
+          <h3>Memory &amp; Intelligence</h3>
+          <p class="settings-hint">FacultyMind learns from your daily activity and follows the rules you set. The AI uses these to act proactively — like J.A.R.V.I.S.</p>
+
+          <div class="settings-row">
+            <div>
+              <strong>Proactive AI</strong>
+              <p>AI surfaces suggestions without being asked — based on schedule, emails, and activity.</p>
+            </div>
+            <label class="toggle-switch">
+              <input type="checkbox" id="toggle-proactive" checked />
+              <span class="toggle-knob"></span>
+            </label>
+          </div>
+        </div>
+
+        <div class="settings-group">
+          <h3>Rules</h3>
+          <p class="settings-hint">Tell the AI what to do or not do. It will follow these in every proactive suggestion and response.</p>
+
+          <!-- Add rule input -->
+          <div class="rule-input-row">
+            <input type="text" id="rule-input" placeholder='e.g. "Never interrupt me during class hours"' autocomplete="off" />
+            <button class="btn-primary small" id="btn-add-rule">Add Rule</button>
+          </div>
+
+          <!-- Active rules list -->
+          <div id="rules-list" class="rules-list">
+            <p class="text-dim" id="rules-empty">No rules set yet. Add one above.</p>
+          </div>
+        </div>
+
+        <div class="settings-group">
+          <h3>AI Thought Journal</h3>
+          <p class="settings-hint">Observations the AI has written about your patterns. Read-only — the AI updates this daily.</p>
+          <div id="thoughts-list" class="thoughts-list">
+            <p class="text-dim">No observations yet. The AI learns after your first full day of use.</p>
+          </div>
+          <button class="btn-ghost small" id="btn-refresh-thoughts" style="margin-top:8px">Refresh</button>
+
+        </div>
+
+        <div class="settings-group">
+          <h3>About</h3>
+          <p>FacultyMind v1.0.0 — OBE engine by ShadSync<br/>
+          Built by Shad, Daffodil International University</p>
+        </div>
+      </section>
+
+    </main>
+
+  <!-- ── Floating AI Assistant Widget ─────────────────────────────────────── -->
+  <div id="fc-root">
+
+    <!-- Collapsed bubble -->
+    <button id="fc-bubble" title="Ask DASH anything">
+      <span id="fc-avatar">D</span>
+      <span id="fc-badge" class="fc-badge hidden">0</span>
+    </button>
+
+    <!-- Expanded panel -->
+    <div id="fc-panel" class="fc-panel hidden">
+      <!-- Header -->
+      <div id="fc-header">
+        <div class="fc-header-info">
+          <div class="fc-header-avatar">D</div>
+          <div>
+            <div class="fc-header-name">DASH</div>
+            <div class="fc-header-status">Always online</div>
+          </div>
+        </div>
+        <button id="fc-close" title="Close">✕</button>
+      </div>
+
+      <!-- Messages -->
+      <div id="fc-messages"></div>
+
+      <!-- File preview strip -->
+      <div id="fc-file-preview" class="hidden"></div>
+
+      <!-- Input row -->
+      <div id="fc-input-row">
+        <label id="fc-attach-btn" title="Attach file (PDF, image, text, Word…)">
+          📎
+          <input type="file" id="fc-file-input" accept=".pdf,.txt,.md,.csv,.docx,.png,.jpg,.jpeg,.webp" style="display:none" />
+        </label>
+        <textarea id="fc-input" placeholder="Ask anything…" rows="1"></textarea>
+        <button id="fc-send">➤</button>
+      </div>
+    </div>
+
+  </div>
+  <!-- ── End Floating Widget ───────────────────────────────────────────────── -->
+
+  <!-- External Libraries -->
+  <script src="../../node_modules/fuse.js/dist/fuse.js"></script>
+
+  <!-- Modules -->
+  <script src="js/chat.js"></script>
+  <script src="js/schedule.js"></script>
+  <script src="js/shadsync.js"></script>
+  <script src="js/blooms.js"></script>
+  <script src="js/portals.js"></script>
+  <script src="js/diu-portal.js"></script>
+  <script src="js/email.js"></script>
+  <script src="js/vault.js"></script>
+  <script src="js/settings.js"></script>
+  <script src="js/floating-chat.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

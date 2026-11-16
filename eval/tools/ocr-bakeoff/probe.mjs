@@ -1,0 +1,13 @@
+import { PaddleOcrService, V6_SMALL_MODEL } from 'ppu-paddle-ocr';
+const img = process.argv[2];
+const svc = new PaddleOcrService({ model: V6_SMALL_MODEL });
+const t0 = Date.now();
+await svc.initialize();
+console.log('init ms', Date.now() - t0);
+const t1 = Date.now();
+import fs from 'node:fs'; const buf = fs.readFileSync(img); const r = await svc.recognize(buf.buffer.slice(buf.byteOffset, buf.byteOffset + buf.byteLength));
+console.log('recognize ms', Date.now() - t1);
+console.log(Object.keys(r));
+console.log((r.text || '').slice(0, 600));
+console.log(JSON.stringify((r.lines || r.items || []).slice(0, 2)).slice(0, 500));
+await svc.destroy();

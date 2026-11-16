@@ -1,0 +1,84 @@
+appId: com.shad.facultymind
+productName: FacultyMind
+copyright: Copyright © 2026 Shad
+
+directories:
+  output: build
+  buildResources: assets
+
+# ── Files packed into the ASAR archive ───────────────────────────────────────
+files:
+  - src/**/*
+  - assets/**/*
+  - package.json
+  - "!src/database/seeds/**"
+  # Exclude native module binaries from ASAR — they must be unpacked
+  # so Node can load them via the filesystem at runtime.
+  - "!node_modules/better-sqlite3/build/**"
+  - "!node_modules/keytar/build/**"
+  - "!node_modules/onnxruntime-node/bin/**"
+  - "!node_modules/onnxruntime-node/lib/binding/**"
+
+# ── ASAR unpack: native binaries that cannot live inside the archive ─────────
+# electron-builder copies these alongside the ASAR so require() can find them.
+asarUnpack:
+  - "node_modules/better-sqlite3/build/Release/*.node"
+  - "node_modules/keytar/build/Release/*.node"
+  - "node_modules/onnxruntime-node/bin/**"
+  - "node_modules/onnxruntime-node/lib/binding/**"
+  # @xenova/transformers ships WASM fallback files that must be on disk
+  - "node_modules/@xenova/transformers/dist/*.wasm"
+  - "node_modules/@xenova/transformers/dist/*.js"
+
+# ── Extra resources (outside ASAR, accessible via process.resourcesPath) ─────
+# The ONNX model cache lives in userData (set in embedding-engine.js) so it
+# survives app updates. No extraResources needed for the model itself.
+# We only bundle the seed dataset JSON so it's available on first launch.
+extraResources:
+  - from: "src/database/seeds/clo-seed-dataset.json"
+    to:   "seeds/clo-seed-dataset.json"
+    filter:
+      - "**/*"
+
+# ── Windows installer ─────────────────────────────────────────────────────────
+win:
+  target:
+    - target: nsis
+      arch: x64
+  icon: assets/icon.ico
+  artifactName: FacultyMind-Setup-${version}.exe
+  # Sign with your certificate here for production:
+  # certificateFile: cert.pfx
+  # certificatePassword: ${env.CERT_PASSWORD}
+
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  installerIcon: assets/icon.ico
+  installerHeaderIcon: assets/icon.ico
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: FacultyMind
+  # Include VC++ redistributables for native module support on clean machines
+  include: assets/installer-extras.nsh
+
+# ── macOS ─────────────────────────────────────────────────────────────────────
+mac:
+  target: dmg
+  icon: assets/icon.icns
+  category: public.app-category.education
+  hardenedRuntime: true
+  entitlements: assets/entitlements.mac.plist
+  entitlementsInherit: assets/entitlements.mac.plist
+
+# ── Build options ─────────────────────────────────────────────────────────────
+asar: true
+compression: maximum
+
+# Rebuild native modules for the target Electron version
+# Run: npx electron-rebuild before building
+afterSign: scripts/notarize.js
+
+# ── Node integration for native modules ──────────────────────────────────────
+# electron-builder will run electron-rebuild automatically if this is set
+npmRebuild: true

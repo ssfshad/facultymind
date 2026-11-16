@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FacultyMind — Vault + Portal + DIU Preview</title>
+  <script>(function(){const t=localStorage.getItem('theme');if(t==='light')document.documentElement.setAttribute('data-theme','light');})();</script>
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/components.css">
+  <link rel="stylesheet" href="styles/shell.css">
+  <link rel="stylesheet" href="styles/vault-portal.css">
+  <style>.screen{display:none;height:100%;overflow:hidden;}.screen.active{display:flex;flex-direction:column;height:100%;} .tab-switch{position:fixed;top:4px;right:200px;z-index:99999;display:flex;gap:4px;-webkit-app-region:no-drag;} .tab-switch button{padding:4px 10px;border-radius:var(--radius-sm);border:1px solid var(--border-default);background:var(--bg-elevated);color:var(--text-secondary);font-size:11px;cursor:pointer;} .tab-switch button.active{background:var(--accent-primary);color:white;border-color:var(--accent-primary);}</style>
+</head>
+<body>
+  <div class="titlebar"><div class="titlebar-left"><div class="titlebar-logo">FM</div><span class="titlebar-text">FacultyMind</span></div><div class="tab-switch"><button class="active" onclick="showScreen('vault')">Vault</button><button onclick="showScreen('portal')">Portal</button><button onclick="showScreen('diu')">DIU Portal</button></div><div class="titlebar-drag"></div><div class="titlebar-controls"><button class="titlebar-btn">&#8211;</button><button class="titlebar-btn">&#9633;</button><button class="titlebar-btn close">&#10005;</button></div></div>
+
+  <div class="app-layout">
+    <nav class="sidebar">
+      <div class="sidebar-logo"><div class="sidebar-logo-mark">FM</div><span class="sidebar-logo-text">FacultyMind</span></div>
+      <ul class="sidebar-nav">
+        <li class="nav-item"><span class="nav-icon"><svg viewBox="0 0 24 24"><rect width="18" height="11" x="3" y="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span><span class="nav-label">Local Vault</span></li>
+        <li class="nav-item active"><span class="nav-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg></span><span class="nav-label">Quick Portal</span></li>
+        <li class="nav-item"><span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M2 22V6l9-4 9 4v16"/><path d="M6 10v8"/><path d="M10 10v8"/><path d="M14 10v8"/><path d="M18 10v8"/><path d="M2 10h18"/></svg></span><span class="nav-label">DIU Portal</span></li>
+      </ul>
+      <div class="sidebar-bottom"><div class="sidebar-avatar">S</div></div>
+    </nav>
+
+    <main class="content-area">
+
+      <!-- ═══ VAULT ═══ -->
+      <div class="screen active" id="screen-vault" style="display:flex;flex-direction:row;">
+        <div class="vault-sidebar">
+          <button class="vault-nav-item active">📋 All Items</button>
+          <button class="vault-nav-item">⭐ Favorites</button>
+          <div style="margin-top:var(--space-4);"><span class="section-label" style="padding:0 var(--space-2);">Categories</span></div>
+          <button class="vault-nav-item" style="margin-top:var(--space-2);"><span class="v-dot" style="background:#3b82f6;"></span>Passwords<span class="v-count">1</span></button>
+          <button class="vault-nav-item"><span class="v-dot" style="background:#22c55e;"></span>Notes<span class="v-count">1</span></button>
+          <button class="vault-nav-item"><span class="v-dot" style="background:#f59e0b;"></span>Links<span class="v-count">1</span></button>
+          <div class="vault-sidebar-bottom">
+            <button class="btn-destructive" style="width:100%;justify-content:center;">🔒 Lock</button>
+            <button class="btn-ghost" style="width:100%;justify-content:center;font-size:var(--font-sm);">Export</button>
+          </div>
+        </div>
+        <div class="vault-main">
+          <div class="vault-topbar">
+            <h2>All Items</h2>
+            <span class="vault-count-badge">3</span>
+            <div class="vault-search"><span class="search-icon">🔍</span><input type="text" placeholder="Search vault..."><span class="search-kbd">Ctrl+K</span></div>
+            <button class="btn-primary btn-sm">+ Add Item</button>
+          </div>
+          <div class="vault-stats">
+            <div class="vault-stat"><span class="v-stat-val">3</span><span class="v-stat-label">Total Items</span></div>
+            <div class="vault-stat"><span class="v-stat-val">1</span><span class="v-stat-label">Passwords</span></div>
+            <div class="vault-stat"><span class="v-stat-val">0</span><span class="v-stat-label">Favorites</span></div>
+            <div class="vault-stat"><span class="v-stat-val">206 B</span><span class="v-stat-label">Storage</span></div>
+          </div>
+          <div class="vault-grid">
+            <div class="vault-item animate-fadeUp"><div class="vault-item-header"><span class="vault-item-name">test</span><button class="btn-ghost" style="font-size:14px;">☆</button></div><div class="vault-item-content">This is a secure test note stored locally with AES-256 encryption.</div><div class="vault-item-footer"><span class="badge badge-default">📝 Note</span></div></div>
+            <div class="vault-item animate-fadeUp"><div class="vault-item-header"><span class="vault-item-name">ssf</span><button class="btn-ghost" style="font-size:14px;">☆</button></div><div class="vault-item-password">•••••••••••• <button class="btn-ghost" style="font-size:12px;">👁</button><button class="btn-ghost" style="font-size:12px;">📋</button></div><div class="vault-item-footer"><span class="badge badge-primary">🔑 Password</span></div></div>
+            <div class="vault-item animate-fadeUp"><div class="vault-item-header"><span class="vault-item-name">git</span><button class="btn-ghost" style="font-size:14px;">☆</button></div><div class="vault-item-url">https://github.com/shad/facultymind</div><div class="vault-item-footer"><span class="badge badge-warning">🔗 Link</span></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ═══ QUICK PORTAL ═══ -->
+      <div class="screen" id="screen-portal">
+        <div class="portal-tabs">
+          <button class="portal-tab" onclick="switchPortal('https://ems.diu.edu.bd','DIU Teacher Portal')">DIU Teacher Portal</button>
+          <button class="portal-tab active" onclick="switchPortal('https://blc.diu.edu.bd','BLC Portal')">BLC Portal</button>
+        </div>
+        <div class="portal-nav-bar">
+          <button class="portal-nav-btn" onclick="document.getElementById('portal-frame').contentWindow.history.back()">←</button>
+          <button class="portal-nav-btn" onclick="document.getElementById('portal-frame').contentWindow.history.forward()">→</button>
+          <button class="portal-nav-btn" onclick="document.getElementById('portal-frame').contentWindow.location.reload()">↻</button>
+          <span class="portal-url" id="portal-url-display">https://blc.diu.edu.bd</span>
+          <button class="portal-nav-btn" title="Open in browser">↗</button>
+        </div>
+        <div class="portal-iframe-wrap">
+          <iframe id="portal-frame" src="https://blc.diu.edu.bd" sandbox="allow-same-origin allow-scripts allow-forms allow-popups"></iframe>
+        </div>
+      </div>
+
+      <!-- ═══ DIU TEACHERS PORTAL ═══ -->
+      <div class="screen" id="screen-diu" style="flex-direction:row;">
+        <div class="diu-sidebar">
+          <div class="diu-sidebar-header">
+            <div class="diu-logo">DIU</div>
+            <span>Daffodil International University</span>
+          </div>
+          <ul class="diu-nav">
+            <li class="diu-nav-item active">📊 Dashboard</li>
+            <li class="diu-nav-item">📋 Student Attendance</li>
+            <li class="diu-nav-item">📄 Result</li>
+            <li class="diu-nav-item">✅ Accounts Clearance</li>
+            <li class="diu-nav-item">🤝 Mentor Clearance</li>
+            <li class="diu-nav-item">✏️ Marks Entry</li>
+            <li class="diu-nav-item">📝 Course Registration</li>
+            <li class="diu-nav-item">📑 Gradesheet Approval</li>
+            <li class="diu-nav-item logout">🚪 Logout</li>
+          </ul>
+        </div>
+        <div class="diu-content">
+          <div style="display:flex;justify-content:space-between;align-items:center;">
+            <h2>Dashboard</h2>
+            <select style="padding:6px 12px;border:1px solid #e5e7eb;border-radius:6px;font-size:13px;color:#374151;background:white;">
+              <option>ICE301 — Microcontroller Engineering</option>
+            </select>
+          </div>
+          <div class="diu-stats-grid">
+            <div class="diu-stat-card blue"><div class="diu-stat-label">Total Students</div><div class="diu-stat-value">35</div><div class="diu-stat-sub">Section A</div></div>
+            <div class="diu-stat-card green"><div class="diu-stat-label">Passing</div><div class="diu-stat-value">34</div><div class="diu-stat-sub">≥ 40%</div></div>
+            <div class="diu-stat-card red"><div class="diu-stat-label">At Risk</div><div class="diu-stat-value">1</div><div class="diu-stat-sub">Below 40%</div></div>
+            <div class="diu-stat-card orange"><div class="diu-stat-label">Class Avg</div><div class="diu-stat-value">66.8</div><div class="diu-stat-sub">Out of 100</div></div>
+            <div class="diu-stat-card blue"><div class="diu-stat-label">Avg Attendance</div><div class="diu-stat-value">77%</div><div class="diu-stat-sub">20 sessions</div></div>
+          </div>
+          <table class="diu-table">
+            <thead><tr><th>Course Code</th><th>Course Title</th><th>Section</th><th>Credit</th><th>Semester</th></tr></thead>
+            <tbody>
+              <tr><td>ICE301</td><td>Microcontroller Engineering</td><td>A</td><td>3.0</td><td>Spring 2026</td></tr>
+              <tr><td>ICE420</td><td>Embedded Systems</td><td>A</td><td>3.0</td><td>Spring 2026</td></tr>
+              <tr><td>ICE401</td><td>Mobile Application Development</td><td>B</td><td>3.0</td><td>Spring 2026</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <script>
+    function showScreen(id) {
+      document.querySelectorAll('.screen').forEach(s => { s.classList.remove('active'); s.style.display = 'none'; });
+      const el = document.getElementById('screen-' + id);
+      el.classList.add('active');
+      el.style.display = (id === 'vault' || id === 'diu') ? 'flex' : 'flex';
+      el.style.flexDirection = (id === 'vault' || id === 'diu') ? 'row' : 'column';
+      document.querySelectorAll('.tab-switch button').forEach(b => b.classList.remove('active'));
+      event.target.classList.add('active');
+    }
+    function switchPortal(url, label) {
+      document.getElementById('portal-frame').src = url;
+      document.getElementById('portal-url-display').textContent = url;
+      document.querySelectorAll('.portal-tab').forEach(t => t.classList.remove('active'));
+      event.target.classList.add('active');
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,2006 @@
+[
+ {
+  "id": "paper-01",
+  "layout": "Table",
+  "text": "Daffodil International University\nDepartment of Information and Communication Engineering (ICE)\nFaculty of Engineering\nFinal Examination, Spring-2026\nCourse Code: ICE 1243    Course Title: Numerical Analysis\nLevel & Term: L1T2   Section: A\nTime: 2 hours   Full Marks: 40\nN.B: Answer all the questions (Only any one from Question 3)\n\n1)  Construct an ER diagram for a university registration system.  8  CLO4 C/5\n2.  Draw the state diagram of a finite automaton that accepts binary strings ending in 01.  4  CLO1 C/6",
+  "gold": [
+   {
+    "id": "Q1",
+    "stem": "Construct an ER diagram for a "
+   },
+   {
+    "id": "Q2",
+    "stem": "Draw the state diagram of a fi"
+   }
+  ]
+ },
+ {
+  "id": "paper-02",
+  "layout": "InlineSubs",
+  "text": "Daffodil International University\nDepartment of Information and Communication Engineering (ICE)\nFaculty of Engineering\nFinal Examination, Spring-2026\nCourse Code: ICE 1243    Course Title: Numerical Analysis\nLevel & Term: L1T2   Section: A\nTime: 2 hours   Full Marks: 40\nN.B: Answer all the questions (Only any one from Question 3)\n\n1. Calculate the cutoff frequency of an RC low-pass filter with R = 1 kOhm and C = 100 nF.   [7]\n[CLO-4, C/2]\n2) a. Apply Kirchhoff voltage law to find the loop current in the given circuit.   [6]\nb. Differentiate between compile time and run time polymorphism.   [2]",
+  "gold": [
+   {
+    "id": "Q1",
+    "stem": "Calculate the cutoff frequency"
+   },
+   {
+    "id": "Q2(a)",
+    "stem": "Apply Kirchhoff voltage law to"
+   },
+   {
+    "id": "Q2(b)",
+    "stem": "Differentiate between compile "
+   }
+  ]
+ },
+ {
+  "id": "paper-03",
+  "layout": "QuestionHeader",
+  "text": "DAFFODIL INTERNATIONAL UNIVERSITY\nDepartment of Information & Communication Engineering\nFinal Examination, Spring-2023\nCourse Code: HUM 101 (Day),  Course Title: ICT Economics & Accounting\nInstructor: SS,  Slot: A\nDate: Saturday, 17 June, 2023   Time: 09:00 AM-11:00 AM\nMarks: 40\n\nQuestion-1:\na) List the four pillars of object oriented programming.  (9)\nb) Apply Kirchhoff voltage law to find the loop current in the given circuit.    (2)\n\nQuestion-2:\na) Write a program to reverse a string without using built-in functions.  (3)\nb) Categorize the susceptibility of a system to failure in detail.  (9)\n",
+  "gold": [
+   {
+    "id": "Q1(a)",
+    "stem": "List the four pillars of objec"
+   },
+   {
+    "id": "Q1(b)",
+    "stem": "Apply Kirchhoff voltage law to"
+   },
+   {
+    "id": "Q2(a)",
+    "stem": "Write a program to reverse a s"
+   },
+   {
+    "id": "Q2(b)",
+    "stem": "Categorize the susceptibility "
+   }
+  ]
+ },
+ {
+  "id": "paper-04",
+  "layout": "BareNumber",
+  "text": "Daffodil International University\nDepartment of Information and Communication Engineering (ICE)\nFaculty of Engineering\nFinal Examination, Spring-2026\nCourse Code: ICE 1243    Course Title: Numerical Analysis\nLevel & Term: L1T2   Section: A\nTime: 2 hours   Full Marks: 40\nN.B: Answer all the questions (Only any one from Question 3)\n\n1\na. Design a class hierarchy for a library management system and justify your choices.   4(CO2, C4)\nb. Differentiate between compile time and run time polymorphism.   5(CO1, C4)\n2\na. Write a program to reverse a string without using built-in functions.   1(CO3, C2)\nb. Categorize the susceptibility of a system to failure in detail.   3(CO2, C1)\n(i) first case   (ii) second case\nc. Represent the number (1101.101) in normalized floating-point form.   1(CO4, C3)\nd. Describe the role of the operating system scheduler in a multitasking environment.   5(CO2, C3)\n3\na. Apply Kirchhoff voltage law to find the loop current in the given circuit.   2(CO5, C4)\n(i) first case   (ii) second case\nb. Discuss the advantages of normalization in relational database design.   4(CO4, C6)",
+  "gold": [
+   {
+    "id": "Q1(a)",
+    "stem": "Design a class hierarchy for a"
+   },
+   {
+    "id": "Q1(b)",
+    "stem": "Differentiate between compile "
+   },
+   {
+    "id": "Q2(a)",
+    "stem": "Write a program to reverse a s"
+   },
+   {
+    "id": "Q2(b)",
+    "stem": "Categorize the susceptibility "
+   },
+   {
+    "id": "Q2(c)",
+    "stem": "Represent the number (1101.101"
+   },
+   {
+    "id": "Q2(d)",
+    "stem": "Describe the role of the opera"
+   },
+   {
+    "id": "Q3(a)",
+    "stem": "Apply Kirchhoff voltage law to"
+   },
+   {
+    "id": "Q3(b)",
+    "stem": "Discuss the advantages of norm"
+   }
+  ]
+ },
+ {
+  "id": "paper-05",
+  "layout": "Scenario",
+  "text": "DAFFODIL INTERNATIONAL UNIVERSITY\nDepartment of Information & Communication Engineering\nFinal Examination, Spring-2023\nCourse Code: HUM 101 (Day),  Course Title: ICT Economics & Accounting\nInstructor: SS,  Slot: A\nDate: Saturday, 17 June, 2023   Time: 09:00 AM-11:00 AM\nMarks: 40\n\nQuestion-1:\nThe Adventure Traders was started on May 1 by a local investor. The following events occurred during the month:\nMay 1  Invested Tk. 80,000 cash and Tk. 25,000 furniture in the business.\nMay 4  Purchased equipment for Tk. 20,000 on account.\nMay 8  Incurred advertising expenses of Tk. 1,800 on account.\nMay 12  Hired a manager at a salary of Tk. 24,000 per month.\nMay 31  Paid Tk. 700 for advertising incurred at May 8.\n\nRequirement:\na. Journalize the transactions.   (6)\nb. Post the journal entries to the ledger for cash and accounts payable.   (7)\n\nQuestion-2:\nA river resort opened for business on June 1 with eight air conditioned units. Its trial balance is as follows:\nCash  19,600\nSupplies  3,300\nEquipment  12,500\n\nRequirement:\na. Prepare the adjusting entries.   (4)\nb. Prepare an adjusted trial balance.   (7)\n",
+  "gold": [
+   {
+    "id": "Q1(a)",
+    "stem": "Journalize the transactions."
+   },
+   {
+    "id": "Q1(b)",
+    "stem": "Post the journal entries to th"
+   },
+   {
+    "id": "Q2(a)",
+    "stem": "Prepare the adjusting entries."
+   },
+   {
+    "id": "Q2(b)",
+    "stem": "Prepare an adjusted trial bala"
+   }
+  ]
+ },
+ {
+  "id": "paper-06",
+  "layout": "Table",
+  "text": "Daffodil International University\nMid-Term Examination, Fall 2026\nCourse Code: EEE 1345   Course Title: Electrical Circuits\nCourse Teacher: Test Teacher (TT)\nTime: 1:30 Hrs        Marks: 25\nAnswer ALL Questions [ANY TWO FROM QUESTION No. 02]\nThe figures in the right margin indicate the full marks and corresponding Course Learning Outcomes.\n\n1 | a) | Differentiate between compile time and run time polymorphism. | 5×1 =5 | CLO4 C/1\nb) | Explain the difference between an abstract class and an interface with examples. | [4] | CLO2 C/6\nc) | Summarize the main differences between TCP and UDP. | 5×1 =5 | CLO1 C/1\nd) | Categorize the susceptibility of a system to failure in detail. | [5+4] | CLO3 C/3\n2 | a) | Design a class hierarchy for a library management system and justify your choices. | 5×1 =5 | CLO3 C/6\nb) | Compare series and parallel resonant circuits in terms of bandwidth. | 7 | CLO4 C/4\nc) | Trace the output of the following program and explain each step. | 5×1 =5 | CLO4 C/1\nd) | Explain the difference between an abstract class and an interface with examples. | [3+3] | CLO2 C/4",
+  "gold": [
+   {
+    "id": "Q1(a)",
+    "stem": "Differentiate between compile "
+   },
+   {
+    "id": "Q1(b)",
+    "stem": "Explain the difference between"
+   },
+   {
+    "id": "Q1(c)",
+    "stem": "Summarize the main differences"
+   },
+   {
+    "id": "Q1(d)",
+    "stem": "Categorize the susceptibility "
+   },
+   {
+    "id": "Q2(a)",
+    "stem": "Design a class hierarchy for a"
+   },
+   {
+    "id": "Q2(b)",
+    "stem": "Compare series and parallel re"
+   },
+   {
+    "id": "Q2(c)",
+    "stem": "Trace the output of the follow"
+   },
+   {
+    "id": "Q2(d)",
+    "stem": "Explain the difference between"
+   }
+  ]
+ },
+ {
+  "id": "paper-07",
+  "layout": "InlineSubs",
+  "text": "Daffodil International University\nDepartment of Information and Communication Engineering (ICE)\nFaculty of Engineering\nFinal Examination, Spring-2026\nCourse Code: ICE 1243    Course Title: Numerical Analysis\nLevel & Term: L1T2   Section: A\nTime: 2 hours   Full Marks: 40\nN.B: Answer all the questions (Only any one from Question 3)\n\n1. Draw the state diagram of a finite automaton that accepts binary strings ending in 01.   [9]\n[CLO-2, C/1]\n2) Describe the role of the operating system scheduler in a multitasking environment.   [5]\n[CLO-4, C/6]",
+  "gold": [
+   {
+    "id": "Q1",
+    "stem": "Draw the state diagram of a fi"
+   },
+   {
+    "id": "Q2",
+    "stem": "Describe the role of the opera"
+   }
+  ]
+ },
+ {
+  "id": "paper-08",
+  "layout": "QuestionHeader",
+  "text": "Daffodil International University\nDepartment of Information and Communication Engineering (ICE)\nFaculty of Engineering\nFinal Examination, Spring-2026\nCourse Code: ICE 1243    Course Title: Numerical Analysis\nLevel & Term: L1T2   Section: A\nTime: 2 hours   Full Marks: 40\nN.B: Answer all the questions (Only any one from Question 3)\n\nQues-1:\na) Compare series and parallel resonant circuits in terms of bandwidth.  (9)\nb) Justify the use of design patterns in large software systems. (5)\n\nQues-2:\na) Differentiate between compile time and run time polymorphism.    (8)\nb) Write a program to reverse a string without using built-in functions. (6)\nc) Categorize the susceptibility of a system to failure in detail.   (5)\n\nQues-3:\na) Find the unknown node voltages from the figure given below using nodal analysis.    (9)\nb) Discuss the advantages of normalization in relational database design.  (3)\nc) Implement a stack using an array and show push and pop operations.   (8)\n\nQues-4:\na) Categorize the susceptibility of a system to failure in detail.   (4)\nb) Implement a stack using an array and show push and pop operations. (3)\n",
+  "gold": [
+   {
+    "id": "Q1(a)",
+    "stem": "Compare series and parallel re"
+   },
+   {
+    "id": "Q1(b)",
+    "stem": "Justify the use of design patt"
+   },
+   {
+    "id": "Q2(a)",
+    "stem": "Differentiate between compile "
+   },
+   {
+    "id": "Q2(b)",
+    "stem": "Write a program to reverse a s"
+   },
+   {
+    "id": "Q2(c)",
+    "stem": "Categorize the susceptibility "
+   },
+   {
+    "id": "Q3(a)",
+    "stem": "Find the unknown node voltages"
+   },
+   {
+    "id": "Q3(b)",
+    "stem": "Discuss the advantages of norm"
+   },
+   {
+    "id": "Q3(c)",
+    "stem": "Implement a stack using an arr"
+   },
+   {
+    "id": "Q4(a)",
+    "stem": "Categorize the susceptibility "
+   },
+   {
+    "id": "Q4(b)",
+    "stem": "Implement a stack using an arr"
+   }
+  ]
+ },
+ {
+  "id": "paper-09",
+  "layout": "BareNumber",
+  "text": "Department of ICE\nClass Test 2\nTime: 30 minutes   Marks: 20\n\n1\na. Analyze the time complexity of merge sort and state the recurrence relation.   2(CO1, C6)\nb. Identify the critical path in the given project network diagram.   5(CO5, C3)\n(i) first case   (ii) second case\nc. Find the unknown node voltages from the figure given below using nodal analysis.   4(CO1, C4)\nd. Write a program to reverse a string without using built-in functions.   5(CO1, C2)\n2\na. Compare series and parallel resonant circuits in terms of bandwidth.   3(CO5, C4)\nb. Design a class hierarchy for a library management system and justify your choices.   3(CO1, C2)\nc. Find the unknown node voltages from the figure given below using nodal analysis.   5(CO1, C4)\n3\na. Write a program to reverse a string without using built-in functions.   5(CO2, C4)\nb. Evaluate the suitability of a hash table versus a balanced tree for a dictionary application.   5(CO2, C6)",
+  "gold": [
+   {
+    "id": "Q1(a)",
+    "stem": "Analyze the time complexity of"
+   },
+   {
+    "id": "Q1(b)",
+    "stem": "Identify the critical path in "
+   },
+   {
+    "id": "Q1(c)",
+    "stem": "Find the unknown node voltages"
+   },
+   {
+    "id": "Q1(d)",
+    "stem": "Write a program to reverse a s"
+   },
+   {
+    "id": "Q2(a)",
+    "stem": "Compare series and parallel re"
+   },
+   {
+    "id": "Q2(b)",
+    "stem": "Design a class hierarchy for a"
+   },
+   {
+    "id": "Q2(c)",
+    "stem": "Find the unknown node voltages"
+   },
+   {
+    "id": "Q3(a)",
+    "stem": "Write a program to reverse a s"
+   },
+   {
+    "id": "Q3(b)",
+    "stem": "Evaluate the suitability of a "
+   }
+  ]
+ },
+ {
+  "id": "paper-10",
+  "layout": "Scenario",
+  "text": "Daffodil International University\nDepartment of Information and Communication Engineering (ICE)\nFaculty of Engineering\nFinal Examination, Spring-2026\nCourse Code: ICE 1243    Course Title: Numerical Analysis\nLevel & Term: L1T2   Section: A\nTime: 2 hours   Full Marks: 40\nN.B: Answer all the questions (Only any one from Question 3)\n\nQuestion-1:\nThe Adventure Traders was started on May 1 by a local investor. The following events occurred during the month:\nMay 1  Invested Tk. 80,000 cash and Tk. 25,000 furniture in the business.\nMay 4  Purchased equipment for Tk. 20,000 on account.\nMay 8  Incurred advertising expenses of Tk. 1,800 on account.\nMay 12  Hired a manager at a salary of Tk. 24,000 per month.\nMay 31  Paid Tk. 700 for advertising incurred at May 8.\n\nRequirement:\na. Journalize the transactions.   (6)\nb. Post the journal entries to the ledger for cash and accounts payable.   (3)\n\nQuestion-2:\nSummarize the main differences between TCP and UDP.   (3)\n\nQuestion-3:\nDiscuss the advantages of normalization in relational database design.   (3)\n",
+  "gold": [
+   {
+    "id": "Q1(a)",
+    "stem": "Journalize the transactions."
+   },
+   {
+    "id": "Q1(b)",
+    "stem": "Post the journal entries to th"
+   },
+   {
+    "id": "Q2",
+    "stem": "Summarize the main differences"
+   },
+   {
+    "id": "Q3",
+    "stem": "Discuss the advantages of norm"
+   }
+  ]
+ },
+ {
+  "id": "paper-11",
+  "layout": "Table",
+  "text": "Daffodil International University\nDepartment of Information and Communication Engineering (ICE)\nFaculty of Engineering\nFinal Examination, Spring-2026\nCourse Code: ICE 1243    Course Title: Numerical Analysis\nLevel & Term: L1T2   Section: A\nTime: 2 hours   Full Marks: 40\nN.B: Answer all the questions (Only any one from Question 3)\n\n1. | Recommend the ways of verification of different simulation models. | 6 | CLO2 C/5\n2. | a) | Define encapsulation and explain why it matters in object oriented design. | 9 | CLO3 C/2\nb) | Construct an ER diagram for a university registration system. | 5×1 =5 | CLO3 C/1\n3) | a) | Design a class hierarchy for a library management system and justify your choices. | 5×1 =5 | CLO4 C/6\nb) | Summarize the main differences between TCP and UDP. | [4] | CLO4 C/5\nc) | Explain the difference between an abstract class and an interface with examples. | 6 | CLO4 C/6\n4) | a) | Recommend the ways of verification of different simulation models. | 9 | CLO4 C/5\nb) | Find the unknown node voltages from the figure given below using nodal analysis. | 5×1 =5 | CLO2 C/2\nc) | Find the unknown node voltages from the figure given below using nodal analysis. | 5×1 =5 | CLO1 C/1",
+  "gold": [
+   {
+    "id": "Q1",
+    "stem": "Recommend the ways of verifica"
+   },
+   {
+    "id": "Q2(a)",
+    "stem": "Define encapsulation and expla"
+   },
+   {
+    "id": "Q2(b)",
+    "stem": "Construct an ER diagram for a "
+   },
+   {
+    "id": "Q3(a)",
+    "stem": "Design a class hierarchy for a"
+   },
+   {
+    "id": "Q3(b)",
+    "stem": "Summarize the main differences"
+   },
+   {
+    "id": "Q3(c)",
+    "stem": "Explain the difference between"
+   },
+   {
+    "id": "Q4(a)",
+    "stem": "Recommend the ways of verifica"
+   },
+   {
+    "id": "Q4(b)",
+    "stem": "Find the unknown node voltages"
+   },
+   {
+    "id": "Q4(c)",
+    "stem": "Find the unknown node voltages"
+   }
+  ]
+ },
+ {
+  "id": "paper-12",
+  "layout": "InlineSubs",
+  "text": "Daffodil International University\nMid-Term Examination, Fall 2026\nCourse Code: EEE 1345   Course Title: Electrical Circuits\nCourse Teacher: Test Teacher (TT)\nTime: 1:30 Hrs        Marks: 25\nAnswer ALL Questions [ANY TWO FROM QUESTION No. 02]\nThe figures in the right margin indicate the full marks and corresponding Course Learning Outcomes.\n\n1) Discuss the advantages of normalization in relational database design.   [10]\n[CLO-4, C/6]\n2) Identify the critical path in the given project network diagram.   [3]\n[CLO-3, C/2]\n3 (a) Summarize the main differences between TCP and UDP.   [4]\n(b) Differentiate between compile time and run time polymorphism.   [6]\n[CLO-5, C/3]\n(c) Implement a stack using an array and show push and pop operations.   [2]\n4 a) Calculate the cutoff frequency of an RC low-pass filter with R = 1 kOhm and C = 100 nF.   [6]\n[CLO-1, C/3]\nb) Recommend the ways of verification of different simulation models.   [3]\n[CLO-1, C/5]\nc) Recommend the ways of verification of different simulation models.   [5]\n[CLO-2, C/4]\n5. Analyze the time complexity of merge sort and state the recurrence relation.   [10]\n[CLO-4, C/2]",
+  "gold": [
+   {
+    "id": "Q1",
+    "stem": "Discuss the advantages of norm"
+   },
+   {
+    "id": "Q2",
+    "stem": "Identify the critical path in "
+   },
+   {
+    "id": "Q3(a)",
+    "stem": "Summarize the main differences"
+   },
+   {
+    "id": "Q3(b)",
+    "stem": "Differentiate between compile "
+   },
+   {
+    "id": "Q3(c)",
+    "stem": "Implement a stack using an arr"
+   },
+   {
+    "id": "Q4(a)",
+    "stem": "Calculate the cutoff frequency"
+   },
+   {
+    "id": "Q4(b)",
+    "stem": "Recommend the ways of verifica"
+   },
+   {
+    "id": "Q4(c)",
+    "stem": "Recommend the ways of verifica"
+   },
+   {
+    "id": "Q5",
+    "stem": "Analyze the time complexity of"
+   }
+  ]
+ },
+ {
+  "id": "paper-13",
+  "layout": "QuestionHeader",
+  "text": "DAFFODIL INTERNATIONAL UNIVERSITY\nDepartment of Information & Communication Engineering\nFinal Examination, Spring-2023\nCourse Code: HUM 101 (Day),  Course Title: ICT Economics & Accounting\nInstructor: SS,  Slot: A\nDate: Saturday, 17 June, 2023   Time: 09:00 AM-11:00 AM\nMarks: 40\n\nPart-A\n\nQuestrion-1:\na) Differentiate between compile time and run time polymorphism. (7)\nb) List the four pillars of object oriented programming.   (4)\nc) Construct an ER diagram for a university registration system.    (8)\n\nQuestrion-2:\na) Construct an ER diagram for a university registration system.    (5)\nb) Compare series and parallel resonant circuits in terms of bandwidth.   (7)\n\nQuestrion-3:\na) Evaluate the suitability of a hash table versus a balanced tree for a dictionary application.   (3)\nb) Construct an ER diagram for a university registration system.    (7)\nc) Apply Kirchhoff voltage law to find the loop current in the given circuit.  (2)\n",
+  "gold": [
+   {
+    "id": "Q1(a)",
+    "stem": "Differentiate between compile "
+   },
+   {
+    "id": "Q1(b)",
+    "stem": "List the four pillars of objec"
+   },
+   {
+    "id": "Q1(c)",
+    "stem": "Construct an ER diagram for a "
+   },
+   {
+    "id": "Q2(a)",
+    "stem": "Construct an ER diagram for a "
+   },
+   {
+    "id": "Q2(b)",
+    "stem": "Compare series and parallel re"
+   },
+   {
+    "id": "Q3(a)",
+    "stem": "Evaluate the suitability of a "
+   },
+   {
+    "id": "Q3(b)",
+    "stem": "Construct an ER diagram for a "
+   },
+   {
+    "id": "Q3(c)",
+    "stem": "Apply Kirchhoff voltage law to"
+   }
+  ]
+ },
+ {
+  "id": "paper-14",
+  "layout": "BareNumber",
+  "text": "Daffodil International University\nMid-Term Examination, Fall 2026\nCourse Code: EEE 1345   Course Title: Electrical Circuits\nCourse Teacher: Test Teacher (TT)\nTime: 1:30 Hrs        Marks: 25\nAnswer ALL Questions [ANY TWO FROM QUESTION No. 02]\nThe figures in the right margin indicate the full marks and corresponding Course Learning Outcomes.\n\n1\na. Define encapsulation and explain why it matters in object oriented design.   1(CO5, C4)\n(i) first case   (ii) second case\nb. Define encapsulation and explain why it matters in object oriented design.   6(CO1, C3)\n2\na. Trace the output of the following program and explain each step.   6(CO2, C3)\nb. List the four pillars of object oriented programming.   6(CO2, C2)\nc. Represent the number (1101.101) in normalized floating-point form.   3(CO1, C4)\nd. Define encapsulation and explain why it matters in object oriented design.   3(CO2, C1)",
+  "gold": [
+   {
+    "id": "Q1(a)",
+    "stem": "Define encapsulation and expla"
+   },
+   {
+    "id": "Q1(b)",
+    "stem": "Define encapsulation and expla"
+   },
+   {
+    "id": "Q2(a)",
+    "stem": "Trace the output of the follow"
+   },
+   {
+    "id": "Q2(b)",
+    "stem": "List the four pillars of objec"
+   },
+   {
+    "id": "Q2(c)",
+    "stem": "Represent the number (1101.101"
+   },
+   {
+    "id": "Q2(d)",
+    "stem": "Define encapsulation and expla"
+   }
+  ]
+ },
+ {
+  "id": "paper-15",
+  "layout": "Scenario",
+  "text": "Department of ICE\nClass Test 2\nTime: 30 minutes   Marks: 20\n\nQuestion-1:\nThe Adventure Traders was started on May 1 by a local investor. The following events occurred during the month:\nMay 1  Invested Tk. 80,000 cash and Tk. 25,000 furniture in the business.\nMay 4  Purchased equipment for Tk. 20,000 on account.\nMay 8  Incurred advertising expenses of Tk. 1,800 on account.\nMay 12  Hired a manager at a salary of Tk. 24,000 per month.\nMay 31  Paid Tk. 700 for advertising incurred at May 8.\n\nRequirement:\na. Journalize the transactions.   (4)\nb. Post the journal entries to the ledger for cash and accounts payable.   (5)\n\nQuestion-2:\nImplement a stack using an array and show push and pop operations.   (4)\n",
+  "gold": [
+   {
+    "id": "Q1(a)",
+    "stem": "Journalize the transactions."
+   },
+   {
+    "id": "Q1(b)",
+    "stem": "Post the journal entries to th"
+   },
+   {
+    "id": "Q2",
+    "stem": "Implement a stack using an arr"
+   }
+  ]
+ },
+ {
+  "id": "paper-16",
+  "layout": "Table",
+  "text": "Daffodil International University\nDepartment of Information and Communication Engineering (ICE)\nFaculty of Engineering\nFinal Examination, Spring-2026\nCourse Code: ICE 1243    Course Title: Numerical Analysis\nLevel & Term: L1T2   Section: A\nTime: 2 hours   Full Marks: 40\nN.B: Answer all the questions (Only any one from Question 3)\n\n1) | a) | Justify the use of design patterns in large software systems. | [4] | CLO4 C/2\nb) | Describe the role of the operating system scheduler in a multitasking environment. | 7 | CLO4 C/1\n2) | a) | Summarize the main differences between TCP and UDP. | [4] | CLO3 C/3\nb) | Justify the use of design patterns in large software systems. | 5×1 =5 | CLO1 C/6\n3) | Design a class hierarchy for a library management system and justify your choices. | [4] | CLO3 C/2",
+  "gold": [
+   {
+    "id": "Q1(a)",
+    "stem": "Justify the use of design patt"
+   },
+   {
+    "id": "Q1(b)",
+    "stem": "Describe the role of the opera"
+   },
+   {
+    "id": "Q2(a)",
+    "stem": "Summarize the main differences"
+   },
+   {
+    "id": "Q2(b)",
+    "stem": "Justify the use of design patt"
+   },
+   {
+    "id": "Q3",
+    "stem": "Design a class hierarchy for a"
+   }
+  ]
+ },
+ {
+  "id": "paper-17",
+  "layout": "InlineSubs",
+  "text": "DAFFODIL INTERNATIONAL UNIVERSITY\nDepartment of Information & Communication Engineering\nFinal Examination, Spring-2023\nCourse Code: HUM 101 (Day),  Course Title: ICT Economics & Accounting\nInstructor: SS,  Slot: A\nDate: Saturday, 17 June, 2023   Time: 09:00 AM-11:00 AM\nMarks: 40\n\n1. a) Find the unknown node voltages from the figure given below using nodal analysis.   [3]\n[CLO-1, C/4]\nb) Summarize the main differences between TCP and UDP.   [2]\nc) Identify the critical path in the given project network diagram.   [2]\n[CLO-3, C/5]\n2. Define encapsulation and explain why it matters in object oriented design.   [5]\n[CLO-4, C/5]\n3) (a) Discuss the advantages of normalization in relational database design.   [6]\n(b) Discuss the advantages of normalization in relational database design.   [3]\n[CLO-3, C/6]\n(c) Design a class hierarchy for a library management system and justify your choices.   [6]\n[CLO-1, C/4]\n4) Implement a stack using an array and show push and pop operations.   [4]\n[CLO-2, C/5]",
+  "gold": [
+   {
+    "id": "Q1(a)",
+    "stem": "Find the unknown node voltages"
+   },
+   {
+    "id": "Q1(b)",
+    "stem": "Summarize the main differences"
+   },
+   {
+    "id": "Q1(c)",
+    "stem": "Identify the critical path in "
+   },
+   {
+    "id": "Q2",
+    "stem": "Define encapsulation and expla"
+   },
+   {
+    "id": "Q3(a)",
+    "stem": "Discuss the advantages of norm"
+   },
+   {
+    "id": "Q3(b)",
+    "stem": "Discuss the advantages of norm"
+   },
+   {
+    "id": "Q3(c)",
+    "stem": "Design a class hierarchy for a"
+   },
+   {
+    "id": "Q4",
+    "stem": "Implement a stack using an arr"
+   }
+  ]
+ },
+ {
+  "id": "paper-18",
+  "layout": "QuestionHeader",
+  "text": "Department of ICE\nClass Test 2\nTime: 30 minutes   Marks: 20\n\nQuestrion-1:\na) Draw the state diagram of a finite automaton that accepts binary strings ending in 01.    (2)\nb) Design a class hierarchy for a library management system and justify your choices.  (3)\n\nQuestrion-2:\na) Categorize the susceptibility of a system to failure in detail.    (8)\nb) Trace the output of the following program and explain each step.    (9)\n",
+  "gold": [
+   {
+    "id": "Q1(a)",
+    "stem": "Draw the state diagram of a fi"
+   },
+   {
+    "id": "Q1(b)",
+    "stem": "Design a class hierarchy for a"
+   },
+   {
+    "id": "Q2(a)",
+    "stem": "Categorize the susceptibility "
+   },
+   {
+    "id": "Q2(b)",
+    "stem": "Trace the output of the follow"
+   }
+  ]
+ },
+ {
+  "id": "paper-19",
+  "layout": "BareNumber",
+  "text": "Daffodil International University\nDepartment of Information and Communication Engineering (ICE)\nFaculty of Engineering\nFinal Examination, Spring-2026\nCourse Code: ICE 1243    Course Title: Numerical Analysis\nLevel & Term: L1T2   Section: A\nTime: 2 hours   Full Marks: 40\nN.B: Answer all the questions (Only any one from Question 3)\n\n1\na. Implement a stack using an array and show push and pop operations.   3(CO5, C1)\nb. Analyze the time complexity of merge sort and state the recurrence relation.   2(CO3, C6)\nc. Differentiate between compile time and run time polymorphism.   5(CO5, C1)\n(i) first case   (ii) second case\nd. Trace the output of the following program and explain each step.   4(CO1, C2)\n2\na. Summarize the main differences between TCP and UDP.   1(CO4, C4)\nb. Construct an ER diagram for a university registration system.   3(CO3, C1)\nc. List the four pillars of object oriented programming.   6(CO1, C1)\n(i) first case   (ii) second case\nd. Explain the difference between an abstract class and an interface with examples.   3(CO1, C2)\n3\na. Write a program to reverse a string without using built-in functions.   2(CO3, C3)\nb. Differentiate between compile time and run time polymorphism.   5(CO1, C6)\n(i) first case   (ii) second case\nc. Define encapsulation and explain why it matters in object oriented design.   2(CO1, C2)\nd. Differentiate between compile time and run time polymorphism.   2(CO3, C3)\n4\na. Draw the state diagram of a finite automaton that accepts binary strings ending in 01.   2(CO4, C3)\n(i) first case   (ii) second case\nb. Represent the number (1101.101) in normalized floating-point form.   1(CO1, C1)\n(i) first case   (ii) second case",
+  "gold": [
+   {
+    "id": "Q1(a)",
+    "stem": "Implement a stack using an arr"
+   },
+   {
+    "id": "Q1(b)",
+    "stem": "Analyze the time complexity of"
+   },
+   {
+    "id": "Q1(c)",
+    "stem": "Differentiate between compile "
+   },
+   {
+    "id": "Q1(d)",
+    "stem": "Trace the output of the follow"
+   },
+   {
+    "id": "Q2(a)",
+    "stem": "Summarize the main differences"
+   },
+   {
+    "id": "Q2(b)",
+    "stem": "Construct an ER diagram for a "
+   },
+   {
+    "id": "Q2(c)",
+    "stem": "List the four pillars of objec"
+   },
+   {
+    "id": "Q2(d)",
+    "stem": "Explain the difference between"
+   },
+   {
+    "id": "Q3(a)",
+    "stem": "Write a program to reverse a s"
+   },
+   {
+    "id": "Q3(b)",
+    "stem": "Differentiate between compile "
+   },
+   {
+    "id": "Q3(c)",
+    "stem": "Define encapsulation and expla"
+   },
+   {
+    "id": "Q3(d)",
+    "stem": "Differentiate between compile "
+   },
+   {
+    "id": "Q4(a)",
+    "stem": "Draw the state diagram of a fi"
+   },
+   {
+    "id": "Q4(b)",
+    "stem": "Represent the number (1101.101"
+   }
+  ]
+ },
+ {
+  "id": "paper-20",
+  "layout": "Scenario",
+  "text": "Daffodil International University\nMid-Term Examination, Fall 2026\nCourse Code: EEE 1345   Course Title: Electrical Circuits\nCourse Teacher: Test Teacher (TT)\nTime: 1:30 Hrs        Marks: 25\nAnswer ALL Questions [ANY TWO FROM QUESTION No. 02]\nThe figures in the right margin indicate the full marks and corresponding Course Learning Outcomes.\n\nQuestion-1:\nThe Adventure Traders was started on May 1 by a local investor. The following events occurred during the month:\nMay 1  Invested Tk. 80,000 cash and Tk. 25,000 furniture in the business.\nMay 4  Purchased equipment for Tk. 20,000 on account.\nMay 8  Incurred advertising expenses of Tk. 1,800 on account.\nMay 12  Hired a manager at a salary of Tk. 24,000 per month.\nMay 31  Paid Tk. 700 for advertising incurred at May 8.\n\nRequirement:\na. Journalize the transactions.   (8)\nb. Post the journal entries to the ledger for cash and accounts payable.   (7)\n\nQuestion-2:\nThe Adventure Traders was started on May 1 by a local investor. The following events occurred during the month:\nMay 1  Invested Tk. 80,000 cash and Tk. 25,000 furniture in the business.\nMay 4  Purchased equipment for Tk. 20,000 on account.\nMay 8  Incurred advertising expenses of Tk. 1,800 on account.\nMay 12  Hired a manager at a salary of Tk. 24,000 per month.\nMay 31  Paid Tk. 700 for advertising incurred at May 8.\n\nRequirement:\na. Journalize the transactions.   (4)\nb. Post the journal entries to the ledger for cash and accounts payable.   (7)\n",
+  "gold": [
+   {
+    "id": "Q1(a)",
+    "stem": "Journalize the transactions."
+   },
+   {
+    "id": "Q1(b)",
+    "stem": "Post the journal entries to th"
+   },
+   {
+    "id": "Q2(a)",
+    "stem": "Journalize the transactions."
+   },
+   {
+    "id": "Q2(b)",
+    "stem": "Post the journal entries to th"
+   }
+  ]
+ },
+ {
+  "id": "paper-21",
+  "layout": "Table",
+  "text": "Daffodil International University\nDepartment of Information and Communication Engineering (ICE)\nFaculty of Engineering\nFinal Examination, Spring-2026\nCourse Code: ICE 1243    Course Title: Numerical Analysis\nLevel & Term: L1T2   Section: A\nTime: 2 hours   Full Marks: 40\nN.B: Answer all the questions (Only any one from Question 3)\n\n1) | a) | Calculate the cutoff frequency of an RC low-pass filter with R = 1 kOhm and C = 100 nF. | [4] | CLO2 C/1\nb) | Identify the critical path in the given project network diagram. | 5×1 =5 | CLO4 C/2\nc) | Define encapsulation and explain why it matters in object oriented design. | [4] | CLO1 C/2\nd) | Justify the use of design patterns in large software systems. | 5×1 =5 | CLO2 C/1\n2) | Implement a stack using an array and show push and pop operations. | 5 | CLO1 C/3",
+  "gold": [
+   {
+    "id": "Q1(a)",
+    "stem": "Calculate the cutoff frequency"
+   },
+   {
+    "id": "Q1(b)",
+    "stem": "Identify the critical path in "
+   },
+   {
+    "id": "Q1(c)",
+    "stem": "Define encapsulation and expla"
+   },
+   {
+    "id": "Q1(d)",
+    "stem": "Justify the use of design patt"
+   },
+   {
+    "id": "Q2",
+    "stem": "Implement a stack using an arr"
+   }
+  ]
+ },
+ {
+  "id": "paper-22",
+  "layout": "InlineSubs",
+  "text": "DAFFODIL INTERNATIONAL UNIVERSITY\nDepartment of Information & Communication Engineering\nFinal Examination, Spring-2023\nCourse Code: HUM 101 (Day),  Course Title: ICT Economics & Accounting\nInstructor: SS,  Slot: A\nDate: Saturday, 17 June, 2023   Time: 09:00 AM-11:00 AM\nMarks: 40\n\n1) a. Design a class hierarchy for a library management system and justify your choices.   [3]\n[CLO-4, C/5]\nb. List the four pillars of object oriented programming.   [3]\n2. (a) Design a class hierarchy for a library management system and justify your choices.   [3]\n[CLO-5, C/5]\n(b) Apply Kirchhoff voltage law to find the loop current in the given circuit.   [5]\n3 Represent the number (1101.101) in normalized floating-point form.   [9]\n[CLO-4, C/2]\n4) Justify the use of design patterns in large software systems.   [5]\n[CLO-1, C/4]\n5) Differentiate between compile time and run time polymorphism.   [5]\n[CLO-1, C/1]",
+  "gold": [
+   {
+    "id": "Q1(a)",
+    "stem": "Design a class hierarchy for a"
+   },
+   {
+    "id": "Q1(b)",
+    "stem": "List the four pillars of objec"
+   },
+   {
+    "id": "Q2(a)",
+    "stem": "Design a class hierarchy for a"
+   },
+   {
+    "id": "Q2(b)",
+    "stem": "Apply Kirchhoff voltage law to"
+   },
+   {
+    "id": "Q3",
+    "stem": "Represent the number (1101.101"
+   },
+   {
+    "id": "Q4",
+    "stem": "Justify the use of design patt"
+   },
+   {
+    "id": "Q5",
+    "stem": "Differentiate between compile "
+   }
+  ]
+ },
+ {
+  "id": "paper-23",
+  "layout": "QuestionHeader",
+  "text": "Daffodil International University\nDepartment of Information and Communication Engineering (ICE)\nFaculty of Engineering\nFinal Examination, Spring-2026\nCourse Code: ICE 1243    Course Title: Numerical Analysis\nLevel & Term: L1T2   Section: A\nTime: 2 hours   Full Marks: 40\nN.B: Answer all the questions (Only any one from Question 3)\n\nPart-A\n(Answer all the questions)\nQuestion-1:\na) Design a class hierarchy for a library management system and justify your choices.   (3)\nb) Compare series and parallel resonant circuits in terms of bandwidth.   (9)\n\nQuestion-2:\na) Compare series and parallel resonant circuits in terms of bandwidth.   (8)\nb) Construct an ER diagram for a university registration system. (4)\n\nQuestion-3:\na) Construct an ER diagram for a university registration system. (8)\nb) Differentiate between compile time and run time polymorphism.    (8)\n",
+  "gold": [
+   {
+    "id": "Q1(a)",
+    "stem": "Design a class hierarchy for a"
+   },
+   {
+    "id": "Q1(b)",
+    "stem": "Compare series and parallel re"
+   },
+   {
+    "id": "Q2(a)",
+    "stem": "Compare series and parallel re"
+   },
+   {
+    "id": "Q2(b)",
+    "stem": "Construct an ER diagram for a "
+   },
+   {
+    "id": "Q3(a)",
+    "stem": "Construct an ER diagram for a "
+   },
+   {
+    "id": "Q3(b)",
+    "stem": "Differentiate between compile "
+   }
+  ]
+ },
+ {
+  "id": "paper-24",
+  "layout": "BareNumber",
+  "text": "DAFFODIL INTERNATIONAL UNIVERSITY\nDepartment of Information & Communication Engineering\nFinal Examination, Spring-2023\nCourse Code: HUM 101 (Day),  Course Title: ICT Economics & Accounting\nInstructor: SS,  Slot: A\nDate: Saturday, 17 June, 2023   Time: 09:00 AM-11:00 AM\nMarks: 40\n\n1\na. Recommend the ways of verification of different simulation models.   2(CO3, C1)\nb. Draw the state diagram of a finite automaton that accepts binary strings ending in 01.   5(CO4, C2)\n2\na. Construct an ER diagram for a university registration system.   5(CO1, C3)\nb. Trace the output of the following program and explain each step.   5(CO3, C2)\n3\na. Find the unknown node voltages from the figure given below using nodal analysis.   6(CO2, C1)\nb. Represent the number (1101.101) in normalized floating-point form.   5(CO2, C5)\n(i) first case   (ii) second case\nc. Discuss the advantages of normalization in relational database design.   1(CO2, C4)\n(i) first case   (ii) second case\nd. Summarize the main differences between TCP and UDP.   3(CO4, C3)\n4\na. Trace the output of the following program and explain each step.   5(CO5, C2)\nb. Design a class hierarchy for a library management system and justify your choices.   2(CO3, C4)\nc. Describe the role of the operating system scheduler in a multitasking environment.   5(CO2, C2)\nd. Trace the output of the following program and explain each step.   4(CO5, C5)",
+  "gold": [
+   {
+    "id": "Q1(a)",
+    "stem": "Recommend the ways of verifica"
+   },
+   {
+    "id": "Q1(b)",
+    "stem": "Draw the state diagram of a fi"
+   },
+   {
+    "id": "Q2(a)",
+    "stem": "Construct an ER diagram for a "
+   },
+   {
+    "id": "Q2(b)",
+    "stem": "Trace the output of the follow"
+   },
+   {
+    "id": "Q3(a)",
+    "stem": "Find the unknown node voltages"
+   },
+   {
+    "id": "Q3(b)",
+    "stem": "Represent the number (1101.101"
+   },
+   {
+    "id": "Q3(c)",
+    "stem": "Discuss the advantages of norm"
+   },
+   {
+    "id": "Q3(d)",
+    "stem": "Summarize the main differences"
+   },
+   {
+    "id": "Q4(a)",
+    "stem": "Trace the output of the follow"
+   },
+   {
+    "id": "Q4(b)",
+    "stem": "Design a class hierarchy for a"
+   },
+   {
+    "id": "Q4(c)",
+    "stem": "Describe the role of the opera"
+   },
+   {
+    "id": "Q4(d)",
+    "stem": "Trace the output of the follow"
+   }
+  ]
+ },
+ {
+  "id": "paper-25",
+  "layout": "Scenario",
+  "text": "Daffodil International University\nMid-Term Examination, Fall 2026\nCourse Code: EEE 1345   Course Title: Electrical Circuits\nCourse Teacher: Test Teacher (TT)\nTime: 1:30 Hrs        Marks: 25\nAnswer ALL Questions [ANY TWO FROM QUESTION No. 02]\nThe figures in the right margin indicate the full marks and corresponding Course Learning Outcomes.\n\nQuestion-1:\nThe Adventure Traders was started on May 1 by a local investor. The following events occurred during the month:\nMay 1  Invested Tk. 80,000 cash and Tk. 25,000 furniture in the business.\nMay 4  Purchased equipment for Tk. 20,000 on account.\nMay 8  Incurred advertising expenses of Tk. 1,800 on account.\nMay 12  Hired a manager at a salary of Tk. 24,000 per month.\nMay 31  Paid Tk. 700 for advertising incurred at May 8.\n\nRequirement:\na. Journalize the transactions.   (4)\nb. Post the journal entries to the ledger for cash and accounts payable.   (5)\n\nQuestion-2:\nAnalyze the time complexity of merge sort and state the recurrence relation.   (7)\n\nQuestion-3:\nThe Adventure Traders was started on May 1 by a local investor. The following events occurred during the month:\nMay 1  Invested Tk. 80,000 cash and Tk. 25,000 furniture in the business.\nMay 4  Purchased equipment for Tk. 20,000 on account.\nMay 8  Incurred advertising expenses of Tk. 1,800 on account.\nMay 12  Hired a manager at a salary of Tk. 24,000 per month.\nMay 31  Paid Tk. 700 for advertising incurred at May 8.\n\nRequirement:\na. Journalize the transactions.   (5)\nb. Post the journal entries to the ledger for cash and accounts payable.   (3)\n",
+  "gold": [
+   {
+    "id": "Q1(a)",
+    "stem": "Journalize the transactions."
+   },
+   {
+    "id": "Q1(b)",
+    "stem": "Post the journal entries to th"
+   },
+   {
+    "id": "Q2",
+    "stem": "Analyze the time complexity of"
+   },
+   {
+    "id": "Q3(a)",
+    "stem": "Journalize the transactions."
+   },
+   {
+    "id": "Q3(b)",
+    "stem": "Post the journal entries to th"
+   }
+  ]
+ },
+ {
+  "id": "paper-26",
+  "layout": "Table",
+  "text": "Department of ICE\nClass Test 2\nTime: 30 minutes   Marks: 20\n\n1) | a) | Draw the state diagram of a finite automaton that accepts binary strings ending in 01. | 3 | CLO4 C/4\nb) | Design a class hierarchy for a library management system and justify your choices. | 5×1 =5 | CLO1 C/4\nc) | Find the unknown node voltages from the figure given below using nodal analysis. | 9 | CLO1 C/5\n2) | a) | Trace the output of the following program and explain each step. | [4] | CLO2 C/1\nb) | Represent the number (1101.101) in normalized floating-point form. | 5×1 =5 | CLO2 C/4",
+  "gold": [
+   {
+    "id": "Q1(a)",
+    "stem": "Draw the state diagram of a fi"
+   },
+   {
+    "id": "Q1(b)",
+    "stem": "Design a class hierarchy for a"
+   },
+   {
+    "id": "Q1(c)",
+    "stem": "Find the unknown node voltages"
+   },
+   {
+    "id": "Q2(a)",
+    "stem": "Trace the output of the follow"
+   },
+   {
+    "id": "Q2(b)",
+    "stem": "Represent the number (1101.101"
+   }
+  ]
+ },
+ {
+  "id": "paper-27",
+  "layout": "InlineSubs",
+  "text": "DAFFODIL INTERNATIONAL UNIVERSITY\nDepartment of Information & Communication Engineering\nFinal Examination, Spring-2023\nCourse Code: HUM 101 (Day),  Course Title: ICT Economics & Accounting\nInstructor: SS,  Slot: A\nDate: Saturday, 17 June, 2023   Time: 09:00 AM-11:00 AM\nMarks: 40\n\n1. Define encapsulation and explain why it matters in object oriented design.   [3]\n[CLO-4, C/5]\n2. a. Summarize the main differences between TCP and UDP.   [5]\nb. Categorize the susceptibility of a system to failure in detail.   [5]\n[CLO-4, C/5]\nc. Construct an ER diagram for a university registration system.   [3]\n[CLO-5, C/3]\n3) Identify the critical path in the given project network diagram.   [7]\n[CLO-4, C/6]",
+  "gold": [
+   {
+    "id": "Q1",
+    "stem": "Define encapsulation and expla"
+   },
+   {
+    "id": "Q2(a)",
+    "stem": "Summarize the main differences"
+   },
+   {
+    "id": "Q2(b)",
+    "stem": "Categorize the susceptibility "
+   },
+   {
+    "id": "Q2(c)",
+    "stem": "Construct an ER diagram for a "
+   },
+   {
+    "id": "Q3",
+    "stem": "Identify the critical path in "
+   }
+  ]
+ },
+ {
+  "id": "paper-28",
+  "layout": "QuestionHeader",
+  "text": "Daffodil International University\nDepartment of Information and Communication Engineering (ICE)\nFaculty of Engineering\nFinal Examination, Spring-2026\nCourse Code: ICE 1243    Course Title: Numerical Analysis\nLevel & Term: L1T2   Section: A\nTime: 2 hours   Full Marks: 40\nN.B: Answer all the questions (Only any one from Question 3)\n\nPart-A\n\nQuestion-1:\na) Trace the output of the following program and explain each step.  (6)\nb) Implement a stack using an array and show push and pop operations. (7)\nc) Represent the number (1101.101) in normalized floating-point form.  (2)\n\nQuestion-2:\na) List the four pillars of object oriented programming. (2)\nb) Design a class hierarchy for a library management system and justify your choices.  (9)\nc) Categorize the susceptibility of a system to failure in detail. (6)\n\nQuestion-3:\na) Categorize the susceptibility of a system to failure in detail.  (4)\nb) Apply Kirchhoff voltage law to find the loop current in the given circuit.   (9)\nc) Design a class hierarchy for a library management system and justify your choices.    (8)\n\nQuestion-4:\na) Design a class hierarchy for a library management system and justify your choices.  (7)\nb) Evaluate the suitability of a hash table versus a balanced tree for a dictionary application.  (2)\nc) Summarize the main differences between TCP and UDP. (9)\n",
+  "gold": [
+   {
+    "id": "Q1(a)",
+    "stem": "Trace the output of the follow"
+   },
+   {
+    "id": "Q1(b)",
+    "stem": "Implement a stack using an arr"
+   },
+   {
+    "id": "Q1(c)",
+    "stem": "Represent the number (1101.101"
+   },
+   {
+    "id": "Q2(a)",
+    "stem": "List the four pillars of objec"
+   },
+   {
+    "id": "Q2(b)",
+    "stem": "Design a class hierarchy for a"
+   },
+   {
+    "id": "Q2(c)",
+    "stem": "Categorize the susceptibility "
+   },
+   {
+    "id": "Q3(a)",
+    "stem": "Categorize the susceptibility "
+   },
+   {
+    "id": "Q3(b)",
+    "stem": "Apply Kirchhoff voltage law to"
+   },
+   {
+    "id": "Q3(c)",
+    "stem": "Design a class hierarchy for a"
+   },
+   {
+    "id": "Q4(a)",
+    "stem": "Design a class hierarchy for a"
+   },
+   {
+    "id": "Q4(b)",
+    "stem": "Evaluate the suitability of a "
+   },
+   {
+    "id": "Q4(c)",
+    "stem": "Summarize the main differences"
+   }
+  ]
+ },
+ {
+  "id": "paper-29",
+  "layout": "BareNumber",
+  "text": "Department of ICE\nClass Test 2\nTime: 30 minutes   Marks: 20\n\n1\na. Describe the role of the operating system scheduler in a multitasking environment.   4(CO3, C3)\nb. Implement a stack using an array and show push and pop operations.   3(CO2, C5)\n(i) first case   (ii) second case\nc. Recommend the ways of verification of different simulation models.   5(CO3, C3)\n2\na. Find the unknown node voltages from the figure given below using nodal analysis.   4(CO5, C4)\nb. Apply Kirchhoff voltage law to find the loop current in the given circuit.   1(CO2, C3)\n3\na. Recommend the ways of verification of different simulation models.   5(CO5, C1)\n(i) first case   (ii) second case\nb. Draw the state diagram of a finite automaton that accepts binary strings ending in 01.   2(CO3, C3)",
+  "gold": [
+   {
+    "id": "Q1(a)",
+    "stem": "Describe the role of the opera"
+   },
+   {
+    "id": "Q1(b)",
+    "stem": "Implement a stack using an arr"
+   },
+   {
+    "id": "Q1(c)",
+    "stem": "Recommend the ways of verifica"
+   },
+   {
+    "id": "Q2(a)",
+    "stem": "Find the unknown node voltages"
+   },
+   {
+    "id": "Q2(b)",
+    "stem": "Apply Kirchhoff voltage law to"
+   },
+   {
+    "id": "Q3(a)",
+    "stem": "Recommend the ways of verifica"
+   },
+   {
+    "id": "Q3(b)",
+    "stem": "Draw the state diagram of a fi"
+   }
+  ]
+ },
+ {
+  "id": "paper-30",
+  "layout": "Scenario",
+  "text": "DAFFODIL INTERNATIONAL UNIVERSITY\nDepartment of Information & Communication Engineering\nFinal Examination, Spring-2023\nCourse Code: HUM 101 (Day),  Course Title: ICT Economics & Accounting\nInstructor: SS,  Slot: A\nDate: Saturday, 17 June, 2023   Time: 09:00 AM-11:00 AM\nMarks: 40\n\nQuestion-1:\nA river resort opened for business on June 1 with eight air conditioned units. Its trial balance is as follows:\nCash  19,600\nSupplies  3,300\nEquipment  12,500\n\nRequirement:\na. Prepare the adjusting entries.   (5)\nb. Prepare an adjusted trial balance.   (4)\n\nQuestion-2:\nExplain the difference between an abstract class and an interface with examples.   (6)\n",
+  "gold": [
+   {
+    "id": "Q1(a)",
+    "stem": "Prepare the adjusting entries."
+   },
+   {
+    "id": "Q1(b)",
+    "stem": "Prepare an adjusted trial bala"
+   },
+   {
+    "id": "Q2",
+    "stem": "Explain the difference between"
+   }
+  ]
+ },
+ {
+  "id": "paper-31",
+  "layout": "Table",
+  "text": "DAFFODIL INTERNATIONAL UNIVERSITY\nDepartment of Information & Communication Engineering\nFinal Examination, Spring-2023\nCourse Code: HUM 101 (Day),  Course Title: ICT Economics & Accounting\nInstructor: SS,  Slot: A\nDate: Saturday, 17 June, 2023   Time: 09:00 AM-11:00 AM\nMarks: 40\n\n1)  a)  Write a program to reverse a string without using built-in functions.  [4]  CLO2 C/2\nb)  Evaluate the suitability of a hash table versus a balanced tree for a dictionary application.  [4]  CLO2 C/2\nc)  Evaluate the suitability of a hash table versus a balanced tree for a dictionary application.  [2+4]  CLO1 C/5\n2  Draw the state diagram of a finite automaton that accepts binary strings ending in 01.  [4]  CLO2 C/4\n3)  a)  Apply Kirchhoff voltage law to find the loop current in the given circuit.  5×1 =5  CLO3 C/5\nb)  Compare series and parallel resonant circuits in terms of bandwidth.  [4]  CLO2 C/1\nc)  Recommend the ways of verification of different simulation models.  5  CLO3 C/2",
+  "gold": [
+   {
+    "id": "Q1(a)",
+    "stem": "Write a program to reverse a s"
+   },
+   {
+    "id": "Q1(b)",
+    "stem": "Evaluate the suitability of a "
+   },
+   {
+    "id": "Q1(c)",
+    "stem": "Evaluate the suitability of a "
+   },
+   {
+    "id": "Q2",
+    "stem": "Draw the state diagram of a fi"
+   },
+   {
+    "id": "Q3(a)",
+    "stem": "Apply Kirchhoff voltage law to"
+   },
+   {
+    "id": "Q3(b)",
+    "stem": "Compare series and parallel re"
+   },
+   {
+    "id": "Q3(c)",
+    "stem": "Recommend the ways of verifica"
+   }
+  ]
+ },
+ {
+  "id": "paper-32",
+  "layout": "InlineSubs",
+  "text": "Daffodil International University\nMid-Term Examination, Fall 2026\nCourse Code: EEE 1345   Course Title: Electrical Circuits\nCourse Teacher: Test Teacher (TT)\nTime: 1:30 Hrs        Marks: 25\nAnswer ALL Questions [ANY TWO FROM QUESTION No. 02]\nThe figures in the right margin indicate the full marks and corresponding Course Learning Outcomes.\n\n1. Evaluate the suitability of a hash table versus a balanced tree for a dictionary application.   [3]\n[CLO-5, C/5]\n2. a. Construct an ER diagram for a university registration system.   [2]\n[CLO-1, C/3]\nb. Justify the use of design patterns in large software systems.   [4]\nc. List the four pillars of object oriented programming.   [5]\n[CLO-5, C/4]\n3 List the four pillars of object oriented programming.   [4]\n[CLO-1, C/6]\n4. Differentiate between compile time and run time polymorphism.   [6]\n[CLO-2, C/2]",
+  "gold": [
+   {
+    "id": "Q1",
+    "stem": "Evaluate the suitability of a "
+   },
+   {
+    "id": "Q2(a)",
+    "stem": "Construct an ER diagram for a "
+   },
+   {
+    "id": "Q2(b)",
+    "stem": "Justify the use of design patt"
+   },
+   {
+    "id": "Q2(c)",
+    "stem": "List the four pillars of objec"
+   },
+   {
+    "id": "Q3",
+    "stem": "List the four pillars of objec"
+   },
+   {
+    "id": "Q4",
+    "stem": "Differentiate between compile "
+   }
+  ]
+ },
+ {
+  "id": "paper-33",
+  "layout": "QuestionHeader",
+  "text": "Daffodil International University\nMid-Term Examination, Fall 2026\nCourse Code: EEE 1345   Course Title: Electrical Circuits\nCourse Teacher: Test Teacher (TT)\nTime: 1:30 Hrs        Marks: 25\nAnswer ALL Questions [ANY TWO FROM QUESTION No. 02]\nThe figures in the right margin indicate the full marks and corresponding Course Learning Outcomes.\n\nPart-A\n(Answer all the questions)\nQuestion-1:\na) Evaluate the suitability of a hash table versus a balanced tree for a dictionary application.  (8)\nb) Explain the difference between an abstract class and an interface with examples. (8)\nc) Evaluate the suitability of a hash table versus a balanced tree for a dictionary application.  (5)\n\nQuestion-2:\na) Calculate the cutoff frequency of an RC low-pass filter with R = 1 kOhm and C = 100 nF.  (6)\nb) Describe the role of the operating system scheduler in a multitasking environment.   (9)\nc) Discuss the advantages of normalization in relational database design.   (2)\n\nQuestion-3:\na) Differentiate between compile time and run time polymorphism.   (9)\nb) Design a class hierarchy for a library management system and justify your choices.    (8)\n",
+  "gold": [
+   {
+    "id": "Q1(a)",
+    "stem": "Evaluate the suitability of a "
+   },
+   {
+    "id": "Q1(b)",
+    "stem": "Explain the difference between"
+   },
+   {
+    "id": "Q1(c)",
+    "stem": "Evaluate the suitability of a "
+   },
+   {
+    "id": "Q2(a)",
+    "stem": "Calculate the cutoff frequency"
+   },
+   {
+    "id": "Q2(b)",
+    "stem": "Describe the role of the opera"
+   },
+   {
+    "id": "Q2(c)",
+    "stem": "Discuss the advantages of norm"
+   },
+   {
+    "id": "Q3(a)",
+    "stem": "Differentiate between compile "
+   },
+   {
+    "id": "Q3(b)",
+    "stem": "Design a class hierarchy for a"
+   }
+  ]
+ },
+ {
+  "id": "paper-34",
+  "layout": "BareNumber",
+  "text": "Daffodil International University\nMid-Term Examination, Fall 2026\nCourse Code: EEE 1345   Course Title: Electrical Circuits\nCourse Teacher: Test Teacher (TT)\nTime: 1:30 Hrs        Marks: 25\nAnswer ALL Questions [ANY TWO FROM QUESTION No. 02]\nThe figures in the right margin indicate the full marks and corresponding Course Learning Outcomes.\n\n1\na. Compare series and parallel resonant circuits in terms of bandwidth.   5(CO2, C1)\nb. Define encapsulation and explain why it matters in object oriented design.   6(CO4, C4)\n(i) first case   (ii) second case\n2\na. Write a program to reverse a string without using built-in functions.   3(CO4, C2)\nb. Construct an ER diagram for a university registration system.   6(CO4, C1)\nc. Draw the state diagram of a finite automaton that accepts binary strings ending in 01.   3(CO1, C3)\nd. Write a program to reverse a string without using built-in functions.   1(CO1, C5)\n3\na. Implement a stack using an array and show push and pop operations.   3(CO3, C5)\nb. Explain the difference between an abstract class and an interface with examples.   6(CO5, C5)\n(i) first case   (ii) second case\nc. Compare series and parallel resonant circuits in terms of bandwidth.   5(CO2, C2)",
+  "gold": [
+   {
+    "id": "Q1(a)",
+    "stem": "Compare series and parallel re"
+   },
+   {
+    "id": "Q1(b)",
+    "stem": "Define encapsulation and expla"
+   },
+   {
+    "id": "Q2(a)",
+    "stem": "Write a program to reverse a s"
+   },
+   {
+    "id": "Q2(b)",
+    "stem": "Construct an ER diagram for a "
+   },
+   {
+    "id": "Q2(c)",
+    "stem": "Draw the state diagram of a fi"
+   },
+   {
+    "id": "Q2(d)",
+    "stem": "Write a program to reverse a s"
+   },
+   {
+    "id": "Q3(a)",
+    "stem": "Implement a stack using an arr"
+   },
+   {
+    "id": "Q3(b)",
+    "stem": "Explain the difference between"
+   },
+   {
+    "id": "Q3(c)",
+    "stem": "Compare series and parallel re"
+   }
+  ]
+ },
+ {
+  "id": "paper-35",
+  "layout": "Scenario",
+  "text": "DAFFODIL INTERNATIONAL UNIVERSITY\nDepartment of Information & Communication Engineering\nFinal Examination, Spring-2023\nCourse Code: HUM 101 (Day),  Course Title: ICT Economics & Accounting\nInstructor: SS,  Slot: A\nDate: Saturday, 17 June, 2023   Time: 09:00 AM-11:00 AM\nMarks: 40\n\nQuestion-1:\nA river resort opened for business on June 1 with eight air conditioned units. Its trial balance is as follows:\nCash  19,600\nSupplies  3,300\nEquipment  12,500\n\nRequirement:\na. Prepare the adjusting entries.   (5)\nb. Prepare an adjusted trial balance.   (5)\n\nQuestion-2:\nThe Adventure Traders was started on May 1 by a local investor. The following events occurred during the month:\nMay 1  Invested Tk. 80,000 cash and Tk. 25,000 furniture in the business.\nMay 4  Purchased equipment for Tk. 20,000 on account.\nMay 8  Incurred advertising expenses of Tk. 1,800 on account.\nMay 12  Hired a manager at a salary of Tk. 24,000 per month.\nMay 31  Paid Tk. 700 for advertising incurred at May 8.\n\nRequirement:\na. Journalize the transactions.   (5)\nb. Post the journal entries to the ledger for cash and accounts payable.   (7)\n",
+  "gold": [
+   {
+    "id": "Q1(a)",
+    "stem": "Prepare the adjusting entries."
+   },
+   {
+    "id": "Q1(b)",
+    "stem": "Prepare an adjusted trial bala"
+   },
+   {
+    "id": "Q2(a)",
+    "stem": "Journalize the transactions."
+   },
+   {
+    "id": "Q2(b)",
+    "stem": "Post the journal entries to th"
+   }
+  ]
+ },
+ {
+  "id": "paper-36",
+  "layout": "Table",
+  "text": "Daffodil International University\nMid-Term Examination, Fall 2026\nCourse Code: EEE 1345   Course Title: Electrical Circuits\nCourse Teacher: Test Teacher (TT)\nTime: 1:30 Hrs        Marks: 25\nAnswer ALL Questions [ANY TWO FROM QUESTION No. 02]\nThe figures in the right margin indicate the full marks and corresponding Course Learning Outcomes.\n\n1)  a)  List the four pillars of object oriented programming.  [2+5]  CLO3 C/2\nb)  List the four pillars of object oriented programming.  3  CLO1 C/6\nc)  Trace the output of the following program and explain each step.  [4+2]  CLO3 C/5\nd)  Compare series and parallel resonant circuits in terms of bandwidth.  5×1 =5  CLO2 C/4\n2.  List the four pillars of object oriented programming.  9  CLO1 C/4\n3  a)  Write a program to reverse a string without using built-in functions.  [4]  CLO2 C/3\nb)  Evaluate the suitability of a hash table versus a balanced tree for a dictionary application.  5×1 =5  CLO1 C/4\nc)  Analyze the time complexity of merge sort and state the recurrence relation.  [4]  CLO3 C/6\n4)  a)  Implement a stack using an array and show push and pop operations.  [4+3]  CLO3 C/4\nb)  Compare series and parallel resonant circuits in terms of bandwidth.  2  CLO4 C/5\nc)  Represent the number (1101.101) in normalized floating-point form.  10  CLO3 C/1",
+  "gold": [
+   {
+    "id": "Q1(a)",
+    "stem": "List the four pillars of objec"
+   },
+   {
+    "id": "Q1(b)",
+    "stem": "List the four pillars of objec"
+   },
+   {
+    "id": "Q1(c)",
+    "stem": "Trace the output of the follow"
+   },
+   {
+    "id": "Q1(d)",
+    "stem": "Compare series and parallel re"
+   },
+   {
+    "id": "Q2",
+    "stem": "List the four pillars of objec"
+   },
+   {
+    "id": "Q3(a)",
+    "stem": "Write a program to reverse a s"
+   },
+   {
+    "id": "Q3(b)",
+    "stem": "Evaluate the suitability of a "
+   },
+   {
+    "id": "Q3(c)",
+    "stem": "Analyze the time complexity of"
+   },
+   {
+    "id": "Q4(a)",
+    "stem": "Implement a stack using an arr"
+   },
+   {
+    "id": "Q4(b)",
+    "stem": "Compare series and parallel re"
+   },
+   {
+    "id": "Q4(c)",
+    "stem": "Represent the number (1101.101"
+   }
+  ]
+ },
+ {
+  "id": "paper-37",
+  "layout": "InlineSubs",
+  "text": "Daffodil International University\nMid-Term Examination, Fall 2026\nCourse Code: EEE 1345   Course Title: Electrical Circuits\nCourse Teacher: Test Teacher (TT)\nTime: 1:30 Hrs        Marks: 25\nAnswer ALL Questions [ANY TWO FROM QUESTION No. 02]\nThe figures in the right margin indicate the full marks and corresponding Course Learning Outcomes.\n\n1) a) Trace the output of the following program and explain each step.   [3]\n[CLO-5, C/3]\nb) Discuss the advantages of normalization in relational database design.   [6]\nc) Construct an ER diagram for a university registration system.   [5]\n[CLO-3, C/1]\n2 (a) Apply Kirchhoff voltage law to find the loop current in the given circuit.   [5]\n[CLO-4, C/1]\n(b) Explain the difference between an abstract class and an interface with examples.   [4]\n[CLO-2, C/2]",
+  "gold": [
+   {
+    "id": "Q1(a)",
+    "stem": "Trace the output of the follow"
+   },
+   {
+    "id": "Q1(b)",
+    "stem": "Discuss the advantages of norm"
+   },
+   {
+    "id": "Q1(c)",
+    "stem": "Construct an ER diagram for a "
+   },
+   {
+    "id": "Q2(a)",
+    "stem": "Apply Kirchhoff voltage law to"
+   },
+   {
+    "id": "Q2(b)",
+    "stem": "Explain the difference between"
+   }
+  ]
+ },
+ {
+  "id": "paper-38",
+  "layout": "QuestionHeader",
+  "text": "Daffodil International University\nMid-Term Examination, Fall 2026\nCourse Code: EEE 1345   Course Title: Electrical Circuits\nCourse Teacher: Test Teacher (TT)\nTime: 1:30 Hrs        Marks: 25\nAnswer ALL Questions [ANY TWO FROM QUESTION No. 02]\nThe figures in the right margin indicate the full marks and corresponding Course Learning Outcomes.\n\nQuestion-1:\na) Discuss the advantages of normalization in relational database design.   (8)\nb) Implement a stack using an array and show push and pop operations.    (7)\n\nPart-B\n\nQuestion-2:\na) Compare series and parallel resonant circuits in terms of bandwidth.  (7)\nb) Describe the role of the operating system scheduler in a multitasking environment.   (5)\n\nQuestion-3:\na) Write a program to reverse a string without using built-in functions.   (5)\nb) Categorize the susceptibility of a system to failure in detail.  (8)\n",
+  "gold": [
+   {
+    "id": "Q1(a)",
+    "stem": "Discuss the advantages of norm"
+   },
+   {
+    "id": "Q1(b)",
+    "stem": "Implement a stack using an arr"
+   },
+   {
+    "id": "Q2(a)",
+    "stem": "Compare series and parallel re"
+   },
+   {
+    "id": "Q2(b)",
+    "stem": "Describe the role of the opera"
+   },
+   {
+    "id": "Q3(a)",
+    "stem": "Write a program to reverse a s"
+   },
+   {
+    "id": "Q3(b)",
+    "stem": "Categorize the susceptibility "
+   }
+  ]
+ },
+ {
+  "id": "paper-39",
+  "layout": "BareNumber",
+  "text": "Daffodil International University\nDepartment of Information and Communication Engineering (ICE)\nFaculty of Engineering\nFinal Examination, Spring-2026\nCourse Code: ICE 1243    Course Title: Numerical Analysis\nLevel & Term: L1T2   Section: A\nTime: 2 hours   Full Marks: 40\nN.B: Answer all the questions (Only any one from Question 3)\n\n1\na. Compare series and parallel resonant circuits in terms of bandwidth.   6(CO4, C4)\n(i) first case   (ii) second case\nb. List the four pillars of object oriented programming.   6(CO5, C2)\n(i) first case   (ii) second case\n2\na. Evaluate the suitability of a hash table versus a balanced tree for a dictionary application.   3(CO2, C1)\n(i) first case   (ii) second case\nb. Calculate the cutoff frequency of an RC low-pass filter with R = 1 kOhm and C = 100 nF.   1(CO1, C1)",
+  "gold": [
+   {
+    "id": "Q1(a)",
+    "stem": "Compare series and parallel re"
+   },
+   {
+    "id": "Q1(b)",
+    "stem": "List the four pillars of objec"
+   },
+   {
+    "id": "Q2(a)",
+    "stem": "Evaluate the suitability of a "
+   },
+   {
+    "id": "Q2(b)",
+    "stem": "Calculate the cutoff frequency"
+   }
+  ]
+ },
+ {
+  "id": "paper-40",
+  "layout": "Scenario",
+  "text": "Daffodil International University\nDepartment of Information and Communication Engineering (ICE)\nFaculty of Engineering\nFinal Examination, Spring-2026\nCourse Code: ICE 1243    Course Title: Numerical Analysis\nLevel & Term: L1T2   Section: A\nTime: 2 hours   Full Marks: 40\nN.B: Answer all the questions (Only any one from Question 3)\n\nQuestion-1:\nThe Adventure Traders was started on May 1 by a local investor. The following events occurred during the month:\nMay 1  Invested Tk. 80,000 cash and Tk. 25,000 furniture in the business.\nMay 4  Purchased equipment for Tk. 20,000 on account.\nMay 8  Incurred advertising expenses of Tk. 1,800 on account.\nMay 12  Hired a manager at a salary of Tk. 24,000 per month.\nMay 31  Paid Tk. 700 for advertising incurred at May 8.\n\nRequirement:\na. Journalize the transactions.   (4)\nb. Post the journal entries to the ledger for cash and accounts payable.   (6)\n\nQuestion-2:\nImplement a stack using an array and show push and pop operations.   (6)\n\nQuestion-3:\nA river resort opened for business on June 1 with eight air conditioned units. Its trial balance is as follows:\nCash  19,600\nSupplies  3,300\nEquipment  12,500\n\nRequirement:\na. Prepare the adjusting entries.   (6)\nb. Prepare an adjusted trial balance.   (4)\n",
+  "gold": [
+   {
+    "id": "Q1(a)",
+    "stem": "Journalize the transactions."
+   },
+   {
+    "id": "Q1(b)",
+    "stem": "Post the journal entries to th"
+   },
+   {
+    "id": "Q2",
+    "stem": "Implement a stack using an arr"
+   },
+   {
+    "id": "Q3(a)",
+    "stem": "Prepare the adjusting entries."
+   },
+   {
+    "id": "Q3(b)",
+    "stem": "Prepare an adjusted trial bala"
+   }
+  ]
+ },
+ {
+  "id": "paper-41",
+  "layout": "Table",
+  "text": "Daffodil International University\nMid-Term Examination, Fall 2026\nCourse Code: EEE 1345   Course Title: Electrical Circuits\nCourse Teacher: Test Teacher (TT)\nTime: 1:30 Hrs        Marks: 25\nAnswer ALL Questions [ANY TWO FROM QUESTION No. 02]\nThe figures in the right margin indicate the full marks and corresponding Course Learning Outcomes.\n\n1)  a)  Calculate the cutoff frequency of an RC low-pass filter with R = 1 kOhm and C = 100 nF.  5×1 =5  CLO3 C/1\nb)  Recommend the ways of verification of different simulation models.  5×1 =5  CLO4 C/2\n2  a)  Explain the difference between an abstract class and an interface with examples.  [5+2]  CLO4 C/2\nb)  Explain the difference between an abstract class and an interface with examples.  5×1 =5  CLO1 C/3\nc)  Construct an ER diagram for a university registration system.  9  CLO4 C/3\nd)  Write a program to reverse a string without using built-in functions.  9  CLO3 C/3\n3)  Differentiate between compile time and run time polymorphism.  3  CLO4 C/6",
+  "gold": [
+   {
+    "id": "Q1(a)",
+    "stem": "Calculate the cutoff frequency"
+   },
+   {
+    "id": "Q1(b)",
+    "stem": "Recommend the ways of verifica"
+   },
+   {
+    "id": "Q2(a)",
+    "stem": "Explain the difference between"
+   },
+   {
+    "id": "Q2(b)",
+    "stem": "Explain the difference between"
+   },
+   {
+    "id": "Q2(c)",
+    "stem": "Construct an ER diagram for a "
+   },
+   {
+    "id": "Q2(d)",
+    "stem": "Write a program to reverse a s"
+   },
+   {
+    "id": "Q3",
+    "stem": "Differentiate between compile "
+   }
+  ]
+ },
+ {
+  "id": "paper-42",
+  "layout": "InlineSubs",
+  "text": "Daffodil International University\nMid-Term Examination, Fall 2026\nCourse Code: EEE 1345   Course Title: Electrical Circuits\nCourse Teacher: Test Teacher (TT)\nTime: 1:30 Hrs        Marks: 25\nAnswer ALL Questions [ANY TWO FROM QUESTION No. 02]\nThe figures in the right margin indicate the full marks and corresponding Course Learning Outcomes.\n\n1. a. Draw the state diagram of a finite automaton that accepts binary strings ending in 01.   [2]\nb. List the four pillars of object oriented programming.   [4]\n[CLO-3, C/6]\n2 a) Find the unknown node voltages from the figure given below using nodal analysis.   [5]\nb) Implement a stack using an array and show push and pop operations.   [5]\n[CLO-2, C/2]\nc) Apply Kirchhoff voltage law to find the loop current in the given circuit.   [6]\n[CLO-3, C/1]\n3) a. Calculate the cutoff frequency of an RC low-pass filter with R = 1 kOhm and C = 100 nF.   [6]\n[CLO-4, C/4]\nb. Apply Kirchhoff voltage law to find the loop current in the given circuit.   [2]\nc. Apply Kirchhoff voltage law to find the loop current in the given circuit.   [3]\n4 Analyze the time complexity of merge sort and state the recurrence relation.   [8]\n[CLO-3, C/3]\n5 a) Construct an ER diagram for a university registration system.   [6]\n[CLO-3, C/4]\nb) Find the unknown node voltages from the figure given below using nodal analysis.   [3]\n[CLO-3, C/3]\nc) Justify the use of design patterns in large software systems.   [5]\n[CLO-1, C/1]",
+  "gold": [
+   {
+    "id": "Q1(a)",
+    "stem": "Draw the state diagram of a fi"
+   },
+   {
+    "id": "Q1(b)",
+    "stem": "List the four pillars of objec"
+   },
+   {
+    "id": "Q2(a)",
+    "stem": "Find the unknown node voltages"
+   },
+   {
+    "id": "Q2(b)",
+    "stem": "Implement a stack using an arr"
+   },
+   {
+    "id": "Q2(c)",
+    "stem": "Apply Kirchhoff voltage law to"
+   },
+   {
+    "id": "Q3(a)",
+    "stem": "Calculate the cutoff frequency"
+   },
+   {
+    "id": "Q3(b)",
+    "stem": "Apply Kirchhoff voltage law to"
+   },
+   {
+    "id": "Q3(c)",
+    "stem": "Apply Kirchhoff voltage law to"
+   },
+   {
+    "id": "Q4",
+    "stem": "Analyze the time complexity of"
+   },
+   {
+    "id": "Q5(a)",
+    "stem": "Construct an ER diagram for a "
+   },
+   {
+    "id": "Q5(b)",
+    "stem": "Find the unknown node voltages"
+   },
+   {
+    "id": "Q5(c)",
+    "stem": "Justify the use of design patt"
+   }
+  ]
+ },
+ {
+  "id": "paper-43",
+  "layout": "QuestionHeader",
+  "text": "Daffodil International University\nMid-Term Examination, Fall 2026\nCourse Code: EEE 1345   Course Title: Electrical Circuits\nCourse Teacher: Test Teacher (TT)\nTime: 1:30 Hrs        Marks: 25\nAnswer ALL Questions [ANY TWO FROM QUESTION No. 02]\nThe figures in the right margin indicate the full marks and corresponding Course Learning Outcomes.\n\nQuestion-1:\na) Write a program to reverse a string without using built-in functions.    (7)\nb) Trace the output of the following program and explain each step. (2)\n\nPart-B\n(Answer all the questions)\nQuestion-2:\na) Calculate the cutoff frequency of an RC low-pass filter with R = 1 kOhm and C = 100 nF. (4)\nb) Recommend the ways of verification of different simulation models.   (9)\n",
+  "gold": [
+   {
+    "id": "Q1(a)",
+    "stem": "Write a program to reverse a s"
+   },
+   {
+    "id": "Q1(b)",
+    "stem": "Trace the output of the follow"
+   },
+   {
+    "id": "Q2(a)",
+    "stem": "Calculate the cutoff frequency"
+   },
+   {
+    "id": "Q2(b)",
+    "stem": "Recommend the ways of verifica"
+   }
+  ]
+ },
+ {
+  "id": "paper-44",
+  "layout": "BareNumber",
+  "text": "Daffodil International University\nMid-Term Examination, Fall 2026\nCourse Code: EEE 1345   Course Title: Electrical Circuits\nCourse Teacher: Test Teacher (TT)\nTime: 1:30 Hrs        Marks: 25\nAnswer ALL Questions [ANY TWO FROM QUESTION No. 02]\nThe figures in the right margin indicate the full marks and corresponding Course Learning Outcomes.\n\n1\na. Categorize the susceptibility of a system to failure in detail.   6(CO4, C6)\nb. Summarize the main differences between TCP and UDP.   6(CO2, C2)\nc. Design a class hierarchy for a library management system and justify your choices.   6(CO3, C1)\nd. Justify the use of design patterns in large software systems.   5(CO1, C2)\n2\na. Construct an ER diagram for a university registration system.   6(CO5, C3)\nb. Analyze the time complexity of merge sort and state the recurrence relation.   6(CO4, C2)\nc. Explain the difference between an abstract class and an interface with examples.   4(CO1, C6)\nd. Describe the role of the operating system scheduler in a multitasking environment.   3(CO4, C6)\n3\na. Summarize the main differences between TCP and UDP.   4(CO1, C3)\n(i) first case   (ii) second case\nb. Trace the output of the following program and explain each step.   5(CO2, C6)",
+  "gold": [
+   {
+    "id": "Q1(a)",
+    "stem": "Categorize the susceptibility "
+   },
+   {
+    "id": "Q1(b)",
+    "stem": "Summarize the main differences"
+   },
+   {
+    "id": "Q1(c)",
+    "stem": "Design a class hierarchy for a"
+   },
+   {
+    "id": "Q1(d)",
+    "stem": "Justify the use of design patt"
+   },
+   {
+    "id": "Q2(a)",
+    "stem": "Construct an ER diagram for a "
+   },
+   {
+    "id": "Q2(b)",
+    "stem": "Analyze the time complexity of"
+   },
+   {
+    "id": "Q2(c)",
+    "stem": "Explain the difference between"
+   },
+   {
+    "id": "Q2(d)",
+    "stem": "Describe the role of the opera"
+   },
+   {
+    "id": "Q3(a)",
+    "stem": "Summarize the main differences"
+   },
+   {
+    "id": "Q3(b)",
+    "stem": "Trace the output of the follow"
+   }
+  ]
+ },
+ {
+  "id": "paper-45",
+  "layout": "Scenario",
+  "text": "DAFFODIL INTERNATIONAL UNIVERSITY\nDepartment of Information & Communication Engineering\nFinal Examination, Spring-2023\nCourse Code: HUM 101 (Day),  Course Title: ICT Economics & Accounting\nInstructor: SS,  Slot: A\nDate: Saturday, 17 June, 2023   Time: 09:00 AM-11:00 AM\nMarks: 40\n\nQuestion-1:\nA river resort opened for business on June 1 with eight air conditioned units. Its trial balance is as follows:\nCash  19,600\nSupplies  3,300\nEquipment  12,500\n\nRequirement:\na. Prepare the adjusting entries.   (8)\nb. Prepare an adjusted trial balance.   (7)\n\nQuestion-2:\nA river resort opened for business on June 1 with eight air conditioned units. Its trial balance is as follows:\nCash  19,600\nSupplies  3,300\nEquipment  12,500\n\nRequirement:\na. Prepare the adjusting entries.   (8)\nb. Prepare an adjusted trial balance.   (6)\n",
+  "gold": [
+   {
+    "id": "Q1(a)",
+    "stem": "Prepare the adjusting entries."
+   },
+   {
+    "id": "Q1(b)",
+    "stem": "Prepare an adjusted trial bala"
+   },
+   {
+    "id": "Q2(a)",
+    "stem": "Prepare the adjusting entries."
+   },
+   {
+    "id": "Q2(b)",
+    "stem": "Prepare an adjusted trial bala"
+   }
+  ]
+ },
+ {
+  "id": "paper-46",
+  "layout": "Table",
+  "text": "Department of ICE\nClass Test 2\nTime: 30 minutes   Marks: 20\n\n1  Draw the state diagram of a finite automaton that accepts binary strings ending in 01.  5×1 =5  CLO3 C/1\n2.  a)  Differentiate between compile time and run time polymorphism.  [4+3]  CLO2 C/5\nb)  Construct an ER diagram for a university registration system.  [5+2]  CLO1 C/6\nc)  Trace the output of the following program and explain each step.  8  CLO3 C/5\nd)  Categorize the susceptibility of a system to failure in detail.  4  CLO2 C/2\n3.  Design a class hierarchy for a library management system and justify your choices.  [4+4]  CLO2 C/6\n4)  a)  Find the unknown node voltages from the figure given below using nodal analysis.  [2+4]  CLO2 C/4\nb)  Calculate the cutoff frequency of an RC low-pass filter with R = 1 kOhm and C = 100 nF.  [2+3]  CLO1 C/1",
+  "gold": [
+   {
+    "id": "Q1",
+    "stem": "Draw the state diagram of a fi"
+   },
+   {
+    "id": "Q2(a)",
+    "stem": "Differentiate between compile "
+   },
+   {
+    "id": "Q2(b)",
+    "stem": "Construct an ER diagram for a "
+   },
+   {
+    "id": "Q2(c)",
+    "stem": "Trace the output of the follow"
+   },
+   {
+    "id": "Q2(d)",
+    "stem": "Categorize the susceptibility "
+   },
+   {
+    "id": "Q3",
+    "stem": "Design a class hierarchy for a"
+   },
+   {
+    "id": "Q4(a)",
+    "stem": "Find the unknown node voltages"
+   },
+   {
+    "id": "Q4(b)",
+    "stem": "Calculate the cutoff frequency"
+   }
+  ]
+ },
+ {
+  "id": "paper-47",
+  "layout": "InlineSubs",
+  "text": "Daffodil International University\nDepartment of Information and Communication Engineering (ICE)\nFaculty of Engineering\nFinal Examination, Spring-2026\nCourse Code: ICE 1243    Course Title: Numerical Analysis\nLevel & Term: L1T2   Section: A\nTime: 2 hours   Full Marks: 40\nN.B: Answer all the questions (Only any one from Question 3)\n\n1. a. Find the unknown node voltages from the figure given below using nodal analysis.   [5]\n[CLO-5, C/4]\nb. Evaluate the suitability of a hash table versus a balanced tree for a dictionary application.   [5]\nc. Explain the difference between an abstract class and an interface with examples.   [2]\n[CLO-3, C/2]\n2) Write a program to reverse a string without using built-in functions.   [9]\n[CLO-1, C/1]\n3. (a) Apply Kirchhoff voltage law to find the loop current in the given circuit.   [5]\n[CLO-1, C/5]\n(b) Discuss the advantages of normalization in relational database design.   [4]\n(c) Evaluate the suitability of a hash table versus a balanced tree for a dictionary application.   [3]\n[CLO-3, C/1]\n4 a. Differentiate between compile time and run time polymorphism.   [3]\n[CLO-1, C/4]\nb. Discuss the advantages of normalization in relational database design.   [4]\nc. List the four pillars of object oriented programming.   [4]\n5) (a) Compare series and parallel resonant circuits in terms of bandwidth.   [4]\n[CLO-1, C/5]\n(b) Write a program to reverse a string without using built-in functions.   [4]\n[CLO-5, C/3]\n(c) Calculate the cutoff frequency of an RC low-pass filter with R = 1 kOhm and C = 100 nF.   [3]",
+  "gold": [
+   {
+    "id": "Q1(a)",
+    "stem": "Find the unknown node voltages"
+   },
+   {
+    "id": "Q1(b)",
+    "stem": "Evaluate the suitability of a "
+   },
+   {
+    "id": "Q1(c)",
+    "stem": "Explain the difference between"
+   },
+   {
+    "id": "Q2",
+    "stem": "Write a program to reverse a s"
+   },
+   {
+    "id": "Q3(a)",
+    "stem": "Apply Kirchhoff voltage law to"
+   },
+   {
+    "id": "Q3(b)",
+    "stem": "Discuss the advantages of norm"
+   },
+   {
+    "id": "Q3(c)",
+    "stem": "Evaluate the suitability of a "
+   },
+   {
+    "id": "Q4(a)",
+    "stem": "Differentiate between compile "
+   },
+   {
+    "id": "Q4(b)",
+    "stem": "Discuss the advantages of norm"
+   },
+   {
+    "id": "Q4(c)",
+    "stem": "List the four pillars of objec"
+   },
+   {
+    "id": "Q5(a)",
+    "stem": "Compare series and parallel re"
+   },
+   {
+    "id": "Q5(b)",
+    "stem": "Write a program to reverse a s"
+   },
+   {
+    "id": "Q5(c)",
+    "stem": "Calculate the cutoff frequency"
+   }
+  ]
+ },
+ {
+  "id": "paper-48",
+  "layout": "QuestionHeader",
+  "text": "Daffodil International University\nMid-Term Examination, Fall 2026\nCourse Code: EEE 1345   Course Title: Electrical Circuits\nCourse Teacher: Test Teacher (TT)\nTime: 1:30 Hrs        Marks: 25\nAnswer ALL Questions [ANY TWO FROM QUESTION No. 02]\nThe figures in the right margin indicate the full marks and corresponding Course Learning Outcomes.\n\nQuestion-1:\na) Compare series and parallel resonant circuits in terms of bandwidth.  (2)\nb) Summarize the main differences between TCP and UDP.    (3)\nc) List the four pillars of object oriented programming.  (7)\n\nQuestion-2:\na) Differentiate between compile time and run time polymorphism.    (4)\nb) Trace the output of the following program and explain each step.    (7)\nc) List the four pillars of object oriented programming.   (4)\n\nQuestion-3:\na) List the four pillars of object oriented programming.    (4)\nb) Calculate the cutoff frequency of an RC low-pass filter with R = 1 kOhm and C = 100 nF.    (8)\n\nQuestion-4:\na) Summarize the main differences between TCP and UDP.   (2)\nb) Categorize the susceptibility of a system to failure in detail.  (6)\nc) Evaluate the suitability of a hash table versus a balanced tree for a dictionary application.  (4)\n",
+  "gold": [
+   {
+    "id": "Q1(a)",
+    "stem": "Compare series and parallel re"
+   },
+   {
+    "id": "Q1(b)",
+    "stem": "Summarize the main differences"
+   },
+   {
+    "id": "Q1(c)",
+    "stem": "List the four pillars of objec"
+   },
+   {
+    "id": "Q2(a)",
+    "stem": "Differentiate between compile "
+   },
+   {
+    "id": "Q2(b)",
+    "stem": "Trace the output of the follow"
+   },
+   {
+    "id": "Q2(c)",
+    "stem": "List the four pillars of objec"
+   },
+   {
+    "id": "Q3(a)",
+    "stem": "List the four pillars of objec"
+   },
+   {
+    "id": "Q3(b)",
+    "stem": "Calculate the cutoff frequency"
+   },
+   {
+    "id": "Q4(a)",
+    "stem": "Summarize the main differences"
+   },
+   {
+    "id": "Q4(b)",
+    "stem": "Categorize the susceptibility "
+   },
+   {
+    "id": "Q4(c)",
+    "stem": "Evaluate the suitability of a "
+   }
+  ]
+ },
+ {
+  "id": "paper-49",
+  "layout": "BareNumber",
+  "text": "Daffodil International University\nDepartment of Information and Communication Engineering (ICE)\nFaculty of Engineering\nFinal Examination, Spring-2026\nCourse Code: ICE 1243    Course Title: Numerical Analysis\nLevel & Term: L1T2   Section: A\nTime: 2 hours   Full Marks: 40\nN.B: Answer all the questions (Only any one from Question 3)\n\n1\na. Find the unknown node voltages from the figure given below using nodal analysis.   4(CO3, C4)\nb. Categorize the susceptibility of a system to failure in detail.   5(CO2, C3)\n2\na. Trace the output of the following program and explain each step.   6(CO5, C2)\nb. Draw the state diagram of a finite automaton that accepts binary strings ending in 01.   3(CO3, C4)\nc. Differentiate between compile time and run time polymorphism.   3(CO1, C5)\nd. Define encapsulation and explain why it matters in object oriented design.   3(CO3, C6)",
+  "gold": [
+   {
+    "id": "Q1(a)",
+    "stem": "Find the unknown node voltages"
+   },
+   {
+    "id": "Q1(b)",
+    "stem": "Categorize the susceptibility "
+   },
+   {
+    "id": "Q2(a)",
+    "stem": "Trace the output of the follow"
+   },
+   {
+    "id": "Q2(b)",
+    "stem": "Draw the state diagram of a fi"
+   },
+   {
+    "id": "Q2(c)",
+    "stem": "Differentiate between compile "
+   },
+   {
+    "id": "Q2(d)",
+    "stem": "Define encapsulation and expla"
+   }
+  ]
+ },
+ {
+  "id": "paper-50",
+  "layout": "Scenario",
+  "text": "Daffodil International University\nDepartment of Information and Communication Engineering (ICE)\nFaculty of Engineering\nFinal Examination, Spring-2026\nCourse Code: ICE 1243    Course Title: Numerical Analysis\nLevel & Term: L1T2   Section: A\nTime: 2 hours   Full Marks: 40\nN.B: Answer all the questions (Only any one from Question 3)\n\nQuestion-1:\nThe Adventure Traders was started on May 1 by a local investor. The following events occurred during the month:\nMay 1  Invested Tk. 80,000 cash and Tk. 25,000 furniture in the business.\nMay 4  Purchased equipment for Tk. 20,000 on account.\nMay 8  Incurred advertising expenses of Tk. 1,800 on account.\nMay 12  Hired a manager at a salary of Tk. 24,000 per month.\nMay 31  Paid Tk. 700 for advertising incurred at May 8.\n\nRequirement:\na. Journalize the transactions.   (3)\nb. Post the journal entries to the ledger for cash and accounts payable.   (4)\n\nQuestion-2:\nApply Kirchhoff voltage law to find the loop current in the given circuit.   (7)\n",
+  "gold": [
+   {
+    "id": "Q1(a)",
+    "stem": "Journalize the transactions."
+   },
+   {
+    "id": "Q1(b)",
+    "stem": "Post the journal entries to th"
+   },
+   {
+    "id": "Q2",
+    "stem": "Apply Kirchhoff voltage law to"
+   }
+  ]
+ },
+ {
+  "id": "paper-51",
+  "layout": "Table",
+  "text": "Department of ICE\nClass Test 2\nTime: 30 minutes   Marks: 20\n\n1 | a) | Describe the role of the operating system scheduler in a multitasking environment. | [4+3] | CLO2 C/5\nb) | Implement a stack using an array and show push and pop operations. | [4] | CLO3 C/6\nc) | Represent the number (1101.101) in normalized floating-point form. | 5×1 =5 | CLO1 C/4\nd) | Find the unknown node voltages from the figure given below using nodal analysis. | [4] | CLO3 C/6\n2) | Trace the output of the following program and explain each step. | 5×1 =5 | CLO2 C/1\n3. | Differentiate between compile time and run time polymorphism. | 3 | CLO1 C/1",
+  "gold": [
+   {
+    "id": "Q1(a)",
+    "stem": "Describe the role of the opera"
+   },
+   {
+    "id": "Q1(b)",
+    "stem": "Implement a stack using an arr"
+   },
+   {
+    "id": "Q1(c)",
+    "stem": "Represent the number (1101.101"
+   },
+   {
+    "id": "Q1(d)",
+    "stem": "Find the unknown node voltages"
+   },
+   {
+    "id": "Q2",
+    "stem": "Trace the output of the follow"
+   },
+   {
+    "id": "Q3",
+    "stem": "Differentiate between compile "
+   }
+  ]
+ },
+ {
+  "id": "paper-52",
+  "layout": "InlineSubs",
+  "text": "Daffodil International University\nMid-Term Examination, Fall 2026\nCourse Code: EEE 1345   Course Title: Electrical Circuits\nCourse Teacher: Test Teacher (TT)\nTime: 1:30 Hrs        Marks: 25\nAnswer ALL Questions [ANY TWO FROM QUESTION No. 02]\nThe figures in the right margin indicate the full marks and corresponding Course Learning Outcomes.\n\n1) a. Trace the output of the following program and explain each step.   [5]\n[CLO-1, C/4]\nb. Write a program to reverse a string without using built-in functions.   [5]\n[CLO-1, C/5]\n2) (a) Explain the difference between an abstract class and an interface with examples.   [4]\n(b) Evaluate the suitability of a hash table versus a balanced tree for a dictionary application.   [5]\n3 Implement a stack using an array and show push and pop operations.   [3]\n[CLO-2, C/4]\n4) Implement a stack using an array and show push and pop operations.   [4]\n[CLO-5, C/5]\n5. a) Evaluate the suitability of a hash table versus a balanced tree for a dictionary application.   [6]\nb) Trace the output of the following program and explain each step.   [6]\n[CLO-4, C/1]",
+  "gold": [
+   {
+    "id": "Q1(a)",
+    "stem": "Trace the output of the follow"
+   },
+   {
+    "id": "Q1(b)",
+    "stem": "Write a program to reverse a s"
+   },
+   {
+    "id": "Q2(a)",
+    "stem": "Explain the difference between"
+   },
+   {
+    "id": "Q2(b)",
+    "stem": "Evaluate the suitability of a "
+   },
+   {
+    "id": "Q3",
+    "stem": "Implement a stack using an arr"
+   },
+   {
+    "id": "Q4",
+    "stem": "Implement a stack using an arr"
+   },
+   {
+    "id": "Q5(a)",
+    "stem": "Evaluate the suitability of a "
+   },
+   {
+    "id": "Q5(b)",
+    "stem": "Trace the output of the follow"
+   }
+  ]
+ },
+ {
+  "id": "paper-53",
+  "layout": "QuestionHeader",
+  "text": "Daffodil International University\nMid-Term Examination, Fall 2026\nCourse Code: EEE 1345   Course Title: Electrical Circuits\nCourse Teacher: Test Teacher (TT)\nTime: 1:30 Hrs        Marks: 25\nAnswer ALL Questions [ANY TWO FROM QUESTION No. 02]\nThe figures in the right margin indicate the full marks and corresponding Course Learning Outcomes.\n\nQues-1:\na) Recommend the ways of verification of different simulation models.   (4)\nb) Identify the critical path in the given project network diagram.   (7)\n\nQues-2:\na) Compare series and parallel resonant circuits in terms of bandwidth.    (8)\nb) Differentiate between compile time and run time polymorphism.  (5)\n",
+  "gold": [
+   {
+    "id": "Q1(a)",
+    "stem": "Recommend the ways of verifica"
+   },
+   {
+    "id": "Q1(b)",
+    "stem": "Identify the critical path in "
+   },
+   {
+    "id": "Q2(a)",
+    "stem": "Compare series and parallel re"
+   },
+   {
+    "id": "Q2(b)",
+    "stem": "Differentiate between compile "
+   }
+  ]
+ },
+ {
+  "id": "paper-54",
+  "layout": "BareNumber",
+  "text": "Department of ICE\nClass Test 2\nTime: 30 minutes   Marks: 20\n\n1\na. Justify the use of design patterns in large software systems.   6(CO3, C5)\nb. Evaluate the suitability of a hash table versus a balanced tree for a dictionary application.   2(CO4, C3)\n(i) first case   (ii) second case\nc. Trace the output of the following program and explain each step.   2(CO1, C6)\nd. Represent the number (1101.101) in normalized floating-point form.   5(CO1, C3)\n(i) first case   (ii) second case\n2\na. Analyze the time complexity of merge sort and state the recurrence relation.   5(CO5, C6)\nb. List the four pillars of object oriented programming.   1(CO4, C2)",
+  "gold": [
+   {
+    "id": "Q1(a)",
+    "stem": "Justify the use of design patt"
+   },
+   {
+    "id": "Q1(b)",
+    "stem": "Evaluate the suitability of a "
+   },
+   {
+    "id": "Q1(c)",
+    "stem": "Trace the output of the follow"
+   },
+   {
+    "id": "Q1(d)",
+    "stem": "Represent the number (1101.101"
+   },
+   {
+    "id": "Q2(a)",
+    "stem": "Analyze the time complexity of"
+   },
+   {
+    "id": "Q2(b)",
+    "stem": "List the four pillars of objec"
+   }
+  ]
+ },
+ {
+  "id": "paper-55",
+  "layout": "Scenario",
+  "text": "Department of ICE\nClass Test 2\nTime: 30 minutes   Marks: 20\n\nQuestion-1:\nA river resort opened for business on June 1 with eight air conditioned units. Its trial balance is as follows:\nCash  19,600\nSupplies  3,300\nEquipment  12,500\n\nRequirement:\na. Prepare the adjusting entries.   (7)\nb. Prepare an adjusted trial balance.   (4)\n\nQuestion-2:\nA river resort opened for business on June 1 with eight air conditioned units. Its trial balance is as follows:\nCash  19,600\nSupplies  3,300\nEquipment  12,500\n\nRequirement:\na. Prepare the adjusting entries.   (3)\nb. Prepare an adjusted trial balance.   (6)\n",
+  "gold": [
+   {
+    "id": "Q1(a)",
+    "stem": "Prepare the adjusting entries."
+   },
+   {
+    "id": "Q1(b)",
+    "stem": "Prepare an adjusted trial bala"
+   },
+   {
+    "id": "Q2(a)",
+    "stem": "Prepare the adjusting entries."
+   },
+   {
+    "id": "Q2(b)",
+    "stem": "Prepare an adjusted trial bala"
+   }
+  ]
+ },
+ {
+  "id": "paper-56",
+  "layout": "Table",
+  "text": "Daffodil International University\nMid-Term Examination, Fall 2026\nCourse Code: EEE 1345   Course Title: Electrical Circuits\nCourse Teacher: Test Teacher (TT)\nTime: 1:30 Hrs        Marks: 25\nAnswer ALL Questions [ANY TWO FROM QUESTION No. 02]\nThe figures in the right margin indicate the full marks and corresponding Course Learning Outcomes.\n\n1.  a)  Define encapsulation and explain why it matters in object oriented design.  [4+3]  CLO2 C/2\nb)  Write a program to reverse a string without using built-in functions.  5×1 =5  CLO4 C/1\nc)  List the four pillars of object oriented programming.  [4]  CLO3 C/6\n2.  a)  Describe the role of the operating system scheduler in a multitasking environment.  [4]  CLO4 C/1\nb)  Implement a stack using an array and show push and pop operations.  2  CLO1 C/1\nc)  Differentiate between compile time and run time polymorphism.  [4]  CLO1 C/2\n3.  a)  Compare series and parallel resonant circuits in terms of bandwidth.  5×1 =5  CLO2 C/5\nb)  Apply Kirchhoff voltage law to find the loop current in the given circuit.  [4+2]  CLO1 C/6",
+  "gold": [
+   {
+    "id": "Q1(a)",
+    "stem": "Define encapsulation and expla"
+   },
+   {
+    "id": "Q1(b)",
+    "stem": "Write a program to reverse a s"
+   },
+   {
+    "id": "Q1(c)",
+    "stem": "List the four pillars of objec"
+   },
+   {
+    "id": "Q2(a)",
+    "stem": "Describe the role of the opera"
+   },
+   {
+    "id": "Q2(b)",
+    "stem": "Implement a stack using an arr"
+   },
+   {
+    "id": "Q2(c)",
+    "stem": "Differentiate between compile "
+   },
+   {
+    "id": "Q3(a)",
+    "stem": "Compare series and parallel re"
+   },
+   {
+    "id": "Q3(b)",
+    "stem": "Apply Kirchhoff voltage law to"
+   }
+  ]
+ },
+ {
+  "id": "paper-57",
+  "layout": "InlineSubs",
+  "text": "Daffodil International University\nDepartment of Information and Communication Engineering (ICE)\nFaculty of Engineering\nFinal Examination, Spring-2026\nCourse Code: ICE 1243    Course Title: Numerical Analysis\nLevel & Term: L1T2   Section: A\nTime: 2 hours   Full Marks: 40\nN.B: Answer all the questions (Only any one from Question 3)\n\n1) a. Draw the state diagram of a finite automaton that accepts binary strings ending in 01.   [4]\n[CLO-1, C/1]\nb. Trace the output of the following program and explain each step.   [2]\n2. Trace the output of the following program and explain each step.   [3]\n[CLO-3, C/5]\n3) Write a program to reverse a string without using built-in functions.   [5]\n[CLO-2, C/6]\n4. a) Draw the state diagram of a finite automaton that accepts binary strings ending in 01.   [6]\n[CLO-1, C/6]\nb) Recommend the ways of verification of different simulation models.   [2]\n[CLO-1, C/2]\nc) Find the unknown node voltages from the figure given below using nodal analysis.   [4]\n[CLO-3, C/1]\n5. Explain the difference between an abstract class and an interface with examples.   [3]\n[CLO-2, C/1]",
+  "gold": [
+   {
+    "id": "Q1(a)",
+    "stem": "Draw the state diagram of a fi"
+   },
+   {
+    "id": "Q1(b)",
+    "stem": "Trace the output of the follow"
+   },
+   {
+    "id": "Q2",
+    "stem": "Trace the output of the follow"
+   },
+   {
+    "id": "Q3",
+    "stem": "Write a program to reverse a s"
+   },
+   {
+    "id": "Q4(a)",
+    "stem": "Draw the state diagram of a fi"
+   },
+   {
+    "id": "Q4(b)",
+    "stem": "Recommend the ways of verifica"
+   },
+   {
+    "id": "Q4(c)",
+    "stem": "Find the unknown node voltages"
+   },
+   {
+    "id": "Q5",
+    "stem": "Explain the difference between"
+   }
+  ]
+ },
+ {
+  "id": "paper-58",
+  "layout": "QuestionHeader",
+  "text": "DAFFODIL INTERNATIONAL UNIVERSITY\nDepartment of Information & Communication Engineering\nFinal Examination, Spring-2023\nCourse Code: HUM 101 (Day),  Course Title: ICT Economics & Accounting\nInstructor: SS,  Slot: A\nDate: Saturday, 17 June, 2023   Time: 09:00 AM-11:00 AM\nMarks: 40\n\nPart-A\n\nQuestion-1:\na) Draw the state diagram of a finite automaton that accepts binary strings ending in 01. (6)\nb) Explain the difference between an abstract class and an interface with examples.   (6)\n\nQuestion-2:\na) Draw the state diagram of a finite automaton that accepts binary strings ending in 01.  (8)\nb) Compare series and parallel resonant circuits in terms of bandwidth.   (4)\nc) Justify the use of design patterns in large software systems. (5)\n",
+  "gold": [
+   {
+    "id": "Q1(a)",
+    "stem": "Draw the state diagram of a fi"
+   },
+   {
+    "id": "Q1(b)",
+    "stem": "Explain the difference between"
+   },
+   {
+    "id": "Q2(a)",
+    "stem": "Draw the state diagram of a fi"
+   },
+   {
+    "id": "Q2(b)",
+    "stem": "Compare series and parallel re"
+   },
+   {
+    "id": "Q2(c)",
+    "stem": "Justify the use of design patt"
+   }
+  ]
+ },
+ {
+  "id": "paper-59",
+  "layout": "BareNumber",
+  "text": "Daffodil International University\nMid-Term Examination, Fall 2026\nCourse Code: EEE 1345   Course Title: Electrical Circuits\nCourse Teacher: Test Teacher (TT)\nTime: 1:30 Hrs        Marks: 25\nAnswer ALL Questions [ANY TWO FROM QUESTION No. 02]\nThe figures in the right margin indicate the full marks and corresponding Course Learning Outcomes.\n\n1\na. Identify the critical path in the given project network diagram.   1(CO5, C5)\nb. Discuss the advantages of normalization in relational database design.   4(CO3, C6)\nc. Calculate the cutoff frequency of an RC low-pass filter with R = 1 kOhm and C = 100 nF.   1(CO4, C5)\n2\na. Explain the difference between an abstract class and an interface with examples.   1(CO3, C6)\n(i) first case   (ii) second case\nb. List the four pillars of object oriented programming.   3(CO3, C1)\n(i) first case   (ii) second case\n3\na. Write a program to reverse a string without using built-in functions.   5(CO1, C3)\nb. Design a class hierarchy for a library management system and justify your choices.   6(CO3, C5)\nc. Summarize the main differences between TCP and UDP.   2(CO5, C4)\n(i) first case   (ii) second case\nd. Compare series and parallel resonant circuits in terms of bandwidth.   6(CO5, C4)",
+  "gold": [
+   {
+    "id": "Q1(a)",
+    "stem": "Identify the critical path in "
+   },
+   {
+    "id": "Q1(b)",
+    "stem": "Discuss the advantages of norm"
+   },
+   {
+    "id": "Q1(c)",
+    "stem": "Calculate the cutoff frequency"
+   },
+   {
+    "id": "Q2(a)",
+    "stem": "Explain the difference between"
+   },
+   {
+    "id": "Q2(b)",
+    "stem": "List the four pillars of objec"
+   },
+   {
+    "id": "Q3(a)",
+    "stem": "Write a program to reverse a s"
+   },
+   {
+    "id": "Q3(b)",
+    "stem": "Design a class hierarchy for a"
+   },
+   {
+    "id": "Q3(c)",
+    "stem": "Summarize the main differences"
+   },
+   {
+    "id": "Q3(d)",
+    "stem": "Compare series and parallel re"
+   }
+  ]
+ },
+ {
+  "id": "paper-60",
+  "layout": "Scenario",
+  "text": "DAFFODIL INTERNATIONAL UNIVERSITY\nDepartment of Information & Communication Engineering\nFinal Examination, Spring-2023\nCourse Code: HUM 101 (Day),  Course Title: ICT Economics & Accounting\nInstructor: SS,  Slot: A\nDate: Saturday, 17 June, 2023   Time: 09:00 AM-11:00 AM\nMarks: 40\n\nQuestion-1:\nA river resort opened for business on June 1 with eight air conditioned units. Its trial balance is as follows:\nCash  19,600\nSupplies  3,300\nEquipment  12,500\n\nRequirement:\na. Prepare the adjusting entries.   (4)\nb. Prepare an adjusted trial balance.   (7)\n\nQuestion-2:\nEvaluate the suitability of a hash table versus a balanced tree for a dictionary application.   (7)\n\nQuestion-3:\nRecommend the ways of verification of different simulation models.   (7)\n",
+  "gold": [
+   {
+    "id": "Q1(a)",
+    "stem": "Prepare the adjusting entries."
+   },
+   {
+    "id": "Q1(b)",
+    "stem": "Prepare an adjusted trial bala"
+   },
+   {
+    "id": "Q2",
+    "stem": "Evaluate the suitability of a "
+   },
+   {
+    "id": "Q3",
+    "stem": "Recommend the ways of verifica"
+   }
+  ]
+ }
+]

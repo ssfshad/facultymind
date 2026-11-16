@@ -1,0 +1,543 @@
+[
+ {
+  "text": "Remind me to submit the marks sheet by Thursday",
+  "intent": "REMINDER_SET",
+  "checks": {
+   "has": {
+    "field": "reminder_text",
+    "words": [
+     "marks"
+    ]
+   },
+   "datetime": true
+  },
+  "id": "ent-001"
+ },
+ {
+  "text": "set a reminder to call the registrar at 3pm",
+  "intent": "REMINDER_SET",
+  "checks": {
+   "has": {
+    "field": "reminder_text",
+    "words": [
+     "registrar"
+    ]
+   },
+   "datetime": true
+  },
+  "id": "ent-002"
+ },
+ {
+  "text": "remind me tomorrow morning to print the question papers",
+  "intent": "REMINDER_SET",
+  "checks": {
+   "has": {
+    "field": "reminder_text",
+    "words": [
+     "question",
+     "papers"
+    ]
+   },
+   "datetime": true
+  },
+  "id": "ent-003"
+ },
+ {
+  "text": "don't let me forget to upload the syllabus on Sunday",
+  "intent": "REMINDER_SET",
+  "checks": {
+   "has": {
+    "field": "reminder_text",
+    "words": [
+     "syllabus"
+    ]
+   },
+   "datetime": true
+  },
+  "id": "ent-004"
+ },
+ {
+  "text": "remind me about the faculty meeting on Monday at 10am",
+  "intent": "REMINDER_SET",
+  "checks": {
+   "has": {
+    "field": "reminder_text",
+    "words": [
+     "faculty",
+     "meeting"
+    ]
+   },
+   "datetime": true
+  },
+  "id": "ent-005"
+ },
+ {
+  "text": "notify me 15 minutes before my ICE301 lecture",
+  "intent": "REMINDER_SET",
+  "checks": {
+   "has": {
+    "field": "reminder_text",
+    "words": [
+     "ICE301"
+    ]
+   }
+  },
+  "id": "ent-006"
+ },
+ {
+  "text": "please remind me to grade the quizzes tonight",
+  "intent": "REMINDER_SET",
+  "checks": {
+   "has": {
+    "field": "reminder_text",
+    "words": [
+     "quizzes"
+    ]
+   },
+   "datetime": true
+  },
+  "id": "ent-007"
+ },
+ {
+  "text": "set a reminder: send the attendance report on Wednesday",
+  "intent": "REMINDER_SET",
+  "checks": {
+   "has": {
+    "field": "reminder_text",
+    "words": [
+     "attendance"
+    ]
+   },
+   "datetime": true
+  },
+  "id": "ent-008"
+ },
+ {
+  "text": "ping me at 4:30pm to prepare the lab sheet",
+  "intent": "REMINDER_SET",
+  "checks": {
+   "has": {
+    "field": "reminder_text",
+    "words": [
+     "lab"
+    ]
+   },
+   "datetime": true
+  },
+  "id": "ent-009"
+ },
+ {
+  "text": "remind me next Tuesday to book the seminar hall",
+  "intent": "REMINDER_SET",
+  "checks": {
+   "has": {
+    "field": "reminder_text",
+    "words": [
+     "seminar"
+    ]
+   },
+   "datetime": true
+  },
+  "id": "ent-010"
+ },
+ {
+  "text": "alert me before the thesis defence on Thursday",
+  "intent": "REMINDER_SET",
+  "checks": {
+   "has": {
+    "field": "reminder_text",
+    "words": [
+     "thesis"
+    ]
+   },
+   "datetime": true
+  },
+  "id": "ent-011"
+ },
+ {
+  "text": "remind me to email the dean today at 2pm",
+  "intent": "REMINDER_SET",
+  "checks": {
+   "has": {
+    "field": "reminder_text",
+    "words": [
+     "dean"
+    ]
+   },
+   "datetime": true
+  },
+  "id": "ent-012"
+ },
+ {
+  "text": "amake kal sokal 9 tay quiz er kotha mone koriye dio",
+  "intent": "REMINDER_SET",
+  "checks": {
+   "has": {
+    "field": "reminder_text",
+    "words": [
+     "quiz"
+    ]
+   },
+   "datetime": true
+  },
+  "id": "ent-013"
+ },
+ {
+  "text": "thesis defence er age amake janio",
+  "intent": "REMINDER_SET",
+  "checks": {
+   "has": {
+    "field": "reminder_text",
+    "words": [
+     "thesis"
+    ]
+   }
+  },
+  "id": "ent-014"
+ },
+ {
+  "text": "Save this link: https://blc.example.edu/course/12",
+  "intent": "VAULT_SAVE",
+  "checks": {
+   "url": "https://blc.example.edu/course/12"
+  },
+  "id": "ent-015"
+ },
+ {
+  "text": "remember this link for later: https://slides.example.com/ice301",
+  "intent": "VAULT_SAVE",
+  "checks": {
+   "url": "https://slides.example.com/ice301"
+  },
+  "id": "ent-016"
+ },
+ {
+  "text": "store https://www.example.edu/forms in my vault",
+  "intent": "VAULT_SAVE",
+  "checks": {
+   "url": "https://www.example.edu/forms"
+  },
+  "id": "ent-017"
+ },
+ {
+  "text": "save this url https://portal.example.org/results",
+  "intent": "VAULT_SAVE",
+  "checks": {
+   "url": "https://portal.example.org/results"
+  },
+  "id": "ent-018"
+ },
+ {
+  "text": "save a note: midterm questions due Friday",
+  "intent": "VAULT_SAVE",
+  "checks": {
+   "has": {
+    "field": "content",
+    "words": [
+     "midterm",
+     "friday"
+    ]
+   }
+  },
+  "id": "ent-019"
+ },
+ {
+  "text": "save a note: bring the projector adapter",
+  "intent": "VAULT_SAVE",
+  "checks": {
+   "has": {
+    "field": "content",
+    "words": [
+     "projector"
+    ]
+   }
+  },
+  "id": "ent-020"
+ },
+ {
+  "text": "write down in the vault that lab 3 needs new cables",
+  "intent": "VAULT_SAVE",
+  "checks": {
+   "has": {
+    "field": "content",
+    "words": [
+     "lab",
+     "cables"
+    ]
+   }
+  },
+  "id": "ent-021"
+ },
+ {
+  "text": "store my wifi password in the vault, it is Tiger2026",
+  "intent": "VAULT_SAVE",
+  "checks": {
+   "password": "Tiger2026"
+  },
+  "id": "ent-022"
+ },
+ {
+  "text": "save my router login in the vault: user admin password Blue77",
+  "intent": "VAULT_SAVE",
+  "checks": {
+   "password": "Blue77"
+  },
+  "id": "ent-023"
+ },
+ {
+  "text": "keep this password safe: Maple#55 for the library portal",
+  "intent": "VAULT_SAVE",
+  "checks": {
+   "password": "Maple#55"
+  },
+  "id": "ent-024"
+ },
+ {
+  "text": "Find my saved notes about the midterm",
+  "intent": "VAULT_SEARCH",
+  "checks": {
+   "has": {
+    "field": "query",
+    "words": [
+     "midterm"
+    ]
+   }
+  },
+  "id": "ent-025"
+ },
+ {
+  "text": "search the vault for the wifi password",
+  "intent": "VAULT_SEARCH",
+  "checks": {
+   "has": {
+    "field": "query",
+    "words": [
+     "wifi"
+    ]
+   }
+  },
+  "id": "ent-026"
+ },
+ {
+  "text": "where is the syllabus file I saved",
+  "intent": "VAULT_SEARCH",
+  "checks": {
+   "has": {
+    "field": "query",
+    "words": [
+     "syllabus"
+    ]
+   }
+  },
+  "id": "ent-027"
+ },
+ {
+  "text": "look up the link I stored for the library",
+  "intent": "VAULT_SEARCH",
+  "checks": {
+   "has": {
+    "field": "query",
+    "words": [
+     "library"
+    ]
+   }
+  },
+  "id": "ent-028"
+ },
+ {
+  "text": "what did I save about recursion",
+  "intent": "VAULT_SEARCH",
+  "checks": {
+   "has": {
+    "field": "query",
+    "words": [
+     "recursion"
+    ]
+   }
+  },
+  "id": "ent-029"
+ },
+ {
+  "text": "do I have a password saved for the lab server",
+  "intent": "VAULT_SEARCH",
+  "checks": {
+   "has": {
+    "field": "query",
+    "words": [
+     "lab"
+    ]
+   }
+  },
+  "id": "ent-030"
+ },
+ {
+  "text": "vault e antenna design er note khuje dao",
+  "intent": "VAULT_SEARCH",
+  "checks": {
+   "has": {
+    "field": "query",
+    "words": [
+     "antenna"
+    ]
+   }
+  },
+  "id": "ent-031"
+ },
+ {
+  "text": "locate my note on Fourier series",
+  "intent": "VAULT_SEARCH",
+  "checks": {
+   "has": {
+    "field": "query",
+    "words": [
+     "fourier"
+    ]
+   }
+  },
+  "id": "ent-032"
+ },
+ {
+  "text": "What is the CLO attainment for ICE301?",
+  "intent": "SHADSYNC_QUERY",
+  "checks": {
+   "course_code": "ICE301"
+  },
+  "id": "ent-033"
+ },
+ {
+  "text": "show me PO attainment of ICE415",
+  "intent": "SHADSYNC_QUERY",
+  "checks": {
+   "course_code": "ICE415"
+  },
+  "id": "ent-034"
+ },
+ {
+  "text": "how many students are below 60% in CLO3 of EEE1345",
+  "intent": "SHADSYNC_QUERY",
+  "checks": {
+   "course_code": "EEE1345"
+  },
+  "id": "ent-035"
+ },
+ {
+  "text": "what's the CO2 attainment for MAT2137",
+  "intent": "SHADSYNC_QUERY",
+  "checks": {
+   "course_code": "MAT2137"
+  },
+  "id": "ent-036"
+ },
+ {
+  "text": "list at-risk students in CSE221",
+  "intent": "SHADSYNC_QUERY",
+  "checks": {
+   "course_code": "CSE221"
+  },
+  "id": "ent-037"
+ },
+ {
+  "text": "is CLO4 attained in HUM101",
+  "intent": "SHADSYNC_QUERY",
+  "checks": {
+   "course_code": "HUM101"
+  },
+  "id": "ent-038"
+ },
+ {
+  "text": "ICE205 er CO2 attainment koto?",
+  "intent": "SHADSYNC_QUERY",
+  "checks": {
+   "course_code": "ICE205"
+  },
+  "id": "ent-039"
+ },
+ {
+  "text": "show weak CLOs for BBA101",
+  "intent": "SHADSYNC_QUERY",
+  "checks": {
+   "course_code": "BBA101"
+  },
+  "id": "ent-040"
+ },
+ {
+  "text": "Switch to Gemini",
+  "intent": "MODEL_SWITCH",
+  "checks": {
+   "model": "gemini"
+  },
+  "id": "ent-041"
+ },
+ {
+  "text": "use GPT-4o from now on",
+  "intent": "MODEL_SWITCH",
+  "checks": {
+   "model": "gpt4o"
+  },
+  "id": "ent-042"
+ },
+ {
+  "text": "change the AI model to Claude",
+  "intent": "MODEL_SWITCH",
+  "checks": {
+   "model": "claude"
+  },
+  "id": "ent-043"
+ },
+ {
+  "text": "let's use Gemini for this",
+  "intent": "MODEL_SWITCH",
+  "checks": {
+   "model": "gemini"
+  },
+  "id": "ent-044"
+ },
+ {
+  "text": "I want to talk to Claude instead",
+  "intent": "MODEL_SWITCH",
+  "checks": {
+   "model": "claude"
+  },
+  "id": "ent-045"
+ },
+ {
+  "text": "model ta gpt4o e change koro",
+  "intent": "MODEL_SWITCH",
+  "checks": {
+   "model": "gpt4o"
+  },
+  "id": "ent-046"
+ },
+ {
+  "text": "Open the DIU portal",
+  "intent": "PORTAL_OPEN",
+  "checks": {
+   "portal": "diu"
+  },
+  "id": "ent-047"
+ },
+ {
+  "text": "open BLC",
+  "intent": "PORTAL_OPEN",
+  "checks": {
+   "portal": "blc"
+  },
+  "id": "ent-048"
+ },
+ {
+  "text": "take me to the BLC website",
+  "intent": "PORTAL_OPEN",
+  "checks": {
+   "portal": "blc"
+  },
+  "id": "ent-049"
+ },
+ {
+  "text": "launch the DIU teachers portal",
+  "intent": "PORTAL_OPEN",
+  "checks": {
+   "portal": "diu"
+  },
+  "id": "ent-050"
+ }
+]

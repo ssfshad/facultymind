@@ -1,0 +1,491 @@
+/* ══════════════════════════════════════════════════════════════════════════
+   FACULTYMIND — SETTINGS SCREEN
+   Section 5.10 of FacultyMind_UI_Redesign_Prompt.md
+   ══════════════════════════════════════════════════════════════════════════ */
+
+/* ── Settings Layout ─────────────────────────────────────────────────────── */
+.settings-screen {
+  padding: 28px 32px;
+  overflow-y: auto;
+  height: 100%;
+}
+
+.settings-section {
+  margin-bottom: var(--space-8);
+}
+
+.settings-section-heading {
+  font-size: var(--font-lg);
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: var(--space-1);
+}
+
+.settings-section-desc {
+  font-size: var(--font-sm);
+  color: var(--text-secondary);
+  margin-bottom: var(--space-4);
+}
+
+.settings-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  margin-bottom: var(--space-5);
+}
+
+/* ── AI Model Section ────────────────────────────────────────────────────── */
+.model-pills {
+  display: flex;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-5);
+}
+
+.model-pill {
+  background: var(--card-bg);
+  border: 1px solid var(--border-default);
+  color: var(--text-secondary);
+  border-radius: var(--radius-full);
+  padding: 7px 18px;
+  font-size: var(--font-base);
+  font-weight: 500;
+  font-family: var(--font-family);
+  cursor: pointer;
+  transition: var(--transition-base);
+}
+
+.model-pill:hover {
+  background: var(--accent-primary-subtle);
+  color: var(--accent-primary);
+  border-color: var(--accent-primary);
+}
+
+.model-pill.active {
+  background: var(--accent-primary);
+  border-color: var(--accent-primary);
+  color: white;
+}
+
+/* Local AI panel */
+.local-ai-panel {
+  margin-top: var(--space-4);
+}
+
+.ollama-status {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+
+.ollama-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--color-success);
+  animation: pulse-dot 2s infinite;
+  flex-shrink: 0;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.4); }
+  50% { opacity: 0.8; box-shadow: 0 0 0 6px rgba(34, 197, 94, 0); }
+}
+
+.ollama-dot.offline {
+  background: var(--text-tertiary);
+  animation: none;
+}
+
+.ollama-status-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.ollama-status-text .status-main {
+  font-size: var(--font-sm);
+  font-weight: 500;
+  color: var(--color-success);
+}
+
+.ollama-status-text .status-sub {
+  font-size: var(--font-xs);
+  color: var(--text-secondary);
+}
+
+.model-input-row {
+  display: flex;
+  gap: var(--space-3);
+  align-items: center;
+  margin-top: var(--space-3);
+}
+
+.model-input-row input {
+  flex: 1;
+}
+
+.model-hint {
+  font-size: var(--font-xs);
+  color: var(--text-tertiary);
+  margin-top: var(--space-2);
+}
+
+/* ── API Keys Section ────────────────────────────────────────────────────── */
+.api-key-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.api-key-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.api-key-row:last-child {
+  border-bottom: none;
+}
+
+.api-key-name {
+  font-size: var(--font-sm);
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.api-key-name .api-key-desc {
+  font-weight: 400;
+  color: var(--text-tertiary);
+  margin-left: var(--space-2);
+}
+
+.api-key-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+}
+
+.api-key-status.set {
+  background: var(--color-success-subtle);
+  color: var(--color-success);
+}
+
+.api-key-status.not-set {
+  background: var(--color-danger-subtle);
+  color: var(--color-danger);
+}
+
+.api-keys-action {
+  margin-top: var(--space-4);
+}
+
+/* ── Google OAuth / OpenRouter Section ───────────────────────────────────── */
+.settings-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+}
+
+.settings-input-group label {
+  font-size: var(--font-sm);
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.settings-input-group input {
+  width: 100%;
+}
+
+/* ── Database Section ────────────────────────────────────────────────────── */
+.db-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.db-row:last-child {
+  border-bottom: none;
+}
+
+.db-row-label {
+  font-size: var(--font-sm);
+  color: var(--text-primary);
+}
+
+.db-row-desc {
+  font-size: var(--font-xs);
+  color: var(--text-tertiary);
+  margin-top: 2px;
+}
+
+/* ── Portable Mode ───────────────────────────────────────────────────────── */
+.portable-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.portable-row label {
+  font-size: var(--font-sm);
+  color: var(--text-primary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.portable-row input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--accent-primary);
+  cursor: pointer;
+}
+
+/* ── Security Section ────────────────────────────────────────────────────── */
+.pin-change-row {
+  display: flex;
+  gap: var(--space-4);
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.pin-change-row .pin-field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.pin-change-row .pin-field label {
+  font-size: var(--font-sm);
+  color: var(--text-secondary);
+}
+
+/* ── Memory & Intelligence Section ───────────────────────────────────────── */
+.toggle-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-3) 0;
+}
+
+.toggle-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.toggle-info .toggle-label {
+  font-size: var(--font-sm);
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.toggle-info .toggle-desc {
+  font-size: var(--font-xs);
+  color: var(--text-secondary);
+}
+
+/* Toggle switch */
+.toggle-switch {
+  position: relative;
+  width: 60px;
+  height: 32px;
+  flex-shrink: 0;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+
+.toggle-track {
+  position: absolute;
+  inset: 0;
+  background: var(--border-strong);
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: background var(--transition-spring);
+}
+
+.toggle-switch input:checked + .toggle-track {
+  background: var(--accent-primary);
+}
+
+.toggle-thumb {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 24px;
+  height: 24px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  transition: transform var(--transition-spring);
+  pointer-events: none;
+}
+
+.toggle-switch input:checked ~ .toggle-thumb {
+  transform: translateX(28px);
+}
+
+/* ── Rules Section ───────────────────────────────────────────────────────── */
+.rules-input-row {
+  display: flex;
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+}
+
+.rules-input-row input {
+  flex: 1;
+}
+
+.rules-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.rule-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-sm);
+  padding: 4px 10px;
+  font-size: 12px;
+  color: var(--text-primary);
+}
+
+.rule-chip .rule-remove {
+  background: none;
+  border: none;
+  color: var(--text-tertiary);
+  cursor: pointer;
+  font-size: 14px;
+  padding: 0;
+  line-height: 1;
+  transition: color var(--transition-fast);
+}
+
+.rule-chip .rule-remove:hover {
+  color: var(--color-danger);
+}
+
+.rules-empty {
+  font-size: var(--font-sm);
+  color: var(--text-tertiary);
+  font-style: italic;
+}
+
+/* ── AI Thought Journal ──────────────────────────────────────────────────── */
+.journal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-4);
+}
+
+.journal-header h3 {
+  font-size: var(--font-lg);
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.journal-header p {
+  font-size: var(--font-sm);
+  color: var(--text-secondary);
+  margin-top: 2px;
+}
+
+.journal-entries {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.journal-entry {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-lg);
+  padding: 14px 18px;
+  border-left: 3px solid var(--accent-primary);
+  transition: var(--transition-base);
+}
+
+.journal-entry.type-rule {
+  border-left-color: var(--accent-primary);
+}
+
+.journal-entry.type-loop {
+  border-left-color: var(--color-warning);
+}
+
+.journal-entry.type-pattern {
+  border-left-color: var(--color-info);
+}
+
+.journal-entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-2);
+}
+
+.journal-type-label {
+  font-size: var(--font-xs);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.journal-entry.type-rule .journal-type-label { color: var(--accent-primary); }
+.journal-entry.type-loop .journal-type-label { color: var(--color-warning); }
+.journal-entry.type-pattern .journal-type-label { color: var(--color-info); }
+
+.journal-date {
+  font-size: var(--font-xs);
+  color: var(--text-tertiary);
+}
+
+.journal-content {
+  font-size: var(--font-sm);
+  color: var(--text-primary);
+  line-height: 1.5;
+}
+
+/* ── About Section ───────────────────────────────────────────────────────── */
+.about-card {
+  text-align: left;
+}
+
+.about-card .about-title {
+  font-size: var(--font-lg);
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.about-card .about-sub {
+  font-size: var(--font-sm);
+  color: var(--text-secondary);
+  margin-top: var(--space-1);
+}
+
+.about-card .about-credit {
+  font-size: var(--font-xs);
+  color: var(--text-tertiary);
+  margin-top: var(--space-1);
+}

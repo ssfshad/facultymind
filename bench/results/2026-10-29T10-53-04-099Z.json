@@ -1,0 +1,174 @@
+{
+  "when": "2026-10-29T10:53:04.099Z",
+  "machine": {
+    "cpu": "AMD Ryzen 5 5600 6-Core Processor              ",
+    "cores": 12,
+    "ram_gb": 31.9,
+    "os": "Windows_NT 10.0.26100",
+    "electron": "32.3.3"
+  },
+  "micro": {
+    "db.fresh_open_migrate_seed": {
+      "n": 3,
+      "median_ms": 2871.35,
+      "p95_ms": 2895.71,
+      "min_ms": 2814.93,
+      "max_ms": 2895.71
+    },
+    "db.warm_reopen_migrate": {
+      "n": 10,
+      "median_ms": 3.81,
+      "p95_ms": 9.6,
+      "min_ms": 3.59,
+      "max_ms": 9.6
+    },
+    "shadsync.attainment_ice301_35_students": {
+      "n": 200,
+      "median_ms": 0.24,
+      "p95_ms": 0.51,
+      "min_ms": 0.21,
+      "max_ms": 1.14
+    },
+    "clo_mapper.6_questions_no_kb": {
+      "n": 50,
+      "median_ms": 0.13,
+      "p95_ms": 0.45,
+      "min_ms": 0.11,
+      "max_ms": 4.02
+    },
+    "clo_mapper.6_questions_with_kb_975_rows": {
+      "n": 20,
+      "median_ms": 8.42,
+      "p95_ms": 26.97,
+      "min_ms": 7.74,
+      "max_ms": 26.97
+    },
+    "clo_mapper.50_questions_with_kb": {
+      "n": 5,
+      "median_ms": 64.66,
+      "p95_ms": 80.21,
+      "min_ms": 63.68,
+      "max_ms": 80.21
+    },
+    "clo_mapper.200_questions_no_kb": {
+      "n": 5,
+      "median_ms": 3.29,
+      "p95_ms": 11.34,
+      "min_ms": 2.75,
+      "max_ms": 11.34
+    },
+    "syllabus.manual_3_cos_15_weeks": {
+      "n": 50,
+      "median_ms": 0.39,
+      "p95_ms": 0.83,
+      "min_ms": 0.36,
+      "max_ms": 8.16
+    },
+    "auth.verify_pin_pbkdf2": {
+      "n": 10,
+      "median_ms": 37.63,
+      "p95_ms": 39.65,
+      "min_ms": 37.15,
+      "max_ms": 39.65
+    },
+    "extract.markitdown_available": true,
+    "extract.dev_path(markitdown).sample_pdf_1page": {
+      "n": 2,
+      "median_ms": 16127.69,
+      "p95_ms": 16127.69,
+      "min_ms": 16121.26,
+      "max_ms": 16127.69
+    },
+    "extract.dev_path(markitdown).sample_pdf_level5": {
+      "n": 2,
+      "median_ms": 19173.87,
+      "p95_ms": 19173.87,
+      "min_ms": 16624.4,
+      "max_ms": 19173.87
+    },
+    "extract.dev_path(markitdown).proposal_docx_33k_chars": {
+      "n": 2,
+      "median_ms": 17260.32,
+      "p95_ms": 17260.32,
+      "min_ms": 16616.33,
+      "max_ms": 17260.32
+    },
+    "extract.installed_path(no markitdown).sample_pdf_1page": {
+      "n": 1,
+      "median_ms": 1247.03,
+      "p95_ms": 1247.03,
+      "min_ms": 1247.03,
+      "max_ms": 1247.03,
+      "used_ocr": true
+    },
+    "extract.installed_path(no markitdown).sample_pdf_level5": {
+      "n": 1,
+      "median_ms": 2333.97,
+      "p95_ms": 2333.97,
+      "min_ms": 2333.97,
+      "max_ms": 2333.97,
+      "used_ocr": true
+    },
+    "extract.installed_path(no markitdown).proposal_docx_33k_chars": {
+      "n": 1,
+      "median_ms": 136.89,
+      "p95_ms": 136.89,
+      "min_ms": 136.89,
+      "max_ms": 136.89,
+      "used_ocr": false
+    },
+    "embedding.first_call_incl_model_load": {
+      "ms": 228.7
+    },
+    "embedding.per_question": {
+      "n": 20,
+      "median_ms": 2.46,
+      "p95_ms": 3.24,
+      "min_ms": 2.32,
+      "max_ms": 3.24
+    },
+    "ollama.intent_classify_cold(model load)": {
+      "ms": 9870.1
+    },
+    "ollama.intent_classify_warm": {
+      "n": 5,
+      "median_ms": 2448.28,
+      "p95_ms": 2634.82,
+      "min_ms": 2438.57,
+      "max_ms": 2634.82
+    },
+    "ollama.chat_reply_120_tokens": {
+      "ms": 10260,
+      "chars": 198
+    },
+    "_process": {
+      "rss_mb": 161.1,
+      "node": "v20.18.1"
+    }
+  },
+  "launch": {
+    "fresh_profile": {
+      "window_shown_ms": 6075,
+      "processes": 8,
+      "working_set_mb": 1090
+    },
+    "warm": [
+      {
+        "window_shown_ms": 1318,
+        "processes": 8,
+        "working_set_mb": 1297
+      },
+      {
+        "window_shown_ms": 1263,
+        "processes": 8,
+        "working_set_mb": 1300
+      },
+      {
+        "window_shown_ms": 1291,
+        "processes": 8,
+        "working_set_mb": 1302
+      }
+    ],
+    "warm_median_window_shown_ms": 1291
+  }
+}

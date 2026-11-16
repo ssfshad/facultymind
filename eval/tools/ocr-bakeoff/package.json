@@ -1,0 +1,12 @@
+{
+  "name": "fm-ocr-bakeoff",
+  "private": true,
+  "description": "Isolated OCR bake-off tools; not part of the app's dependencies",
+  "dependencies": {
+    "@gutenye/ocr-node": "^1.4.9",
+    "ppu-paddle-ocr": "^6.7.0",
+    "sharp": "^0.35.5",
+    "tesseract.js": "^7.0.0",
+    "wasm-feature-detect": "^1.8.0"
+  }
+}

@@ -1,0 +1,6609 @@
+[
+ {
+  "id": "cmd-001",
+  "text": "What classes do I have today?",
+  "intent": "SCHEDULE_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-002",
+  "text": "show me my timetable for tomorrow",
+  "intent": "SCHEDULE_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-003",
+  "text": "wat is my next class",
+  "intent": "SCHEDULE_QUERY",
+  "tag": "typo"
+ },
+ {
+  "id": "cmd-004",
+  "text": "aj amar koyta class ache?",
+  "intent": "SCHEDULE_QUERY",
+  "tag": "banglish"
+ },
+ {
+  "id": "cmd-005",
+  "text": "when is my ICE301 class this week",
+  "intent": "SCHEDULE_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-006",
+  "text": "Remind me to submit the marks sheet by Thursday",
+  "intent": "REMINDER_SET",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-007",
+  "text": "set a reminder for the faculty meeting at 3pm",
+  "intent": "REMINDER_SET",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-008",
+  "text": "remind me tmrw to bring the question papers",
+  "intent": "REMINDER_SET",
+  "tag": "typo"
+ },
+ {
+  "id": "cmd-009",
+  "text": "amake kal sokal 9 tay quiz er kotha mone koriye dio",
+  "intent": "REMINDER_SET",
+  "tag": "banglish"
+ },
+ {
+  "id": "cmd-010",
+  "text": "notify me 10 minutes before my next lecture",
+  "intent": "REMINDER_SET",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-011",
+  "text": "Generate a lesson plan from this PDF",
+  "intent": "BLOOM_GENERATE",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-012",
+  "text": "make a quiz from the uploaded chapter",
+  "intent": "BLOOM_GENERATE",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-013",
+  "text": "genrate quiz questions from the syllabus pdf",
+  "intent": "BLOOM_GENERATE",
+  "tag": "typo"
+ },
+ {
+  "id": "cmd-014",
+  "text": "ei pdf theke ekta lesson plan banao",
+  "intent": "BLOOM_GENERATE",
+  "tag": "banglish"
+ },
+ {
+  "id": "cmd-015",
+  "text": "create a 10 question test from my lecture notes file",
+  "intent": "BLOOM_GENERATE",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-016",
+  "text": "Map my CLOs to Bloom's levels",
+  "intent": "BLOOM_CLO_MAP",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-017",
+  "text": "which bloom level is CLO3: Design a database schema",
+  "intent": "BLOOM_CLO_MAP",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-018",
+  "text": "suggest action verbs for my course outcomes",
+  "intent": "BLOOM_CLO_MAP",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-019",
+  "text": "analize these CLOs and tell me if they match blooms taxonomy",
+  "intent": "BLOOM_CLO_MAP",
+  "tag": "typo"
+ },
+ {
+  "id": "cmd-020",
+  "text": "amar CLO gula Bloom level e map koro",
+  "intent": "BLOOM_CLO_MAP",
+  "tag": "banglish"
+ },
+ {
+  "id": "cmd-021",
+  "text": "What is the CLO attainment for ICE301?",
+  "intent": "SHADSYNC_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-022",
+  "text": "show PO attainment of ICE415",
+  "intent": "SHADSYNC_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-023",
+  "text": "how many students are below 60% in CLO3",
+  "intent": "SHADSYNC_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-024",
+  "text": "attendence of student Karim in ICE301",
+  "intent": "SHADSYNC_QUERY",
+  "tag": "typo",
+  "ambiguous": true
+ },
+ {
+  "id": "cmd-025",
+  "text": "ICE301 er CO2 attainment koto?",
+  "intent": "SHADSYNC_QUERY",
+  "tag": "banglish"
+ },
+ {
+  "id": "cmd-026",
+  "text": "Enter marks for ICE301 midterm",
+  "intent": "SHADSYNC_UPDATE",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-027",
+  "text": "update attendance for today's class",
+  "intent": "SHADSYNC_UPDATE",
+  "tag": "clean",
+  "ambiguous": true
+ },
+ {
+  "id": "cmd-028",
+  "text": "i want to input quiz marks for section A",
+  "intent": "SHADSYNC_UPDATE",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-029",
+  "text": "marks entry korbo ICE415 er jonno",
+  "intent": "SHADSYNC_UPDATE",
+  "tag": "banglish"
+ },
+ {
+  "id": "cmd-030",
+  "text": "record absent students for ICE301 lecture 5",
+  "intent": "SHADSYNC_UPDATE",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-031",
+  "text": "Any new emails?",
+  "intent": "EMAIL_FETCH",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-032",
+  "text": "check my inbox",
+  "intent": "EMAIL_FETCH",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-033",
+  "text": "refersh my emails",
+  "intent": "EMAIL_FETCH",
+  "tag": "typo"
+ },
+ {
+  "id": "cmd-034",
+  "text": "email gula ekbar check koro",
+  "intent": "EMAIL_FETCH",
+  "tag": "banglish"
+ },
+ {
+  "id": "cmd-035",
+  "text": "sync emails",
+  "intent": "EMAIL_FETCH",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-036",
+  "text": "Today only show me emails from the dean",
+  "intent": "EMAIL_RULE",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-037",
+  "text": "ignore all emails from advertisements",
+  "intent": "EMAIL_RULE",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-038",
+  "text": "only show student emails for the next hour",
+  "intent": "EMAIL_RULE",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-039",
+  "text": "promotional email gula ignore koro",
+  "intent": "EMAIL_RULE",
+  "tag": "banglish"
+ },
+ {
+  "id": "cmd-040",
+  "text": "hide OTP emails from now on",
+  "intent": "EMAIL_RULE",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-041",
+  "text": "Draft a reply to the last email from the department head",
+  "intent": "EMAIL_DRAFT",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-042",
+  "text": "write an email to students about the quiz postponement",
+  "intent": "EMAIL_DRAFT",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-043",
+  "text": "reply to this mail saying i will attend",
+  "intent": "EMAIL_DRAFT",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-044",
+  "text": "drfat a polite email to decline the meeting",
+  "intent": "EMAIL_DRAFT",
+  "tag": "typo"
+ },
+ {
+  "id": "cmd-045",
+  "text": "head er email er ekta reply likhe dao",
+  "intent": "EMAIL_DRAFT",
+  "tag": "banglish"
+ },
+ {
+  "id": "cmd-046",
+  "text": "Save this link: https://blc.example.edu",
+  "intent": "VAULT_SAVE",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-047",
+  "text": "store my wifi password in the vault",
+  "intent": "VAULT_SAVE",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-048",
+  "text": "save a note: midterm questions due Friday",
+  "intent": "VAULT_SAVE",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-049",
+  "text": "ei file ta vault e save koro",
+  "intent": "VAULT_SAVE",
+  "tag": "banglish"
+ },
+ {
+  "id": "cmd-050",
+  "text": "add this document to my vault",
+  "intent": "VAULT_SAVE",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-051",
+  "text": "Find my saved notes about the midterm",
+  "intent": "VAULT_SEARCH",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-052",
+  "text": "search the vault for the wifi password",
+  "intent": "VAULT_SEARCH",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-053",
+  "text": "wher is the syllabus file i saved",
+  "intent": "VAULT_SEARCH",
+  "tag": "typo"
+ },
+ {
+  "id": "cmd-054",
+  "text": "vault e amar notes khuje dao",
+  "intent": "VAULT_SEARCH",
+  "tag": "banglish"
+ },
+ {
+  "id": "cmd-055",
+  "text": "look up the link i saved for BLC",
+  "intent": "VAULT_SEARCH",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-056",
+  "text": "Open the DIU portal",
+  "intent": "PORTAL_OPEN",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-057",
+  "text": "open BLC",
+  "intent": "PORTAL_OPEN",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-058",
+  "text": "take me to the BLC website",
+  "intent": "PORTAL_OPEN",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-059",
+  "text": "diu portal ta open koro",
+  "intent": "PORTAL_OPEN",
+  "tag": "banglish"
+ },
+ {
+  "id": "cmd-060",
+  "text": "launch the university portal",
+  "intent": "PORTAL_OPEN",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-061",
+  "text": "Who failed in ICE301 in the portal results?",
+  "intent": "DIU_PORTAL_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-062",
+  "text": "what is the grade distribution of my course",
+  "intent": "DIU_PORTAL_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-063",
+  "text": "show the average CT score",
+  "intent": "DIU_PORTAL_QUERY",
+  "tag": "clean",
+  "ambiguous": true
+ },
+ {
+  "id": "cmd-064",
+  "text": "how many students passed this semester",
+  "intent": "DIU_PORTAL_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-065",
+  "text": "result e ke ke fail korse?",
+  "intent": "DIU_PORTAL_QUERY",
+  "tag": "banglish"
+ },
+ {
+  "id": "cmd-066",
+  "text": "Open marks entry",
+  "intent": "DIU_PORTAL_NAV",
+  "tag": "clean",
+  "ambiguous": true
+ },
+ {
+  "id": "cmd-067",
+  "text": "go to attendance in the portal",
+  "intent": "DIU_PORTAL_NAV",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-068",
+  "text": "show the result sheet",
+  "intent": "DIU_PORTAL_NAV",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-069",
+  "text": "open course registration",
+  "intent": "DIU_PORTAL_NAV",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-070",
+  "text": "portal er dashboard dekhao",
+  "intent": "DIU_PORTAL_NAV",
+  "tag": "banglish"
+ },
+ {
+  "id": "cmd-071",
+  "text": "Switch to Gemini",
+  "intent": "MODEL_SWITCH",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-072",
+  "text": "use GPT-4o from now on",
+  "intent": "MODEL_SWITCH",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-073",
+  "text": "change the AI model to Claude",
+  "intent": "MODEL_SWITCH",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-074",
+  "text": "swtich to the local model",
+  "intent": "MODEL_SWITCH",
+  "tag": "typo"
+ },
+ {
+  "id": "cmd-075",
+  "text": "model ta gemini te change koro",
+  "intent": "MODEL_SWITCH",
+  "tag": "banglish"
+ },
+ {
+  "id": "cmd-076",
+  "text": "How much have you learned about me?",
+  "intent": "MEMORY_STATUS",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-077",
+  "text": "what have you learned so far",
+  "intent": "MEMORY_STATUS",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-078",
+  "text": "show your memory stats",
+  "intent": "MEMORY_STATUS",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-079",
+  "text": "tumi ki ki shikhecho?",
+  "intent": "MEMORY_STATUS",
+  "tag": "banglish"
+ },
+ {
+  "id": "cmd-080",
+  "text": "how's your self learning going",
+  "intent": "MEMORY_STATUS",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-081",
+  "text": "Add a new student Rahim to ICE301",
+  "intent": "DATA_ADD",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-082",
+  "text": "create a new course ICE450",
+  "intent": "DATA_ADD",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-083",
+  "text": "add a class on Sunday 10am for ICE301",
+  "intent": "DATA_ADD",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-084",
+  "text": "notun student add koro Karim",
+  "intent": "DATA_ADD",
+  "tag": "banglish"
+ },
+ {
+  "id": "cmd-085",
+  "text": "add a new rule to ignore spam emails",
+  "intent": "DATA_ADD",
+  "tag": "clean",
+  "ambiguous": true
+ },
+ {
+  "id": "cmd-086",
+  "text": "Change the name of student S004 to Rahman",
+  "intent": "DATA_EDIT",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-087",
+  "text": "modify my Sunday class time to 11am",
+  "intent": "DATA_EDIT",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-088",
+  "text": "updte the marks of Karim in midterm to 18",
+  "intent": "DATA_EDIT",
+  "tag": "typo",
+  "ambiguous": true
+ },
+ {
+  "id": "cmd-089",
+  "text": "student er naam ta change kore dao",
+  "intent": "DATA_EDIT",
+  "tag": "banglish"
+ },
+ {
+  "id": "cmd-090",
+  "text": "edit the ICE301 section to B",
+  "intent": "DATA_EDIT",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-091",
+  "text": "Delete student Rahim from ICE301",
+  "intent": "DATA_DELETE",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-092",
+  "text": "remove the course ICE205",
+  "intent": "DATA_DELETE",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-093",
+  "text": "clear the spam email rule",
+  "intent": "DATA_DELETE",
+  "tag": "clean",
+  "ambiguous": true
+ },
+ {
+  "id": "cmd-094",
+  "text": "student ta delete kore dao",
+  "intent": "DATA_DELETE",
+  "tag": "banglish"
+ },
+ {
+  "id": "cmd-095",
+  "text": "delete my Sunday class",
+  "intent": "DATA_DELETE",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-096",
+  "text": "Hello, how are you?",
+  "intent": "GENERAL_CHAT",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-097",
+  "text": "explain what Bloom's taxonomy is",
+  "intent": "GENERAL_CHAT",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-098",
+  "text": "what is the capital of Bangladesh",
+  "intent": "GENERAL_CHAT",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-099",
+  "text": "thanks for your help",
+  "intent": "GENERAL_CHAT",
+  "tag": "clean"
+ },
+ {
+  "id": "cmd-100",
+  "text": "ki khobor?",
+  "intent": "GENERAL_CHAT",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0001",
+  "text": "attendance dekhao portal e",
+  "intent": "DIU_PORTAL_NAV",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0002",
+  "text": "don't notify me about marketing emails",
+  "intent": "EMAIL_RULE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0003",
+  "text": "reply to the chairman saiyng I will attend",
+  "intent": "EMAIL_DRAFT",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0004",
+  "text": "add Karim to my ICE205 list",
+  "intent": "DATA_ADD",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0005",
+  "text": "what's on my schedule this week",
+  "intent": "SCHEDULE_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0006",
+  "text": "Mongolbar er class ta 2pm e soriye dao",
+  "intent": "DATA_EDIT",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0007",
+  "text": "is there aynthing new in my email",
+  "intent": "EMAIL_FETCH",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0008",
+  "text": "fix the spelling of Mim's name",
+  "intent": "DATA_EDIT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0009",
+  "text": "take me to the BLC websie",
+  "intent": "PORTAL_OPEN",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0010",
+  "text": "is this CLO measurable: Aply Ohm's law to solve circuits",
+  "intent": "BLOOM_CLO_MAP",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0011",
+  "text": "remove Shoaib from my list",
+  "intent": "DATA_DELETE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0012",
+  "text": "Budhbar er class ta 11 am e soriye dao",
+  "intent": "DATA_EDIT",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0013",
+  "text": "move my Thursday class to 2pm",
+  "intent": "DATA_EDIT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0014",
+  "text": "is CLO4 atatined in ICE2241",
+  "intent": "SHADSYNC_QUERY",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0015",
+  "text": "Delete studetn Ayesha from PHY1022",
+  "intent": "DATA_DELETE",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0016",
+  "text": "use OpenRouter from now on",
+  "intent": "MODEL_SWITCH",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0017",
+  "text": "register a new section for EEE1345",
+  "intent": "DATA_ADD",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0018",
+  "text": "what have you picked up from my activvity",
+  "intent": "MEMORY_STATUS",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0019",
+  "text": "turn this syllabus pdf into a leson plan",
+  "intent": "BLOOM_GENERATE",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0020",
+  "text": "write an email to my students about the quiz postponement",
+  "intent": "EMAIL_DRAFT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0021",
+  "text": "EEE1345 er grade distribution ta bolo",
+  "intent": "DIU_PORTAL_QUERY",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0022",
+  "text": "I want to input assignment 3 marks for section D",
+  "intent": "SHADSYNC_UPDATE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0023",
+  "text": "student der ekta email likho tomorrow's cancelled lecture niye",
+  "intent": "EMAIL_DRAFT",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0024",
+  "text": "good evenng",
+  "intent": "GENERAL_CHAT",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0025",
+  "text": "launch the university prtal",
+  "intent": "PORTAL_OPEN",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0026",
+  "text": "create a new course PHY1022",
+  "intent": "DATA_ADD",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0027",
+  "text": "quiz 2 er number gula input dibo",
+  "intent": "SHADSYNC_UPDATE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0028",
+  "text": "I want to use the BLC live site",
+  "intent": "PORTAL_OPEN",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0029",
+  "text": "open DIU teachers portal plaese",
+  "intent": "PORTAL_OPEN",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0030",
+  "text": "kemon acho?",
+  "intent": "GENERAL_CHAT",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0031",
+  "text": "ei chapter theke test paper banai dao",
+  "intent": "BLOOM_GENERATE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0032",
+  "text": "align the PHY1022 CLOs with Bloom's taxonomy",
+  "intent": "BLOOM_CLO_MAP",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0033",
+  "text": "what have you leearned so far",
+  "intent": "MEMORY_STATUS",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0034",
+  "text": "can you prepare practice questions from my slides",
+  "intent": "BLOOM_GENERATE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0035",
+  "text": "write a short poem abbout lab server",
+  "intent": "GENERAL_CHAT",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0036",
+  "text": "alert me 10 minutes before the ICE205 lecture",
+  "intent": "REMINDER_SET",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0037",
+  "text": "ICE329 e ke ke fail korse?",
+  "intent": "DIU_PORTAL_QUERY",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0038",
+  "text": "align the HUM101 CLOs with Bloom's taxonomy",
+  "intent": "BLOOM_CLO_MAP",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0039",
+  "text": "Sombar er class ta 12pm e soriye dao",
+  "intent": "DATA_EDIT",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0040",
+  "text": "delete the ice301 class on monday",
+  "intent": "DATA_DELETE",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0041",
+  "text": "show the highest total in ICE301 results",
+  "intent": "DIU_PORTAL_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0042",
+  "text": "give me a repoort on your learning",
+  "intent": "MEMORY_STATUS",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0043",
+  "text": "remove the course EEE1345",
+  "intent": "DATA_DELETE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0044",
+  "text": "give me the grand total ranking for ICE415",
+  "intent": "DIU_PORTAL_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0045",
+  "text": "swap the mdel to Gemini",
+  "intent": "MODEL_SWITCH",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0046",
+  "text": "generate quiz questions on pointers from the pdf",
+  "intent": "BLOOM_GENERATE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0047",
+  "text": "write a worksheet based on the attached chaapter 4 pdf",
+  "intent": "BLOOM_GENERATE",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0048",
+  "text": "ignore all OTP emaiils",
+  "intent": "EMAIL_RULE",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0049",
+  "text": "lanuch the university portal",
+  "intent": "PORTAL_OPEN",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0050",
+  "text": "notfiy me before my ICE415 class",
+  "intent": "REMINDER_SET",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0051",
+  "text": "I want to input class test 1 marks for section C",
+  "intent": "SHADSYNC_UPDATE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0052",
+  "text": "what have you learnde so far",
+  "intent": "MEMORY_STATUS",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0053",
+  "text": "add a class on Tuesday at 10:30 for PHY1022",
+  "intent": "DATA_ADD",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0054",
+  "text": "can you run on OpenRouter",
+  "intent": "MODEL_SWITCH",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0055",
+  "text": "set a reminder: grade the quizzes on Sunday",
+  "intent": "REMINDER_SET",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0056",
+  "text": "the local model diye kaj koro",
+  "intent": "MODEL_SWITCH",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0057",
+  "text": "pull the latest emails",
+  "intent": "EMAIL_FETCH",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0058",
+  "text": "locate my note on oop",
+  "intent": "VAULT_SEARCH",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0059",
+  "text": "Jamal er attendance koto BBA101 te?",
+  "intent": "SHADSYNC_QUERY",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0060",
+  "text": "ekhon theke GPT-4o use koro",
+  "intent": "MODEL_SWITCH",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0061",
+  "text": "swap the moddel to GPT-4o",
+  "intent": "MODEL_SWITCH",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0062",
+  "text": "kon CLO ta weak ICE415 er?",
+  "intent": "SHADSYNC_QUERY",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0063",
+  "text": "drop Sabbir from HUM101",
+  "intent": "DATA_DELETE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0064",
+  "text": "use the lecture notes to create a short quiz",
+  "intent": "BLOOM_GENERATE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0065",
+  "text": "ICE205 er PO attainment dekhao",
+  "intent": "SHADSYNC_QUERY",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0066",
+  "text": "create a new course CSE221",
+  "intent": "DATA_ADD",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0067",
+  "text": "list at-risk students in BBA101",
+  "intent": "SHADSYNC_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0068",
+  "text": "Add a new student Mehedi to EEE1345",
+  "intent": "DATA_ADD",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0069",
+  "text": "brig up the DIU portal",
+  "intent": "PORTAL_OPEN",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0070",
+  "text": "Jamal ke BBA101 e enrol koro",
+  "intent": "DATA_ADD",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0071",
+  "text": "model ta Gemini e change koro",
+  "intent": "MODEL_SWITCH",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0072",
+  "text": "give me my class routine for Sunday",
+  "intent": "SCHEDULE_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0073",
+  "text": "Ayesha er attendance koto ICE329 te?",
+  "intent": "SHADSYNC_QUERY",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0074",
+  "text": "Today only show me emails from Dr. Hasan",
+  "intent": "EMAIL_RULE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0075",
+  "text": "syllabus pdf diye lesson plan toiri koro",
+  "intent": "BLOOM_GENERATE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0076",
+  "text": "what Blloom's level does 'Design a database schema' sit at",
+  "intent": "BLOOM_CLO_MAP",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0077",
+  "text": "Sombar er class ta 10:30 e soriye dao",
+  "intent": "DATA_EDIT",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0078",
+  "text": "open DIU teachers porttal please",
+  "intent": "PORTAL_OPEN",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0079",
+  "text": "ei soptahe kono class ache ki?",
+  "intent": "SCHEDULE_QUERY",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0080",
+  "text": "what's on my schedule on Monday",
+  "intent": "SCHEDULE_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0081",
+  "text": "am I free at 10:30 on Thursday?",
+  "intent": "SCHEDULE_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0082",
+  "text": "wat's the CO3 attainment for ICE420",
+  "intent": "SHADSYNC_QUERY",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0083",
+  "text": "let's use the local model for this",
+  "intent": "MODEL_SWITCH",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0084",
+  "text": "I want to talk to the local model instead",
+  "intent": "MODEL_SWITCH",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0085",
+  "text": "portal er marks entry page e jao",
+  "intent": "DIU_PORTAL_NAV",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0086",
+  "text": "how well do you know my scheule",
+  "intent": "MEMORY_STATUS",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0087",
+  "text": "Mongolbar er class ta 9am e soriye dao",
+  "intent": "DATA_EDIT",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0088",
+  "text": "see if ther'es new mail",
+  "intent": "EMAIL_FETCH",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0089",
+  "text": "launch the university portla",
+  "intent": "PORTAL_OPEN",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0090",
+  "text": "bring up the DIU potral",
+  "intent": "PORTAL_OPEN",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0091",
+  "text": "Gemini diye kaj koro",
+  "intent": "MODEL_SWITCH",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0092",
+  "text": "prioritise emails from the registrar",
+  "intent": "EMAIL_RULE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0093",
+  "text": "router er link ta kothay rakhsilam",
+  "intent": "VAULT_SEARCH",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0094",
+  "text": "you're awesome",
+  "intent": "GENERAL_CHAT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0095",
+  "text": "PHY1022 er class kokhon?",
+  "intent": "SCHEDULE_QUERY",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0096",
+  "text": "2pm e meeting er reminder set koro",
+  "intent": "REMINDER_SET",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0097",
+  "text": "I need to enter attendance for section A",
+  "intent": "SHADSYNC_UPDATE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0098",
+  "text": "thesis defence er age amake janio",
+  "intent": "REMINDER_SET",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0099",
+  "text": "rename MAT2137 to Digital Logic",
+  "intent": "DATA_EDIT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0100",
+  "text": "ei slides theke ekta quiz banao",
+  "intent": "BLOOM_GENERATE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0101",
+  "text": "write a worksheet based on the attached textbook chapter",
+  "intent": "BLOOM_GENERATE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0102",
+  "text": "how many things have you meemorised",
+  "intent": "MEMORY_STATUS",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0103",
+  "text": "swap the model to Claude",
+  "intent": "MODEL_SWITCH",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0104",
+  "text": "are you gettig better at helping me",
+  "intent": "MEMORY_STATUS",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0105",
+  "text": "show your memory stts",
+  "intent": "MEMORY_STATUS",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0106",
+  "text": "please remind me to call the registrar",
+  "intent": "REMINDER_SET",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0107",
+  "text": "MAT2137 e ke ke fail korse?",
+  "intent": "DIU_PORTAL_QUERY",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0108",
+  "text": "How much have you learned abbout me?",
+  "intent": "MEMORY_STATUS",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0109",
+  "text": "Find my saved notes about antenna design",
+  "intent": "VAULT_SEARCH",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0110",
+  "text": "use the course outline to create a short quiz",
+  "intent": "BLOOM_GENERATE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0111",
+  "text": "Sabbir ke ICE420 e enrol koro",
+  "intent": "DATA_ADD",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0112",
+  "text": "see if thre's new mail",
+  "intent": "EMAIL_FETCH",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0113",
+  "text": "when is my next ICE329 class?",
+  "intent": "SCHEDULE_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0114",
+  "text": "aj er attendance nite chai HUM101 er",
+  "intent": "SHADSYNC_UPDATE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0115",
+  "text": "write down in the vault that bring the projector adapter",
+  "intent": "VAULT_SAVE",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0116",
+  "text": "create a class entry for Tesday 9am",
+  "intent": "DATA_ADD",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0117",
+  "text": "marks submit korte bhule jeno na jai, reminder dao",
+  "intent": "REMINDER_SET",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0118",
+  "text": "ekhon theke Gemini use koro",
+  "intent": "MODEL_SWITCH",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0119",
+  "text": "go to the DIU teachers portla",
+  "intent": "PORTAL_OPEN",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0120",
+  "text": "where is the chapter 4 pdf I saved",
+  "intent": "VAULT_SEARCH",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0121",
+  "text": "repy to my supervisor saying I will attend",
+  "intent": "EMAIL_DRAFT",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0122",
+  "text": "rename bba101 to signals and systems",
+  "intent": "DATA_EDIT",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0123",
+  "text": "portal er grade sheet page e jao",
+  "intent": "DIU_PORTAL_NAV",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0124",
+  "text": "delete the Monday class",
+  "intent": "DATA_DELETE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0125",
+  "text": "which room is my ICE301 lecture in on Wednesday",
+  "intent": "SCHEDULE_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0126",
+  "text": "alert me 10 minutes before the ICE2241 lecture",
+  "intent": "REMINDER_SET",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0127",
+  "text": "rate the verbs used in my ICE205 outcomes",
+  "intent": "BLOOM_CLO_MAP",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0128",
+  "text": "Draft a reply to the last email from the exam controller",
+  "intent": "EMAIL_DRAFT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0129",
+  "text": "refresh my emails",
+  "intent": "EMAIL_FETCH",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0130",
+  "text": "MAT2137 e koyjon student 40% er niche?",
+  "intent": "SHADSYNC_QUERY",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0131",
+  "text": "Switch to GPT-4o",
+  "intent": "MODEL_SWITCH",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0132",
+  "text": "generate quiz questions on signal processing from the pdf",
+  "intent": "BLOOM_GENERATE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0133",
+  "text": "ICE205 er grade distribution ta bolo",
+  "intent": "DIU_PORTAL_QUERY",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0134",
+  "text": "vault e Fourier series er note khuje dao",
+  "intent": "VAULT_SEARCH",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0135",
+  "text": "get rid of the ice420 course",
+  "intent": "DATA_DELETE",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0136",
+  "text": "write a short poem about router",
+  "intent": "GENERAL_CHAT",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0137",
+  "text": "tell me about recursion",
+  "intent": "GENERAL_CHAT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0138",
+  "text": "write a message to HR asking for the seminar slides",
+  "intent": "EMAIL_DRAFT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0139",
+  "text": "ei note ta save kore rakho: midterm questions due Friday",
+  "intent": "VAULT_SAVE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0140",
+  "text": "help me write to the registrar about the quiz postponement",
+  "intent": "EMAIL_DRAFT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0141",
+  "text": "Who failed HUM101 in the portal results?",
+  "intent": "DIU_PORTAL_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0142",
+  "text": "create a new course MAT2137",
+  "intent": "DATA_ADD",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0143",
+  "text": "Imran ke EEE1345 e enrol koro",
+  "intent": "DATA_ADD",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0144",
+  "text": "result e koyjon pass korse?",
+  "intent": "DIU_PORTAL_QUERY",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0145",
+  "text": "which Bloom level is this outcome: Explain the OSI model",
+  "intent": "BLOOM_CLO_MAP",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0146",
+  "text": "question bank diye lesson plan toiri koro",
+  "intent": "BLOOM_GENERATE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0147",
+  "text": "use the syllabus pdf to create a short quiz",
+  "intent": "BLOOM_GENERATE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0148",
+  "text": "is this clo measurable: analyse a modulation scheme",
+  "intent": "BLOOM_CLO_MAP",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0149",
+  "text": "delte the ICE415 class on Tuesday",
+  "intent": "DATA_DELETE",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0150",
+  "text": "i uploaded my lecture notes, make an exam from it",
+  "intent": "BLOOM_GENERATE",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0151",
+  "text": "see if tere's new mail",
+  "intent": "EMAIL_FETCH",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0152",
+  "text": "show the course registration page in the portal",
+  "intent": "DIU_PORTAL_NAV",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0153",
+  "text": "Mongolbar e 8:30 e ekta class add koro",
+  "intent": "DATA_ADD",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0154",
+  "text": "show me what arrived in my inbox",
+  "intent": "EMAIL_FETCH",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0155",
+  "text": "is this CLO measurable: Apply Ohm's law to solve circuits",
+  "intent": "BLOOM_CLO_MAP",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0156",
+  "text": "amar ICE301 er CLO gula Bloom level e map koro",
+  "intent": "BLOOM_CLO_MAP",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0157",
+  "text": "take me to the portal marks entry",
+  "intent": "DIU_PORTAL_NAV",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0158",
+  "text": "update the room of my ICE329 class to the seminar hall",
+  "intent": "DATA_EDIT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0159",
+  "text": "start the BLC portal",
+  "intent": "PORTAL_OPEN",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0160",
+  "text": "Todday only show me emails from the exam controller",
+  "intent": "EMAIL_RULE",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0161",
+  "text": "are you getting better at helping me",
+  "intent": "MEMORY_STATUS",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0162",
+  "text": "Change the name of student S012 to Nusrat",
+  "intent": "DATA_EDIT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0163",
+  "text": "launch the university poral",
+  "intent": "PORTAL_OPEN",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0164",
+  "text": "can you help me uderstand Ohm's law",
+  "intent": "GENERAL_CHAT",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0165",
+  "text": "fetch new eails",
+  "intent": "EMAIL_FETCH",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0166",
+  "text": "I need to enter attendance for section D",
+  "intent": "SHADSYNC_UPDATE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0167",
+  "text": "classify these learning outcomes by cognitive level",
+  "intent": "BLOOM_CLO_MAP",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0168",
+  "text": "mute emails from the chairman for a week",
+  "intent": "EMAIL_RULE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0169",
+  "text": "store my router password in the vault",
+  "intent": "VAULT_SAVE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0170",
+  "text": "go to the DIU tachers portal",
+  "intent": "PORTAL_OPEN",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0171",
+  "text": "can you run on GPT-4o",
+  "intent": "MODEL_SWITCH",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0172",
+  "text": "bring up dashboard in the portl",
+  "intent": "DIU_PORTAL_NAV",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0173",
+  "text": "give me the grand total ranking for ICE301",
+  "intent": "DIU_PORTAL_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0174",
+  "text": "are you getting better at helpnig me",
+  "intent": "MEMORY_STATUS",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0175",
+  "text": "store my lab server password in the vault",
+  "intent": "VAULT_SAVE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0176",
+  "text": "check whether my CLOs mtach their Bloom levels",
+  "intent": "BLOOM_CLO_MAP",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0177",
+  "text": "save the finl scores for ICE2241",
+  "intent": "SHADSYNC_UPDATE",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0178",
+  "text": "alert me 30 minutes before the CSE221 lecture",
+  "intent": "REMINDER_SET",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0179",
+  "text": "Save this link: www.example.edu/forms",
+  "intent": "VAULT_SAVE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0180",
+  "text": "where is the question bank I saved",
+  "intent": "VAULT_SEARCH",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0181",
+  "text": "mute emails from the cahirman for a week",
+  "intent": "EMAIL_RULE",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0182",
+  "text": "help me write to HR about tomorrow's cancelled lecture",
+  "intent": "EMAIL_DRAFT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0183",
+  "text": "take me to the portal CT marks page",
+  "intent": "DIU_PORTAL_NAV",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0184",
+  "text": "Delete student Mehedi from ICE401",
+  "intent": "DATA_DELETE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0185",
+  "text": "what do you remember about my habits",
+  "intent": "MEMORY_STATUS",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0186",
+  "text": "chairman ke ekta formal mail draft koro",
+  "intent": "EMAIL_DRAFT",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0187",
+  "text": "see if thee's new mail",
+  "intent": "EMAIL_FETCH",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0188",
+  "text": "how many classes do I have on Monday",
+  "intent": "SCHEDULE_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0189",
+  "text": "build a test paper from the lecture notes",
+  "intent": "BLOOM_GENERATE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0190",
+  "text": "amake porshu question paper print korte mone koriye dio",
+  "intent": "REMINDER_SET",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0191",
+  "text": "log today's attendance for ice329",
+  "intent": "SHADSYNC_UPDATE",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0192",
+  "text": "enrol Imarn in EEE1345",
+  "intent": "DATA_ADD",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0193",
+  "text": "delete the Tuesday class",
+  "intent": "DATA_DELETE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0194",
+  "text": "notify me before my BBA101 class",
+  "intent": "REMINDER_SET",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0195",
+  "text": "only show promotional emails until tomorrow",
+  "intent": "EMAIL_RULE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0196",
+  "text": "remove farhana from my list",
+  "intent": "DATA_DELETE",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0197",
+  "text": "list at-risk students in ICE301",
+  "intent": "SHADSYNC_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0198",
+  "text": "tumi ke?",
+  "intent": "GENERAL_CHAT",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0199",
+  "text": "swap the model to Gemini",
+  "intent": "MODEL_SWITCH",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0200",
+  "text": "OTP email gula ignore koro",
+  "intent": "EMAIL_RULE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0201",
+  "text": "ICE420 e ke ke fail korse?",
+  "intent": "DIU_PORTAL_QUERY",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0202",
+  "text": "upload kora pdf theke 9 ta question banao",
+  "intent": "BLOOM_GENERATE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0203",
+  "text": "amar save kora slides ta ber koro",
+  "intent": "VAULT_SEARCH",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0204",
+  "text": "give me tips for teaching large clsses",
+  "intent": "GENERAL_CHAT",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0205",
+  "text": "when is my next ice2241 class",
+  "intent": "SCHEDULE_QUERY",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0206",
+  "text": "explain what supply and demand is",
+  "intent": "GENERAL_CHAT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0207",
+  "text": "show your meomry stats",
+  "intent": "MEMORY_STATUS",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0208",
+  "text": "give me tips for teaching large classes",
+  "intent": "GENERAL_CHAT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0209",
+  "text": "Any new emalis?",
+  "intent": "EMAIL_FETCH",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0210",
+  "text": "produce a lesson outline from the document",
+  "intent": "BLOOM_GENERATE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0211",
+  "text": "how do I stay organised druing exam week",
+  "intent": "GENERAL_CHAT",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0212",
+  "text": "bring up marks entry in the portal",
+  "intent": "DIU_PORTAL_NAV",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0213",
+  "text": "what's the pass rate for ICE329",
+  "intent": "DIU_PORTAL_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0214",
+  "text": "bring up CT marks page in the portal",
+  "intent": "DIU_PORTAL_NAV",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0215",
+  "text": "are you geetting better at helping me",
+  "intent": "MEMORY_STATUS",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0216",
+  "text": "Remind me to grade the quizzes on Monday",
+  "intent": "REMINDER_SET",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0217",
+  "text": "I need a reminder for the department seminar tooday",
+  "intent": "REMINDER_SET",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0218",
+  "text": "student der ekta email likho the lab schedule change niye",
+  "intent": "EMAIL_DRAFT",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0219",
+  "text": "write an email to my students about the lab schedule change",
+  "intent": "EMAIL_DRAFT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0220",
+  "text": "Any new emils?",
+  "intent": "EMAIL_FETCH",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0221",
+  "text": "I want to talk to OpenRouter instead",
+  "intent": "MODEL_SWITCH",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0222",
+  "text": "Budhbar er class ta 9am e soriye dao",
+  "intent": "DATA_EDIT",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0223",
+  "text": "move my Sunday class to 12pm",
+  "intent": "DATA_EDIT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0224",
+  "text": "prepare an email to the department about the make-up class",
+  "intent": "EMAIL_DRAFT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0225",
+  "text": "registrar er email ke priority dao",
+  "intent": "EMAIL_RULE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0226",
+  "text": "Nusrat ke ICE205 e enrol koro",
+  "intent": "DATA_ADD",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0227",
+  "text": "modiy the Wednesday class time",
+  "intent": "DATA_EDIT",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0228",
+  "text": "who scored the lowest in the HUM101 final",
+  "intent": "DIU_PORTAL_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0229",
+  "text": "inbox ta refresh koro",
+  "intent": "EMAIL_FETCH",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0230",
+  "text": "set a reminder: submit the marks on Monday",
+  "intent": "REMINDER_SET",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0231",
+  "text": "delete the Sunday class",
+  "intent": "DATA_DELETE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0232",
+  "text": "statr the BLC portal",
+  "intent": "PORTAL_OPEN",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0233",
+  "text": "switch my PHY1022 class from Wednesday to Wednesday",
+  "intent": "DATA_EDIT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0234",
+  "text": "ei note ta save kore rakho: bring the projector adapter",
+  "intent": "VAULT_SAVE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0235",
+  "text": "cheeck my inbox",
+  "intent": "EMAIL_FETCH",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0236",
+  "text": "what do you remember abbout my habits",
+  "intent": "MEMORY_STATUS",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0237",
+  "text": "how do I stay orgaised during exam week",
+  "intent": "GENERAL_CHAT",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0238",
+  "text": "create 15 multiple choice questions from the uploaded question bank",
+  "intent": "BLOOM_GENERATE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0239",
+  "text": "how do I stay organised during exam week",
+  "intent": "GENERAL_CHAT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0240",
+  "text": "show the highest total in PHY1022 results",
+  "intent": "DIU_PORTAL_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0241",
+  "text": "Egypt er rajdhani ki?",
+  "intent": "GENERAL_CHAT",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0242",
+  "text": "show me PO attainment of ICE401",
+  "intent": "SHADSYNC_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0243",
+  "text": "what did I save about signal processing",
+  "intent": "VAULT_SEARCH",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0244",
+  "text": "move my Monday class to 11 am",
+  "intent": "DATA_EDIT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0245",
+  "text": "set the assistant to GPT-4o",
+  "intent": "MODEL_SWITCH",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0246",
+  "text": "look up the link I stored for library",
+  "intent": "VAULT_SEARCH",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0247",
+  "text": "do I have unread mesasges",
+  "intent": "EMAIL_FETCH",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0248",
+  "text": "I uploaded my question bank, make an exam from it",
+  "intent": "BLOOM_GENERATE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0249",
+  "text": "navigate to the CT marks page section of the portal",
+  "intent": "DIU_PORTAL_NAV",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0250",
+  "text": "let me type in the class test 1 scores",
+  "intent": "SHADSYNC_UPDATE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0251",
+  "text": "launch the universiity portal",
+  "intent": "PORTAL_OPEN",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0252",
+  "text": "GPT-4o diye kaj koro",
+  "intent": "MODEL_SWITCH",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0253",
+  "text": "show weak CLOs for HUM101",
+  "intent": "SHADSYNC_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0254",
+  "text": "log today's attendance for CSE221",
+  "intent": "SHADSYNC_UPDATE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0255",
+  "text": "remind me about the exam invigilation on Thursday",
+  "intent": "REMINDER_SET",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0256",
+  "text": "Mim ke ICE301 theke delete koro",
+  "intent": "DATA_DELETE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0257",
+  "text": "do I have unred messages",
+  "intent": "EMAIL_FETCH",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0258",
+  "text": "locate my note on antenna design",
+  "intent": "VAULT_SEARCH",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0259",
+  "text": "is there a class atfer 9am today?",
+  "intent": "SCHEDULE_QUERY",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0260",
+  "text": "kon CLO ta weak ICE2241 er?",
+  "intent": "SHADSYNC_QUERY",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0261",
+  "text": "newsletter email gula ignore koro",
+  "intent": "EMAIL_RULE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0262",
+  "text": "add Mehedi to my ICE205 list",
+  "intent": "DATA_ADD",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0263",
+  "text": "which students failed CLO2 in HUM101",
+  "intent": "SHADSYNC_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0264",
+  "text": "launch the university potral",
+  "intent": "PORTAL_OPEN",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0265",
+  "text": "amar ICE415 er CLO gula Bloom level e map koro",
+  "intent": "BLOOM_CLO_MAP",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0266",
+  "text": "save a note: mdterm questions due Friday",
+  "intent": "VAULT_SAVE",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0267",
+  "text": "Bangladesh er rajdhani ki?",
+  "intent": "GENERAL_CHAT",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0268",
+  "text": "let me type in the quiz 2 scores",
+  "intent": "SHADSYNC_UPDATE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0269",
+  "text": "reomve the course BBA101",
+  "intent": "DATA_DELETE",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0270",
+  "text": "search my vault for recursion",
+  "intent": "VAULT_SEARCH",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0271",
+  "text": "ICE301 e ke ke fail korse?",
+  "intent": "DIU_PORTAL_QUERY",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0272",
+  "text": "portal er CT marks page page e jao",
+  "intent": "DIU_PORTAL_NAV",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0273",
+  "text": "store my department password in the vault",
+  "intent": "VAULT_SAVE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0274",
+  "text": "open the portal's result sheet",
+  "intent": "DIU_PORTAL_NAV",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0275",
+  "text": "EEE1345 er CO1 attainment koto?",
+  "intent": "SHADSYNC_QUERY",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0276",
+  "text": "remove the course ICE2241",
+  "intent": "DATA_DELETE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0277",
+  "text": "when is my next cse221 class",
+  "intent": "SCHEDULE_QUERY",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0278",
+  "text": "Any new emaails?",
+  "intent": "EMAIL_FETCH",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0279",
+  "text": "switch to the local model",
+  "intent": "MODEL_SWITCH",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0280",
+  "text": "Do I have any lectures on Wednesday?",
+  "intent": "SCHEDULE_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0281",
+  "text": "respond to this mail: I need more time",
+  "intent": "EMAIL_DRAFT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0282",
+  "text": "give me the grand total ranking for PHY1022",
+  "intent": "DIU_PORTAL_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0283",
+  "text": "course outline diye lesson plan toiri koro",
+  "intent": "BLOOM_GENERATE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0284",
+  "text": "model ta the local model e change koro",
+  "intent": "MODEL_SWITCH",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0285",
+  "text": "are you gettting better at helping me",
+  "intent": "MEMORY_STATUS",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0286",
+  "text": "open grade sheet in the DIU portal",
+  "intent": "DIU_PORTAL_NAV",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0287",
+  "text": "I want to talk to GPT-4o instead",
+  "intent": "MODEL_SWITCH",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0288",
+  "text": "alert me 5 minutes before the MAT2137 lecture",
+  "intent": "REMINDER_SET",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0289",
+  "text": "ICE301 nam e ekta notun course banao",
+  "intent": "DATA_ADD",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0290",
+  "text": "is this CLO measurable: Design a database schema",
+  "intent": "BLOOM_CLO_MAP",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0291",
+  "text": "student er naam ta Mehedi koro",
+  "intent": "DATA_EDIT",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0292",
+  "text": "create 6 multiple choice questions from the uploaded chapetr 4 pdf",
+  "intent": "BLOOM_GENERATE",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0293",
+  "text": "align the ICE329 CLOs with Bloom's taxonomy",
+  "intent": "BLOOM_CLO_MAP",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0294",
+  "text": "store my library password in the vault",
+  "intent": "VAULT_SAVE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0295",
+  "text": "where is the syllabus pdf I saved",
+  "intent": "VAULT_SEARCH",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0296",
+  "text": "student der ekta email likho the quiz postponement niye",
+  "intent": "EMAIL_DRAFT",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0297",
+  "text": "fix the spelling of Mehedi's name",
+  "intent": "DATA_EDIT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0298",
+  "text": "PHY1022 er lab test marks entry korbo",
+  "intent": "SHADSYNC_UPDATE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0299",
+  "text": "EEE1345 course ta remove kore dao",
+  "intent": "DATA_DELETE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0300",
+  "text": "turn this courrse outline into a lesson plan",
+  "intent": "BLOOM_GENERATE",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0301",
+  "text": "where is the textbook chapter I saved",
+  "intent": "VAULT_SEARCH",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0302",
+  "text": "open CT marks page in the DIU portal",
+  "intent": "DIU_PORTAL_NAV",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0303",
+  "text": "edit the section of ice205 to a",
+  "intent": "DATA_EDIT",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0304",
+  "text": "HUM101 er class kokhon?",
+  "intent": "SCHEDULE_QUERY",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0305",
+  "text": "set a reminder to subbmit the marks at 8:30",
+  "intent": "REMINDER_SET",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0306",
+  "text": "write a worksheet based on the attached chapter 4 pdf",
+  "intent": "BLOOM_GENERATE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0307",
+  "text": "what do you remember about my habtis",
+  "intent": "MEMORY_STATUS",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0308",
+  "text": "what bloom's level does 'evaluate sorting algorithms' sit at",
+  "intent": "BLOOM_CLO_MAP",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0309",
+  "text": "good monring",
+  "intent": "GENERAL_CHAT",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0310",
+  "text": "what time does my ice415 class start",
+  "intent": "SCHEDULE_QUERY",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0311",
+  "text": "how well do you know my schedule",
+  "intent": "MEMORY_STATUS",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0312",
+  "text": "tell me about spply and demand",
+  "intent": "GENERAL_CHAT",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0313",
+  "text": "Any new emials?",
+  "intent": "EMAIL_FETCH",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0314",
+  "text": "help me write to Dr. Hasan about the quiz postponement",
+  "intent": "EMAIL_DRAFT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0315",
+  "text": "Rahim ke BBA101 theke delete koro",
+  "intent": "DATA_DELETE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0316",
+  "text": "see if three's new mail",
+  "intent": "EMAIL_FETCH",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0317",
+  "text": "refresh my emaails",
+  "intent": "EMAIL_FETCH",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0318",
+  "text": "Mongolbar er class ta 11 am e soriye dao",
+  "intent": "DATA_EDIT",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0319",
+  "text": "Change the name of student S004 to Rahim",
+  "intent": "DATA_EDIT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0320",
+  "text": "list students with grade f in ice301",
+  "intent": "DIU_PORTAL_QUERY",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0321",
+  "text": "set up a new course called Diital Logic",
+  "intent": "DATA_ADD",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0322",
+  "text": "student mail ar dekhabe na",
+  "intent": "EMAIL_RULE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0323",
+  "text": "kono mail ashche ki amar?",
+  "intent": "EMAIL_FETCH",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0324",
+  "text": "wrte a short poem about lab server",
+  "intent": "GENERAL_CHAT",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0325",
+  "text": "which Bloom level is this outcome: Analyse a modulation scheme",
+  "intent": "BLOOM_CLO_MAP",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0326",
+  "text": "BBA101 er final marks entry korbo",
+  "intent": "SHADSYNC_UPDATE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0327",
+  "text": "check my inbxo",
+  "intent": "EMAIL_FETCH",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0328",
+  "text": "start marks entyr for BBA101",
+  "intent": "SHADSYNC_UPDATE",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0329",
+  "text": "wrte a short poem about wifi",
+  "intent": "GENERAL_CHAT",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0330",
+  "text": "search my vault for antenna design",
+  "intent": "VAULT_SEARCH",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0331",
+  "text": "wite an email to my students about extending the deadline",
+  "intent": "EMAIL_DRAFT",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0332",
+  "text": "let me type in the lab test scores",
+  "intent": "SHADSYNC_UPDATE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0333",
+  "text": "has anyone emiled me",
+  "intent": "EMAIL_FETCH",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0334",
+  "text": "locate my note on noralisation",
+  "intent": "VAULT_SEARCH",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0335",
+  "text": "show me PO attainmnet of ICE329",
+  "intent": "SHADSYNC_QUERY",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0336",
+  "text": "set up a new course called Signals and Systems",
+  "intent": "DATA_ADD",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0337",
+  "text": "how many students are below 75% in CLO2",
+  "intent": "SHADSYNC_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0338",
+  "text": "amar PHY1022 er CLO gula Bloom level e map koro",
+  "intent": "BLOOM_CLO_MAP",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0339",
+  "text": "remember this link for later: https://blc.example.edu/course/12",
+  "intent": "VAULT_SAVE",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0340",
+  "text": "which stduents failed CLO2 in ICE301",
+  "intent": "SHADSYNC_QUERY",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0341",
+  "text": "record absent students for ICE329 lecture 13",
+  "intent": "SHADSYNC_UPDATE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0342",
+  "text": "remember this link for later: https://slides.example.com/ice301",
+  "intent": "VAULT_SAVE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0343",
+  "text": "register a new section for ICE415",
+  "intent": "DATA_ADD",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0344",
+  "text": "start marks entry for ICE301",
+  "intent": "SHADSYNC_UPDATE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0345",
+  "text": "is thhere anything new in my email",
+  "intent": "EMAIL_FETCH",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0346",
+  "text": "please remind me to print the question papers",
+  "intent": "REMINDER_SET",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0347",
+  "text": "put my lab server login in the vault",
+  "intent": "VAULT_SAVE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0348",
+  "text": "whihc room is my HUM101 lecture in on Monday",
+  "intent": "SCHEDULE_QUERY",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0349",
+  "text": "department head er email er reply likhe dao",
+  "intent": "EMAIL_DRAFT",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0350",
+  "text": "who scored the lowest in the ice415 final",
+  "intent": "DIU_PORTAL_QUERY",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0351",
+  "text": "set up a new course called Digital Logic",
+  "intent": "DATA_ADD",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0352",
+  "text": "Helo, how are you?",
+  "intent": "GENERAL_CHAT",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0353",
+  "text": "help me write to HR about extending the deadline",
+  "intent": "EMAIL_DRAFT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0354",
+  "text": "build a test paper from the course outline",
+  "intent": "BLOOM_GENERATE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0355",
+  "text": "save the final scores for CSE221",
+  "intent": "SHADSYNC_UPDATE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0356",
+  "text": "update the room of my ice329 class to lab 2",
+  "intent": "DATA_EDIT",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0357",
+  "text": "give me tips for teaching lage classes",
+  "intent": "GENERAL_CHAT",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0358",
+  "text": "start using the local model",
+  "intent": "MODEL_SWITCH",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0359",
+  "text": "upload kora pdf theke 14 ta question banao",
+  "intent": "BLOOM_GENERATE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0360",
+  "text": "go to course registration in the portal",
+  "intent": "DIU_PORTAL_NAV",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0361",
+  "text": "prepare an email to the department about tomorrow's cancelled lecture",
+  "intent": "EMAIL_DRAFT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0362",
+  "text": "amar porer class ta kokhon?",
+  "intent": "SCHEDULE_QUERY",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0363",
+  "text": "filter out newsletter emails",
+  "intent": "EMAIL_RULE",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0364",
+  "text": "Japan er rajdhani ki?",
+  "intent": "GENERAL_CHAT",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0365",
+  "text": "ei course outline theke ekta quiz banao",
+  "intent": "BLOOM_GENERATE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0366",
+  "text": "list at-risk students in CSE221",
+  "intent": "SHADSYNC_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0367",
+  "text": "list all my classes this week",
+  "intent": "SCHEDULE_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0368",
+  "text": "show the highest toal in PHY1022 results",
+  "intent": "DIU_PORTAL_QUERY",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0369",
+  "text": "Find my saved notes about signal processing",
+  "intent": "VAULT_SEARCH",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0370",
+  "text": "Any new emaiils?",
+  "intent": "EMAIL_FETCH",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0371",
+  "text": "brng up the DIU portal",
+  "intent": "PORTAL_OPEN",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0372",
+  "text": "kal kono class ache ki?",
+  "intent": "SCHEDULE_QUERY",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0373",
+  "text": "cehck my inbox",
+  "intent": "EMAIL_FETCH",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0374",
+  "text": "see if there's new mail",
+  "intent": "EMAIL_FETCH",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0375",
+  "text": "remind me about the faculty meeting on Tuesday",
+  "intent": "REMINDER_SET",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0376",
+  "text": "take attendance for my HUM101 class",
+  "intent": "SHADSYNC_UPDATE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0377",
+  "text": "kon CLO ta weak PHY1022 er?",
+  "intent": "SHADSYNC_QUERY",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0378",
+  "text": "how many things have you memoried",
+  "intent": "MEMORY_STATUS",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0379",
+  "text": "what is the grade distribution of PHY1022",
+  "intent": "DIU_PORTAL_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0380",
+  "text": "AI model OpenRouter koro",
+  "intent": "MODEL_SWITCH",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0381",
+  "text": "portal e CT marks page ta kholo",
+  "intent": "DIU_PORTAL_NAV",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0382",
+  "text": "edit the section of ICE329 to A",
+  "intent": "DATA_EDIT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0383",
+  "text": "lab server er password ta vault e save koro",
+  "intent": "VAULT_SAVE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0384",
+  "text": "is theere anything new in my email",
+  "intent": "EMAIL_FETCH",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0385",
+  "text": "write an email to my students about the make-up class",
+  "intent": "EMAIL_DRAFT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0386",
+  "text": "library er password ta vault e save koro",
+  "intent": "VAULT_SAVE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0387",
+  "text": "Enter marks for ICE401 midtrem",
+  "intent": "SHADSYNC_UPDATE",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0388",
+  "text": "write a message to my supervisor asking for a recommendation letter",
+  "intent": "EMAIL_DRAFT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0389",
+  "text": "Open the DIU porttal",
+  "intent": "PORTAL_OPEN",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0390",
+  "text": "open the portal's attendance",
+  "intent": "DIU_PORTAL_NAV",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0391",
+  "text": "tell me about entropy",
+  "intent": "GENERAL_CHAT",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0392",
+  "text": "ICE329 er quiz 2 marks entry korbo",
+  "intent": "SHADSYNC_UPDATE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0393",
+  "text": "department er password ta vault e save koro",
+  "intent": "VAULT_SAVE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0394",
+  "text": "what's the difference between a virus and a bacterium",
+  "intent": "GENERAL_CHAT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0395",
+  "text": "Draft a reply to the last email from the dean",
+  "intent": "EMAIL_DRAFT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0396",
+  "text": "find the file I saed about recursion",
+  "intent": "VAULT_SEARCH",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0397",
+  "text": "notun student Mim add koro BBA101 e",
+  "intent": "DATA_ADD",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0398",
+  "text": "start using GPT-4o",
+  "intent": "MODEL_SWITCH",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0399",
+  "text": "erase section A of EEE1345",
+  "intent": "DATA_DELETE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0400",
+  "text": "starrt the BLC portal",
+  "intent": "PORTAL_OPEN",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0401",
+  "text": "vault e antenna design er note khuje dao",
+  "intent": "VAULT_SEARCH",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0402",
+  "text": "Brihospotibar er class ta muche felo",
+  "intent": "DATA_DELETE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0403",
+  "text": "amar save kora course outline ta ber koro",
+  "intent": "VAULT_SEARCH",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0404",
+  "text": "locate my note on normalisation",
+  "intent": "VAULT_SEARCH",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0405",
+  "text": "bring up the DIU portal",
+  "intent": "PORTAL_OPEN",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0406",
+  "text": "shudhu exam controller er email dekhao aj",
+  "intent": "EMAIL_RULE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0407",
+  "text": "write a short poem about library",
+  "intent": "GENERAL_CHAT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0408",
+  "text": "which Bloom level is this outcome: Design a database schema",
+  "intent": "BLOOM_CLO_MAP",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0409",
+  "text": "thankks a lot",
+  "intent": "GENERAL_CHAT",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0410",
+  "text": "what's on my schedule tonight",
+  "intent": "SCHEDULE_QUERY",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0411",
+  "text": "stop showing me OTP mail",
+  "intent": "EMAIL_RULE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0412",
+  "text": "ignore all OTP emails",
+  "intent": "EMAIL_RULE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0413",
+  "text": "is CLO3 attained in EEE1345",
+  "intent": "SHADSYNC_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0414",
+  "text": "what Bloom's level does 'Evluate sorting algorithms' sit at",
+  "intent": "BLOOM_CLO_MAP",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0415",
+  "text": "PHY1022 er section ta D e change koro",
+  "intent": "DATA_EDIT",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0416",
+  "text": "How much have you leared about me?",
+  "intent": "MEMORY_STATUS",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0417",
+  "text": "when is my next ICE301 class?",
+  "intent": "SCHEDULE_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0418",
+  "text": "improve the wording of my outcomes so they are measurable",
+  "intent": "BLOOM_CLO_MAP",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0419",
+  "text": "write down in the vault that midtrm questions due Friday",
+  "intent": "VAULT_SAVE",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0420",
+  "text": "swap the model to the local model",
+  "intent": "MODEL_SWITCH",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0421",
+  "text": "Today only show me emails from the chairman",
+  "intent": "EMAIL_RULE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0422",
+  "text": "explain what recursion is",
+  "intent": "GENERAL_CHAT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0423",
+  "text": "ICE2241 er quiz 2 marks entry korbo",
+  "intent": "SHADSYNC_UPDATE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0424",
+  "text": "take me to the portal result sheet",
+  "intent": "DIU_PORTAL_NAV",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0425",
+  "text": "which room is my ICE329 lecture in on Wednesday",
+  "intent": "SCHEDULE_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0426",
+  "text": "are you getitng better at helping me",
+  "intent": "MEMORY_STATUS",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0427",
+  "text": "keep this file safely in the vaault",
+  "intent": "VAULT_SAVE",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0428",
+  "text": "what Bloom's level does 'Design a database schema' sit at",
+  "intent": "BLOOM_CLO_MAP",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0429",
+  "text": "ekhon theke OpenRouter use koro",
+  "intent": "MODEL_SWITCH",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0430",
+  "text": "don't let me forget to upload the syllabus",
+  "intent": "REMINDER_SET",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0431",
+  "text": "lab server er link ta kothay rakhsilam",
+  "intent": "VAULT_SEARCH",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0432",
+  "text": "when is my next HUM101 class?",
+  "intent": "SCHEDULE_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0433",
+  "text": "give me the attainment summary for ICE329",
+  "intent": "SHADSYNC_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0434",
+  "text": "create a new course ICE420",
+  "intent": "DATA_ADD",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0435",
+  "text": "Jamal ke PHY1022 theke delete koro",
+  "intent": "DATA_DELETE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0436",
+  "text": "Map my CLOs to Bloom's levesl",
+  "intent": "BLOOM_CLO_MAP",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0437",
+  "text": "open the portal's makrs entry",
+  "intent": "DIU_PORTAL_NAV",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0438",
+  "text": "open the portal's CT marks page",
+  "intent": "DIU_PORTAL_NAV",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0439",
+  "text": "filter out spam emails",
+  "intent": "EMAIL_RULE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0440",
+  "text": "put my library login in the vault",
+  "intent": "VAULT_SAVE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0441",
+  "text": "CSE221 er final marks entry korbo",
+  "intent": "SHADSYNC_UPDATE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0442",
+  "text": "don't notify me about newsletter emails",
+  "intent": "EMAIL_RULE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0443",
+  "text": "edit the section of PHY1022 to D",
+  "intent": "DATA_EDIT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0444",
+  "text": "get rid of the PHY1022 course",
+  "intent": "DATA_DELETE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0445",
+  "text": "create a new course ICE301",
+  "intent": "DATA_ADD",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0446",
+  "text": "list at-risk students in ICE205",
+  "intent": "SHADSYNC_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0447",
+  "text": "mute emails from my supervisor for a week",
+  "intent": "EMAIL_RULE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0448",
+  "text": "find the file I saved about Fourier series",
+  "intent": "VAULT_SEARCH",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0449",
+  "text": "rememebr this link for later: https://blc.example.edu/course/12",
+  "intent": "VAULT_SAVE",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0450",
+  "text": "modify the Tuesday class time",
+  "intent": "DATA_EDIT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0451",
+  "text": "Nusrat ke EEE1345 theke delete koro",
+  "intent": "DATA_DELETE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0452",
+  "text": "registrar er email er reply likhe dao",
+  "intent": "EMAIL_DRAFT",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0453",
+  "text": "let's use Claude for this",
+  "intent": "MODEL_SWITCH",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0454",
+  "text": "portal er link ta kothay rakhsilam",
+  "intent": "VAULT_SEARCH",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0455",
+  "text": "let me type in the final scores",
+  "intent": "SHADSYNC_UPDATE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0456",
+  "text": "sart the BLC portal",
+  "intent": "PORTAL_OPEN",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0457",
+  "text": "save this textbook chapter to my vault",
+  "intent": "VAULT_SAVE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0458",
+  "text": "tell me about Bloom's taxonomy",
+  "intent": "GENERAL_CHAT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0459",
+  "text": "remove Nusrat from my list",
+  "intent": "DATA_DELETE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0460",
+  "text": "open DIU teachers portal plase",
+  "intent": "PORTAL_OPEN",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0461",
+  "text": "get rid of the ICE301 course",
+  "intent": "DATA_DELETE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0462",
+  "text": "alerrt me 10 minutes before the EEE1345 lecture",
+  "intent": "REMINDER_SET",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0463",
+  "text": "Any new emals?",
+  "intent": "EMAIL_FETCH",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0464",
+  "text": "log today's attendance for eee1345",
+  "intent": "SHADSYNC_UPDATE",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0465",
+  "text": "final er number gula input dibo",
+  "intent": "SHADSYNC_UPDATE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0466",
+  "text": "aj er attendance nite chai ICE205 er",
+  "intent": "SHADSYNC_UPDATE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0467",
+  "text": "what have you picked up from my activity",
+  "intent": "MEMORY_STATUS",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0468",
+  "text": "align the ICE420 CLOs with Bloom's taxonomy",
+  "intent": "BLOOM_CLO_MAP",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0469",
+  "text": "department head ke ekta formal mail draft koro",
+  "intent": "EMAIL_DRAFT",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0470",
+  "text": "absent student der list ta record koro",
+  "intent": "SHADSYNC_UPDATE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0471",
+  "text": "modify the Thursday class time",
+  "intent": "DATA_EDIT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0472",
+  "text": "start the BLC prtal",
+  "intent": "PORTAL_OPEN",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0473",
+  "text": "who inveented the telephone",
+  "intent": "GENERAL_CHAT",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0474",
+  "text": "get rid of the CSE221 course",
+  "intent": "DATA_DELETE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0475",
+  "text": "ei soptahe amar koyta class ache?",
+  "intent": "SCHEDULE_QUERY",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0476",
+  "text": "ICE2241 course ta remove kore dao",
+  "intent": "DATA_DELETE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0477",
+  "text": "search the vault for the lab server password",
+  "intent": "VAULT_SEARCH",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0478",
+  "text": "amar ICE205 er CLO gula Bloom level e map koro",
+  "intent": "BLOOM_CLO_MAP",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0479",
+  "text": "give me the grand total ranking for ICE205",
+  "intent": "DIU_PORTAL_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0480",
+  "text": "take me to the portal dashboard",
+  "intent": "DIU_PORTAL_NAV",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0481",
+  "text": "wifi er password ta vault e save koro",
+  "intent": "VAULT_SAVE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0482",
+  "text": "locate my note on signal processing",
+  "intent": "VAULT_SEARCH",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0483",
+  "text": "turn this chapter 4 pdf into a lesson plan",
+  "intent": "BLOOM_GENERATE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0484",
+  "text": "has anyone emaled me",
+  "intent": "EMAIL_FETCH",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0485",
+  "text": "fetch new emails",
+  "intent": "EMAIL_FETCH",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0486",
+  "text": "good morning",
+  "intent": "GENERAL_CHAT",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0487",
+  "text": "record absent students for ICE401 lecture 14",
+  "intent": "SHADSYNC_UPDATE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0488",
+  "text": "don't notify me about OTP emails",
+  "intent": "EMAIL_RULE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0489",
+  "text": "entropy ta ki bujhiye dao",
+  "intent": "GENERAL_CHAT",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0490",
+  "text": "correct Nusrat's ID in ICE301",
+  "intent": "DATA_EDIT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0491",
+  "text": "build a test papre from the textbook chapter",
+  "intent": "BLOOM_GENERATE",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0492",
+  "text": "I uploaded my lecture noes, make an exam from it",
+  "intent": "BLOOM_GENERATE",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0493",
+  "text": "remind me about the department seminar on Tuesday",
+  "intent": "REMINDER_SET",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0494",
+  "text": "which students failed CLO4 in ICE420",
+  "intent": "SHADSYNC_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0495",
+  "text": "add Mehedi to my ICE415 list",
+  "intent": "DATA_ADD",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0496",
+  "text": "write a message to my supervisor asking for extra time",
+  "intent": "EMAIL_DRAFT",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0497",
+  "text": "show the highest total in HUM101 results",
+  "intent": "DIU_PORTAL_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0498",
+  "text": "good evening",
+  "intent": "GENERAL_CHAT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0499",
+  "text": "give me a reoprt on your learning",
+  "intent": "MEMORY_STATUS",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0500",
+  "text": "move my Tuesday class to 8:30",
+  "intent": "DATA_EDIT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0501",
+  "text": "show my timetable for next Tuesday",
+  "intent": "SCHEDULE_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0502",
+  "text": "Find my saaved notes about antenna design",
+  "intent": "VAULT_SEARCH",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0503",
+  "text": "how many got A+ in ICE329",
+  "intent": "DIU_PORTAL_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0504",
+  "text": "please remind me to submit the marks",
+  "intent": "REMINDER_SET",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0505",
+  "text": "portal e attendance ta kholo",
+  "intent": "DIU_PORTAL_NAV",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0506",
+  "text": "Save this link: https://slides.example.com/ice301",
+  "intent": "VAULT_SAVE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0507",
+  "text": "how many things have you mmorised",
+  "intent": "MEMORY_STATUS",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0508",
+  "text": "show your memory staats",
+  "intent": "MEMORY_STATUS",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0509",
+  "text": "turn this quuestion bank into a lesson plan",
+  "intent": "BLOOM_GENERATE",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0510",
+  "text": "record absent students for ICE2241 lecture 8",
+  "intent": "SHADSYNC_UPDATE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0511",
+  "text": "set the assistant to the local model",
+  "intent": "MODEL_SWITCH",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0512",
+  "text": "put my wifi login in the vult",
+  "intent": "VAULT_SAVE",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0513",
+  "text": "portal ta khule dao",
+  "intent": "PORTAL_OPEN",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0514",
+  "text": "set a reminder: prepare the lab sehet on Tuesday",
+  "intent": "REMINDER_SET",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0515",
+  "text": "ping me at 3:15pm to send the attendance report",
+  "intent": "REMINDER_SET",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0516",
+  "text": "how's your self learnning going",
+  "intent": "MEMORY_STATUS",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0517",
+  "text": "upload kora pdf theke 15 ta question banao",
+  "intent": "BLOOM_GENERATE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0518",
+  "text": "am I free at 3:15pm on Monday?",
+  "intent": "SCHEDULE_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0519",
+  "text": "kal amar koyta class ache?",
+  "intent": "SCHEDULE_QUERY",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0520",
+  "text": "who scored the lowest in the ICE420 final",
+  "intent": "DIU_PORTAL_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0521",
+  "text": "hide promotional emaisl from now on",
+  "intent": "EMAIL_RULE",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0522",
+  "text": "student ta list theke bad dao",
+  "intent": "DATA_DELETE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0523",
+  "text": "lab sheet toiri korte bhule jeno na jai, reminder dao",
+  "intent": "REMINDER_SET",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0524",
+  "text": "what's the CO3 attainment for MAT2137",
+  "intent": "SHADSYNC_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0525",
+  "text": "Farhana ke ICE420 theke delete koro",
+  "intent": "DATA_DELETE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0526",
+  "text": "fethc new emails",
+  "intent": "EMAIL_FETCH",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0527",
+  "text": "find the file i saved about recursion",
+  "intent": "VAULT_SEARCH",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0528",
+  "text": "fix the spelling of ayesha's name",
+  "intent": "DATA_EDIT",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0529",
+  "text": "what have you pickeed up from my activity",
+  "intent": "MEMORY_STATUS",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0530",
+  "text": "change the AI model to Gemini",
+  "intent": "MODEL_SWITCH",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0531",
+  "text": "Open the DIU potral",
+  "intent": "PORTAL_OPEN",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0532",
+  "text": "rate the verbs used in my ICE329 outcomes",
+  "intent": "BLOOM_CLO_MAP",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0533",
+  "text": "PHY1022 er CO2 attainment koto?",
+  "intent": "SHADSYNC_QUERY",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0534",
+  "text": "Delete student Nusrat from ICE2241",
+  "intent": "DATA_DELETE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0535",
+  "text": "tell me about my upcoming classes",
+  "intent": "SCHEDULE_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0536",
+  "text": "Farhana ke ICE329 e enrol koro",
+  "intent": "DATA_ADD",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0537",
+  "text": "MAT2137 er PO attainment dekhao",
+  "intent": "SHADSYNC_QUERY",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0538",
+  "text": "when is my next ICE205 class?",
+  "intent": "SCHEDULE_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0539",
+  "text": "go to the DIU teachers portal",
+  "intent": "PORTAL_OPEN",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0540",
+  "text": "what have you leared so far",
+  "intent": "MEMORY_STATUS",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0541",
+  "text": "which Bloom level is this outcome: Evaluate sorting algorithms",
+  "intent": "BLOOM_CLO_MAP",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0542",
+  "text": "list students with grade F in ICE415",
+  "intent": "DIU_PORTAL_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0543",
+  "text": "remind me about the viva session on Monday",
+  "intent": "REMINDER_SET",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0544",
+  "text": "amar HUM101 er CLO gula Bloom level e map koro",
+  "intent": "BLOOM_CLO_MAP",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0545",
+  "text": "show your memory sttats",
+  "intent": "MEMORY_STATUS",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0546",
+  "text": "do I have unread msesages",
+  "intent": "EMAIL_FETCH",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0547",
+  "text": "generate quiz questions on antenna desgin from the pdf",
+  "intent": "BLOOM_GENERATE",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0548",
+  "text": "search my vault for normalisation",
+  "intent": "VAULT_SEARCH",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0549",
+  "text": "Map my CLOs to Blloom's levels",
+  "intent": "BLOOM_CLO_MAP",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0550",
+  "text": "alert me 15 minutes before the BBA101 lecture",
+  "intent": "REMINDER_SET",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0551",
+  "text": "drop Jamal from ICE2241",
+  "intent": "DATA_DELETE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0552",
+  "text": "notify me before my ICE401 class",
+  "intent": "REMINDER_SET",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0553",
+  "text": "delete the Thursday class",
+  "intent": "DATA_DELETE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0554",
+  "text": "EEE1345 er PO attainment dekhao",
+  "intent": "SHADSYNC_QUERY",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0555",
+  "text": "student er naam ta Nusrat koro",
+  "intent": "DATA_EDIT",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0556",
+  "text": "move my Tuesday class to 11 am",
+  "intent": "DATA_EDIT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0557",
+  "text": "BBA101 e ke ke fail korse?",
+  "intent": "DIU_PORTAL_QUERY",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0558",
+  "text": "is there anything new in my email",
+  "intent": "EMAIL_FETCH",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0559",
+  "text": "student er naam ta Mim koro",
+  "intent": "DATA_EDIT",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0560",
+  "text": "I want to input quiz 2 marks for section C",
+  "intent": "SHADSYNC_UPDATE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0561",
+  "text": "create a class entry for Tuesday 3:15pm",
+  "intent": "DATA_ADD",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0562",
+  "text": "ICE329 er lab test marks entry korbo",
+  "intent": "SHADSYNC_UPDATE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0563",
+  "text": "let's use Gemini for this",
+  "intent": "MODEL_SWITCH",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0564",
+  "text": "pull the latest emalis",
+  "intent": "EMAIL_FETCH",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0565",
+  "text": "register a new section for MAT2137",
+  "intent": "DATA_ADD",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0566",
+  "text": "navigate to the result sheet section of the portal",
+  "intent": "DIU_PORTAL_NAV",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0567",
+  "text": "are you getting bteter at helping me",
+  "intent": "MEMORY_STATUS",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0568",
+  "text": "midterm er number gula input dibo",
+  "intent": "SHADSYNC_UPDATE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0569",
+  "text": "portal er password ta vault e save koro",
+  "intent": "VAULT_SAVE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0570",
+  "text": "Generate a lesson plan from this syllabus pdf",
+  "intent": "BLOOM_GENERATE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0571",
+  "text": "Add a new student Karim to PHY1022",
+  "intent": "DATA_ADD",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0572",
+  "text": "how's your self learning goig",
+  "intent": "MEMORY_STATUS",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0573",
+  "text": "what's the CO2 attainment for EEE1345",
+  "intent": "SHADSYNC_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0574",
+  "text": "Budhbar e 12pm e ekta class add koro",
+  "intent": "DATA_ADD",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0575",
+  "text": "birng up the DIU portal",
+  "intent": "PORTAL_OPEN",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0576",
+  "text": "which room is my ICE301 lecture in on Monday",
+  "intent": "SCHEDULE_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0577",
+  "text": "exam controller ke ekta formal mail draft koro",
+  "intent": "EMAIL_DRAFT",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0578",
+  "text": "are you getting better at helpign me",
+  "intent": "MEMORY_STATUS",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0579",
+  "text": "suggest better action verbs for ICE329 CLOs",
+  "intent": "BLOOM_CLO_MAP",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0580",
+  "text": "is there a class after 11 am today?",
+  "intent": "SCHEDULE_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0581",
+  "text": "update the room of my ice301 class to room 210",
+  "intent": "DATA_EDIT",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0582",
+  "text": "Do I have any lectures on Tuesday?",
+  "intent": "SCHEDULE_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0583",
+  "text": "I want to input class test 1 marks for section A",
+  "intent": "SHADSYNC_UPDATE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0584",
+  "text": "who is below 60% attendance in ICE301",
+  "intent": "SHADSYNC_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0585",
+  "text": "what Blom's level does 'Explain the OSI model' sit at",
+  "intent": "BLOOM_CLO_MAP",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0586",
+  "text": "remember this link for latr: https://blc.example.edu/course/12",
+  "intent": "VAULT_SAVE",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0587",
+  "text": "see if ther's new mail",
+  "intent": "EMAIL_FETCH",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0588",
+  "text": "can you help me understand recursion",
+  "intent": "GENERAL_CHAT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0589",
+  "text": "AI model GPT-4o koro",
+  "intent": "MODEL_SWITCH",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0590",
+  "text": "ICE301 e koyjon student 60% er niche?",
+  "intent": "SHADSYNC_QUERY",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0591",
+  "text": "comppose a polite email declining the invitation",
+  "intent": "EMAIL_DRAFT",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0592",
+  "text": "advertisement mail ar dekhabe na",
+  "intent": "EMAIL_RULE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0593",
+  "text": "generate quiz questions on antenna design from the pdf",
+  "intent": "BLOOM_GENERATE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0594",
+  "text": "stop showing me student mail",
+  "intent": "EMAIL_RULE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0595",
+  "text": "ICE401 e ke ke fail korse?",
+  "intent": "DIU_PORTAL_QUERY",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0596",
+  "text": "take attendance for my ICE2241 class",
+  "intent": "SHADSYNC_UPDATE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0597",
+  "text": "which room is my CSE221 lecture in on Monday",
+  "intent": "SCHEDULE_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0598",
+  "text": "how many clases do I have on Monday",
+  "intent": "SCHEDULE_QUERY",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0599",
+  "text": "where is the slides I saved",
+  "intent": "VAULT_SEARCH",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0600",
+  "text": "give me the attainment summary for ICE2241",
+  "intent": "SHADSYNC_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0601",
+  "text": "can you help me understand Bloom's taxonomy",
+  "intent": "GENERAL_CHAT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0602",
+  "text": "open diu teachers portal please",
+  "intent": "PORTAL_OPEN",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0603",
+  "text": "show me what arrievd in my inbox",
+  "intent": "EMAIL_FETCH",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0604",
+  "text": "who is below 50% attendance in mat2137",
+  "intent": "SHADSYNC_QUERY",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0605",
+  "text": "aj er attendance nite chai MAT2137 er",
+  "intent": "SHADSYNC_UPDATE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0606",
+  "text": "what time does my ICE420 class start",
+  "intent": "SCHEDULE_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0607",
+  "text": "suggest better action verbs for HUM101 CLOs",
+  "intent": "BLOOM_CLO_MAP",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0608",
+  "text": "use Gemini from now on",
+  "intent": "MODEL_SWITCH",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0609",
+  "text": "what is the grade distribution of BBA101",
+  "intent": "DIU_PORTAL_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0610",
+  "text": "textbook chapter diye lesson plan toiri koro",
+  "intent": "BLOOM_GENERATE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0611",
+  "text": "how is BBA101 performing against the threshold",
+  "intent": "SHADSYNC_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0612",
+  "text": "let's use OpenRouter for this",
+  "intent": "MODEL_SWITCH",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0613",
+  "text": "Remind me to call the registrar on Monday",
+  "intent": "REMINDER_SET",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0614",
+  "text": "portal e dashboard ta kholo",
+  "intent": "DIU_PORTAL_NAV",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0615",
+  "text": "fetch new emaails",
+  "intent": "EMAIL_FETCH",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0616",
+  "text": "amake blc te nao",
+  "intent": "PORTAL_OPEN",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0617",
+  "text": "I want to talk to the local modeel instead",
+  "intent": "MODEL_SWITCH",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0618",
+  "text": "is this CLO measurable: Desgin a database schema",
+  "intent": "BLOOM_CLO_MAP",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0619",
+  "text": "ignore all work emails",
+  "intent": "EMAIL_RULE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0620",
+  "text": "ignore all student emails",
+  "intent": "EMAIL_RULE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0621",
+  "text": "only show OTP emails until tomorrow",
+  "intent": "EMAIL_RULE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0622",
+  "text": "ei note ta save kore rakho: lab 3 needs new cables",
+  "intent": "VAULT_SAVE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0623",
+  "text": "lanch the university portal",
+  "intent": "PORTAL_OPEN",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0624",
+  "text": "go to reult sheet in the portal",
+  "intent": "DIU_PORTAL_NAV",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0625",
+  "text": "create a new couse PHY1022",
+  "intent": "DATA_ADD",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0626",
+  "text": "lecture notes diye lesson plan toiri koro",
+  "intent": "BLOOM_GENERATE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0627",
+  "text": "I uploaded my slides, make an exam from it",
+  "intent": "BLOOM_GENERATE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0628",
+  "text": "chaneg the AI model to the local model",
+  "intent": "MODEL_SWITCH",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0629",
+  "text": "give me a reprt on your learning",
+  "intent": "MEMORY_STATUS",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0630",
+  "text": "analyse my course outcomes against Bloom's taxonomy",
+  "intent": "BLOOM_CLO_MAP",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0631",
+  "text": "amar save kora textbook chapter ta ber koro",
+  "intent": "VAULT_SEARCH",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0632",
+  "text": "Add a new sttudent Nusrat to ICE415",
+  "intent": "DATA_ADD",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0633",
+  "text": "has anyone emailed me",
+  "intent": "EMAIL_FETCH",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0634",
+  "text": "show my timetable for this week",
+  "intent": "SCHEDULE_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0635",
+  "text": "registrar ke ekta formal mail draft koro",
+  "intent": "EMAIL_DRAFT",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0636",
+  "text": "Delete student Tania from ICE401",
+  "intent": "DATA_DELETE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0637",
+  "text": "open the portal's dashboard",
+  "intent": "DIU_PORTAL_NAV",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0638",
+  "text": "ei textbook chapter theke ekta quiz banao",
+  "intent": "BLOOM_GENERATE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0639",
+  "text": "open DIU techers portal please",
+  "intent": "PORTAL_OPEN",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0640",
+  "text": "show the highest total in ice205 results",
+  "intent": "DIU_PORTAL_QUERY",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0641",
+  "text": "notun student Rahim add koro ICE205 e",
+  "intent": "DATA_ADD",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0642",
+  "text": "model ta GPT-4o e change koro",
+  "intent": "MODEL_SWITCH",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0643",
+  "text": "check whether my clos match their bloom levels",
+  "intent": "BLOOM_CLO_MAP",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0644",
+  "text": "see if thhere's new mail",
+  "intent": "EMAIL_FETCH",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0645",
+  "text": "reply to the chairman saying I will attend",
+  "intent": "EMAIL_DRAFT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0646",
+  "text": "give me the attainment summary for BBA101",
+  "intent": "SHADSYNC_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0647",
+  "text": "jump to result sheet on the teachers portal",
+  "intent": "DIU_PORTAL_NAV",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0648",
+  "text": "ignore all newsletter emails",
+  "intent": "EMAIL_RULE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0649",
+  "text": "has anyonne emailed me",
+  "intent": "EMAIL_FETCH",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0650",
+  "text": "update the room of my MAT2137 class to room 210",
+  "intent": "DATA_EDIT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0651",
+  "text": "aj er attendance nite chai CSE221 er",
+  "intent": "SHADSYNC_UPDATE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0652",
+  "text": "which room is my BBA101 lecture in on Tuesday",
+  "intent": "SCHEDULE_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0653",
+  "text": "thansk a lot",
+  "intent": "GENERAL_CHAT",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0654",
+  "text": "remember this link for lateer: https://blc.example.edu/course/12",
+  "intent": "VAULT_SAVE",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0655",
+  "text": "how many classes do I have on Wednesday",
+  "intent": "SCHEDULE_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0656",
+  "text": "switch my PHY1022 class from Monday to Wednesday",
+  "intent": "DATA_EDIT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0657",
+  "text": "create a class entry for Wednesday 3:15pm",
+  "intent": "DATA_ADD",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0658",
+  "text": "classify these learnng outcomes by cognitive level",
+  "intent": "BLOOM_CLO_MAP",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0659",
+  "text": "take me to the prtal marks entry",
+  "intent": "DIU_PORTAL_NAV",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0660",
+  "text": "what have you pickde up from my activity",
+  "intent": "MEMORY_STATUS",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0661",
+  "text": "student der ekta email likho the make-up class niye",
+  "intent": "EMAIL_DRAFT",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0662",
+  "text": "what have you lerned so far",
+  "intent": "MEMORY_STATUS",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0663",
+  "text": "bring up the DIU porrtal",
+  "intent": "PORTAL_OPEN",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0664",
+  "text": "corrcet Mehedi's ID in MAT2137",
+  "intent": "DATA_EDIT",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0665",
+  "text": "ei lecture notes theke ekta quiz banao",
+  "intent": "BLOOM_GENERATE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0666",
+  "text": "ICE2241 er PO attainment dekhao",
+  "intent": "SHADSYNC_QUERY",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0667",
+  "text": "notun student Farhana add koro HUM101 e",
+  "intent": "DATA_ADD",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0668",
+  "text": "what time does my ICE401 class start",
+  "intent": "SCHEDULE_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0669",
+  "text": "router er password ta vault e save koro",
+  "intent": "VAULT_SAVE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0670",
+  "text": "give me the attainment summary for ICE205",
+  "intent": "SHADSYNC_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0671",
+  "text": "notun mail ache ki?",
+  "intent": "EMAIL_FETCH",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0672",
+  "text": "ping me at 8:30 to prpeare the lab sheet",
+  "intent": "REMINDER_SET",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0673",
+  "text": "whaat's the pass rate for CSE221",
+  "intent": "DIU_PORTAL_QUERY",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0674",
+  "text": "What classes do I have tonight?",
+  "intent": "SCHEDULE_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0675",
+  "text": "PHY1022 course ta remove kore dao",
+  "intent": "DATA_DELETE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0676",
+  "text": "add Mim to my BBA101 list",
+  "intent": "DATA_ADD",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0677",
+  "text": "locate my note on machine learning",
+  "intent": "VAULT_SEARCH",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0678",
+  "text": "get rid of the ICE401 course",
+  "intent": "DATA_DELETE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0679",
+  "text": "ICE420 course ta remove kore dao",
+  "intent": "DATA_DELETE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0680",
+  "text": "do I have a password saved for router",
+  "intent": "VAULT_SEARCH",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0681",
+  "text": "use Claude from now on",
+  "intent": "MODEL_SWITCH",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0682",
+  "text": "ami ki ki bole diyechi tomake mone ache?",
+  "intent": "MEMORY_STATUS",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0683",
+  "text": "PHY1022 er CO3 attainment koto?",
+  "intent": "SHADSYNC_QUERY",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0684",
+  "text": "HUM101 course ta remove kore dao",
+  "intent": "DATA_DELETE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0685",
+  "text": "tell me aout my upcoming classes",
+  "intent": "SCHEDULE_QUERY",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0686",
+  "text": "search the vault for the department password",
+  "intent": "VAULT_SEARCH",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0687",
+  "text": "drop Imran from EEE1345",
+  "intent": "DATA_DELETE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0688",
+  "text": "who scored the lowest in the ICE401 final",
+  "intent": "DIU_PORTAL_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0689",
+  "text": "keep this file saffely in the vault",
+  "intent": "VAULT_SAVE",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0690",
+  "text": "portal e marks entry ta kholo",
+  "intent": "DIU_PORTAL_NAV",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0691",
+  "text": "Switch to Claude",
+  "intent": "MODEL_SWITCH",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0692",
+  "text": "which Bloom level is this outcome: Apply Ohm's law to solve circuits",
+  "intent": "BLOOM_CLO_MAP",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0693",
+  "text": "take me to the BLC wesite",
+  "intent": "PORTAL_OPEN",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0694",
+  "text": "is this CLO measurable: Evaluate sorting algorithms",
+  "intent": "BLOOM_CLO_MAP",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0695",
+  "text": "erase section b of phy1022",
+  "intent": "DATA_DELETE",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0696",
+  "text": "BBA101 er assignment 3 marks entry korbo",
+  "intent": "SHADSYNC_UPDATE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0697",
+  "text": "portal er dashboard page e jao",
+  "intent": "DIU_PORTAL_NAV",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0698",
+  "text": "faculty meeting er age amake janio",
+  "intent": "REMINDER_SET",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0699",
+  "text": "add a class on Sunday at 3:15pm for ICE2241",
+  "intent": "DATA_ADD",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0700",
+  "text": "amar timetable ta dekhao",
+  "intent": "SCHEDULE_QUERY",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0701",
+  "text": "CT marks page dekhao portal e",
+  "intent": "DIU_PORTAL_NAV",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0702",
+  "text": "list students with grade F in BBA101",
+  "intent": "DIU_PORTAL_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0703",
+  "text": "see if theer's new mail",
+  "intent": "EMAIL_FETCH",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0704",
+  "text": "erase sectiion C of PHY1022",
+  "intent": "DATA_DELETE",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0705",
+  "text": "do I have a password savved for department",
+  "intent": "VAULT_SEARCH",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0706",
+  "text": "who scored the lowest in the ICE205 final",
+  "intent": "DIU_PORTAL_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0707",
+  "text": "what Bloo'ms level does 'Explain the OSI model' sit at",
+  "intent": "BLOOM_CLO_MAP",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0708",
+  "text": "creatte 14 multiple choice questions from the uploaded question bank",
+  "intent": "BLOOM_GENERATE",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0709",
+  "text": "amake ajke syllabus upload korte mone koriye dio",
+  "intent": "REMINDER_SET",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0710",
+  "text": "list at-risk students in PHY1022",
+  "intent": "SHADSYNC_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0711",
+  "text": "give me a report on your learninng",
+  "intent": "MEMORY_STATUS",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0712",
+  "text": "write a worksheet based on the attached course outline",
+  "intent": "BLOOM_GENERATE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0713",
+  "text": "what's on my schedule this afternoon",
+  "intent": "SCHEDULE_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0714",
+  "text": "amar CSE221 er CLO gula Bloom level e map koro",
+  "intent": "BLOOM_CLO_MAP",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0715",
+  "text": "show your mmeory stats",
+  "intent": "MEMORY_STATUS",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0716",
+  "text": "3:15pm e meeting er reminder set koro",
+  "intent": "REMINDER_SET",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0717",
+  "text": "marks entry dekhao portal e",
+  "intent": "DIU_PORTAL_NAV",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0718",
+  "text": "how many things have you memorised",
+  "intent": "MEMORY_STATUS",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0719",
+  "text": "launch the university porttal",
+  "intent": "PORTAL_OPEN",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0720",
+  "text": "who invented the telephone",
+  "intent": "GENERAL_CHAT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0721",
+  "text": "filter out promotional emails",
+  "intent": "EMAIL_RULE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0722",
+  "text": "AI model the local model koro",
+  "intent": "MODEL_SWITCH",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0723",
+  "text": "swap the model to GPT-4o",
+  "intent": "MODEL_SWITCH",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0724",
+  "text": "dhonnobad",
+  "intent": "GENERAL_CHAT",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0725",
+  "text": "Map my CLOs to Bloom's leevels",
+  "intent": "BLOOM_CLO_MAP",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0726",
+  "text": "register a new sectiion for ICE301",
+  "intent": "DATA_ADD",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0727",
+  "text": "save this course outline to my vault",
+  "intent": "VAULT_SAVE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0728",
+  "text": "edit the section of ICE420 to B",
+  "intent": "DATA_EDIT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0729",
+  "text": "launch the unievrsity portal",
+  "intent": "PORTAL_OPEN",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0730",
+  "text": "portal e grade sheet ta kholo",
+  "intent": "DIU_PORTAL_NAV",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0731",
+  "text": "ICE2241 nam e ekta notun course banao",
+  "intent": "DATA_ADD",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0732",
+  "text": "what did I save about OOP",
+  "intent": "VAULT_SEARCH",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0733",
+  "text": "spam mail ar dekhabe na",
+  "intent": "EMAIL_RULE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0734",
+  "text": "write down in the vault that lab 3 needs new cables",
+  "intent": "VAULT_SAVE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0735",
+  "text": "keep this file safely in the vault",
+  "intent": "VAULT_SAVE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0736",
+  "text": "add a class on wednesday at 12pm for ice2241",
+  "intent": "DATA_ADD",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0737",
+  "text": "is CLO3 attained in ICE301",
+  "intent": "SHADSYNC_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0738",
+  "text": "correct Karim's ID in MAT2137",
+  "intent": "DATA_EDIT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0739",
+  "text": "Add a new student Jamal to HUM101",
+  "intent": "DATA_ADD",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0740",
+  "text": "good evning",
+  "intent": "GENERAL_CHAT",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0741",
+  "text": "what did I save about machine learning",
+  "intent": "VAULT_SEARCH",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0742",
+  "text": "ICE415 er grade distribution ta bolo",
+  "intent": "DIU_PORTAL_QUERY",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0743",
+  "text": "ke sob theke beshi number peyeche PHY1022 e?",
+  "intent": "DIU_PORTAL_QUERY",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0744",
+  "text": "open DIU teaachers portal please",
+  "intent": "PORTAL_OPEN",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0745",
+  "text": "supervisor er email ke priority dao",
+  "intent": "EMAIL_RULE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0746",
+  "text": "log today's attendance for ICE401",
+  "intent": "SHADSYNC_UPDATE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0747",
+  "text": "promotional mail ar dekhabe na",
+  "intent": "EMAIL_RULE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0748",
+  "text": "ping me at 10:30 to upload the syllabus",
+  "intent": "REMINDER_SET",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0749",
+  "text": "ei note ta save kore rakho: results meeting at noon",
+  "intent": "VAULT_SAVE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0750",
+  "text": "reply to the exam controller saying I will attend",
+  "intent": "EMAIL_DRAFT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0751",
+  "text": "newsletter mail ar dekhabe na",
+  "intent": "EMAIL_RULE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0752",
+  "text": "remove imran from my list",
+  "intent": "DATA_DELETE",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0753",
+  "text": "write a worksheet based on the attached question bank",
+  "intent": "BLOOM_GENERATE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0754",
+  "text": "I want to input lab test marks for section C",
+  "intent": "SHADSYNC_UPDATE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0755",
+  "text": "enrol Farhana in ICE301",
+  "intent": "DATA_ADD",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0756",
+  "text": "launch the universty portal",
+  "intent": "PORTAL_OPEN",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0757",
+  "text": "compose a polite email declining the invitation",
+  "intent": "EMAIL_DRAFT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0758",
+  "text": "dean ke ekta formal mail draft koro",
+  "intent": "EMAIL_DRAFT",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0759",
+  "text": "look up the link I stored for wifi",
+  "intent": "VAULT_SEARCH",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0760",
+  "text": "get rid of the BBA101 couse",
+  "intent": "DATA_DELETE",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0761",
+  "text": "jump to dashboard on the teachers portal",
+  "intent": "DIU_PORTAL_NAV",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0762",
+  "text": "how many students are below 50% in CLO1",
+  "intent": "SHADSYNC_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0763",
+  "text": "Claude diye kaj koro",
+  "intent": "MODEL_SWITCH",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0764",
+  "text": "show me PO attainment of ICE329",
+  "intent": "SHADSYNC_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0765",
+  "text": "add this document to my valut",
+  "intent": "VAULT_SAVE",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0766",
+  "text": "I uploaded my course outline, make an exam from it",
+  "intent": "BLOOM_GENERATE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0767",
+  "text": "search my vault for pointters",
+  "intent": "VAULT_SEARCH",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0768",
+  "text": "what's the co1 attainment for bba101",
+  "intent": "SHADSYNC_QUERY",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0769",
+  "text": "write down in the vault that midterm questions due Friday",
+  "intent": "VAULT_SAVE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0770",
+  "text": "reply to Dr. Hasan saying I will attend",
+  "intent": "EMAIL_DRAFT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0771",
+  "text": "shudhu dean er email dekhao aj",
+  "intent": "EMAIL_RULE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0772",
+  "text": "I want to input class test 1 marks for section B",
+  "intent": "SHADSYNC_UPDATE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0773",
+  "text": "bring up dashboard in the portal",
+  "intent": "DIU_PORTAL_NAV",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0774",
+  "text": "is there a class after 2pm today?",
+  "intent": "SCHEDULE_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0775",
+  "text": "see if theree's new mail",
+  "intent": "EMAIL_FETCH",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0776",
+  "text": "thanks a lot",
+  "intent": "GENERAL_CHAT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0777",
+  "text": "put my router login in the vault",
+  "intent": "VAULT_SAVE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0778",
+  "text": "hide work emails from now on",
+  "intent": "EMAIL_RULE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0779",
+  "text": "can you prepare practice questions from my lecture noets",
+  "intent": "BLOOM_GENERATE",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0780",
+  "text": "are you gettnig better at helping me",
+  "intent": "MEMORY_STATUS",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0781",
+  "text": "remove the course ICE301",
+  "intent": "DATA_DELETE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0782",
+  "text": "save this question bank to my vault",
+  "intent": "VAULT_SAVE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0783",
+  "text": "how's your self learning goign",
+  "intent": "MEMORY_STATUS",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0784",
+  "text": "what is the clo attainment for ice401",
+  "intent": "SHADSYNC_QUERY",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0785",
+  "text": "show weak CLOs for MAT2137",
+  "intent": "SHADSYNC_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0786",
+  "text": "update the room of my PHY1022 class to the seminar hall",
+  "intent": "DATA_EDIT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0787",
+  "text": "write an email to my students about tomorrow's cancelled lecture",
+  "intent": "EMAIL_DRAFT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0788",
+  "text": "draft an email requesting the room key",
+  "intent": "EMAIL_DRAFT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0789",
+  "text": "what is the grade distribution of EEE1345",
+  "intent": "DIU_PORTAL_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0790",
+  "text": "rate the verbs used in my ICE2241 outcomes",
+  "intent": "BLOOM_CLO_MAP",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0791",
+  "text": "strt the BLC portal",
+  "intent": "PORTAL_OPEN",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0792",
+  "text": "what did I save about normalisation",
+  "intent": "VAULT_SEARCH",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0793",
+  "text": "start usinng Gemini",
+  "intent": "MODEL_SWITCH",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0794",
+  "text": "Sombar er class ta muche felo",
+  "intent": "DATA_DELETE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0795",
+  "text": "delete the Wednesday class",
+  "intent": "DATA_DELETE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0796",
+  "text": "register a new section for HUM101",
+  "intent": "DATA_ADD",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0797",
+  "text": "portal er attendance page e jao",
+  "intent": "DIU_PORTAL_NAV",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0798",
+  "text": "what did I save about antenna design",
+  "intent": "VAULT_SEARCH",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0799",
+  "text": "update the room of my BBA101 class to room 210",
+  "intent": "DATA_EDIT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0800",
+  "text": "amake ajke marks submit korte mone koriye dio",
+  "intent": "REMINDER_SET",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0801",
+  "text": "is there anyything new in my email",
+  "intent": "EMAIL_FETCH",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0802",
+  "text": "turn this lecture notes into a lesson plan",
+  "intent": "BLOOM_GENERATE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0803",
+  "text": "what is the grade distribution of ICE420",
+  "intent": "DIU_PORTAL_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0804",
+  "text": "Ayesha er ID ta thik koro",
+  "intent": "DATA_EDIT",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0805",
+  "text": "remind me to send the attendance report tonight",
+  "intent": "REMINDER_SET",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0806",
+  "text": "look up the link I stored for lab server",
+  "intent": "VAULT_SEARCH",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0807",
+  "text": "MAT2137 er final marks entry korbo",
+  "intent": "SHADSYNC_UPDATE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0808",
+  "text": "drop Mim from ICE301",
+  "intent": "DATA_DELETE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0809",
+  "text": "only show spam emails until tomorrow",
+  "intent": "EMAIL_RULE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0810",
+  "text": "mute emails from hr for a week",
+  "intent": "EMAIL_RULE",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0811",
+  "text": "vault e normalisation er note khuje dao",
+  "intent": "VAULT_SEARCH",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0812",
+  "text": "prepare an email to the department about the quiz postponement",
+  "intent": "EMAIL_DRAFT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0813",
+  "text": "give me the grand total ranking for EEE1345",
+  "intent": "DIU_PORTAL_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0814",
+  "text": "Switch to Gemni",
+  "intent": "MODEL_SWITCH",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0815",
+  "text": "Sombar e 12pm e ekta class add koro",
+  "intent": "DATA_ADD",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0816",
+  "text": "notun student Ayesha add koro ICE420 e",
+  "intent": "DATA_ADD",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0817",
+  "text": "Mehedi er attendance koto CSE221 te?",
+  "intent": "SHADSYNC_QUERY",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0818",
+  "text": "I need to enter attendance for section B",
+  "intent": "SHADSYNC_UPDATE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0819",
+  "text": "How much have you lerned about me?",
+  "intent": "MEMORY_STATUS",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0820",
+  "text": "CLO er action verb gula thik ache ki?",
+  "intent": "BLOOM_CLO_MAP",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0821",
+  "text": "how's your self learning goiing",
+  "intent": "MEMORY_STATUS",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0822",
+  "text": "build a test paper from the quetsion bank",
+  "intent": "BLOOM_GENERATE",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0823",
+  "text": "has anyone emaailed me",
+  "intent": "EMAIL_FETCH",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0824",
+  "text": "ekhon theke Claude use koro",
+  "intent": "MODEL_SWITCH",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0825",
+  "text": "amar save kora chapter 4 pdf ta ber koro",
+  "intent": "VAULT_SEARCH",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0826",
+  "text": "blc site e niye jao",
+  "intent": "PORTAL_OPEN",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0827",
+  "text": "amar BBA101 er CLO gula Bloom level e map koro",
+  "intent": "BLOOM_CLO_MAP",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0828",
+  "text": "chairman er email er reply likhe dao",
+  "intent": "EMAIL_DRAFT",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0829",
+  "text": "upload kora pdf theke 8 ta question banao",
+  "intent": "BLOOM_GENERATE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0830",
+  "text": "what have you learend so far",
+  "intent": "MEMORY_STATUS",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0831",
+  "text": "Any new eails?",
+  "intent": "EMAIL_FETCH",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0832",
+  "text": "navigate to the marks entry section of the portal",
+  "intent": "DIU_PORTAL_NAV",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0833",
+  "text": "portal er result sheet page e jao",
+  "intent": "DIU_PORTAL_NAV",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0834",
+  "text": "stop showing me advertisement mail",
+  "intent": "EMAIL_RULE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0835",
+  "text": "notiify me before my EEE1345 class",
+  "intent": "REMINDER_SET",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0836",
+  "text": "who is below 75% attendance in HUM101",
+  "intent": "SHADSYNC_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0837",
+  "text": "OpenRouter diye kaj koro",
+  "intent": "MODEL_SWITCH",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0838",
+  "text": "what is the capital of Egypt",
+  "intent": "GENERAL_CHAT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0839",
+  "text": "Save this link: https://blc.example.edu/course/12",
+  "intent": "VAULT_SAVE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0840",
+  "text": "show my timetable for this afternoon",
+  "intent": "SCHEDULE_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0841",
+  "text": "align the ICE205 CLOs with Bloom's taxonomy",
+  "intent": "BLOOM_CLO_MAP",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0842",
+  "text": "sync my mail",
+  "intent": "EMAIL_FETCH",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0843",
+  "text": "classiffy these learning outcomes by cognitive level",
+  "intent": "BLOOM_CLO_MAP",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0844",
+  "text": "bring up grade sheet in the portal",
+  "intent": "DIU_PORTAL_NAV",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0845",
+  "text": "what's the difference betweeen a virus and a bacterium",
+  "intent": "GENERAL_CHAT",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0846",
+  "text": "exam invigilation er age amake janio",
+  "intent": "REMINDER_SET",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0847",
+  "text": "Draft a reply to the last email from Dr. Hasan",
+  "intent": "EMAIL_DRAFT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0848",
+  "text": "ke sob theke beshi number peyeche ICE401 e?",
+  "intent": "DIU_PORTAL_QUERY",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0849",
+  "text": "put my department login in the vault",
+  "intent": "VAULT_SAVE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0850",
+  "text": "Who failled ICE205 in the portal results?",
+  "intent": "DIU_PORTAL_QUERY",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0851",
+  "text": "ke sob theke beshi number peyeche EEE1345 e?",
+  "intent": "DIU_PORTAL_QUERY",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0852",
+  "text": "remember this link for later: www.example.edu/forms",
+  "intent": "VAULT_SAVE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0853",
+  "text": "modify the Monday class time",
+  "intent": "DATA_EDIT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0854",
+  "text": "tell me about supply and demand",
+  "intent": "GENERAL_CHAT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0855",
+  "text": "what's the CO5 attainment for CSE221",
+  "intent": "SHADSYNC_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0856",
+  "text": "do I have unread messages",
+  "intent": "EMAIL_FETCH",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0857",
+  "text": "amake ajke question paper print korte mone koriye dio",
+  "intent": "REMINDER_SET",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0858",
+  "text": "student er naam ta Tania koro",
+  "intent": "DATA_EDIT",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0859",
+  "text": "what Bloom's level does 'Apply Ohm's law to solve circuits' sit at",
+  "intent": "BLOOM_CLO_MAP",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0860",
+  "text": "set the assistant to Claude",
+  "intent": "MODEL_SWITCH",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0861",
+  "text": "save a note: reesults meeting at noon",
+  "intent": "VAULT_SAVE",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0862",
+  "text": "mute emails from the registrar for a week",
+  "intent": "EMAIL_RULE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0863",
+  "text": "ICE420 er CO4 attainment koto?",
+  "intent": "SHADSYNC_QUERY",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0864",
+  "text": "give me a report on your learrning",
+  "intent": "MEMORY_STATUS",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0865",
+  "text": "register a new section for ICE301",
+  "intent": "DATA_ADD",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0866",
+  "text": "portal e course registration ta kholo",
+  "intent": "DIU_PORTAL_NAV",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0867",
+  "text": "who invented the teephone",
+  "intent": "GENERAL_CHAT",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0868",
+  "text": "give me a report on your leaning",
+  "intent": "MEMORY_STATUS",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0869",
+  "text": "delete the ICE415 class on Tuesday",
+  "intent": "DATA_DELETE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0870",
+  "text": "record absent students for HUM101 lecture 2",
+  "intent": "SHADSYNC_UPDATE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0871",
+  "text": "how many students passed HUM101 this semester",
+  "intent": "DIU_PORTAL_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0872",
+  "text": "do I have a password saved for lab server",
+  "intent": "VAULT_SEARCH",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0873",
+  "text": "alert me 15 minutes before the CSE221 lecture",
+  "intent": "REMINDER_SET",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0874",
+  "text": "file ta vault e jog koro",
+  "intent": "VAULT_SAVE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0875",
+  "text": "suggest bettter action verbs for PHY1022 CLOs",
+  "intent": "BLOOM_CLO_MAP",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0876",
+  "text": "amake aj question paper print korte mone koriye dio",
+  "intent": "REMINDER_SET",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0877",
+  "text": "which students failed CLO3 in ICE401",
+  "intent": "SHADSYNC_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0878",
+  "text": "change the AI model to OpenRouter",
+  "intent": "MODEL_SWITCH",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0879",
+  "text": "shudhu chairman er email dekhao aj",
+  "intent": "EMAIL_RULE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0880",
+  "text": "CSE221 er PO attainment dekhao",
+  "intent": "SHADSYNC_QUERY",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0881",
+  "text": "fetch new emils",
+  "intent": "EMAIL_FETCH",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0882",
+  "text": "ei link ta vault e rakho",
+  "intent": "VAULT_SAVE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0883",
+  "text": "ke sob theke beshi number peyeche ICE415 e?",
+  "intent": "DIU_PORTAL_QUERY",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0884",
+  "text": "ICE205 nam e ekta notun course banao",
+  "intent": "DATA_ADD",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0885",
+  "text": "put my portal login in the vault",
+  "intent": "VAULT_SAVE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0886",
+  "text": "put my library login in the vaut",
+  "intent": "VAULT_SAVE",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0887",
+  "text": "tell me about Ohm's law",
+  "intent": "GENERAL_CHAT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0888",
+  "text": "What is the CLO attainment for HUM101?",
+  "intent": "SHADSYNC_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0889",
+  "text": "which students have irregular attendance in the portal",
+  "intent": "DIU_PORTAL_QUERY",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0890",
+  "text": "take me to the portal course registration",
+  "intent": "DIU_PORTAL_NAV",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0891",
+  "text": "Ravibar er class ta 12pm e soriye dao",
+  "intent": "DATA_EDIT",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0892",
+  "text": "go to the DIU teachers prtal",
+  "intent": "PORTAL_OPEN",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0893",
+  "text": "navigate to the course registration section of the portal",
+  "intent": "DIU_PORTAL_NAV",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0894",
+  "text": "portal e result sheet ta kholo",
+  "intent": "DIU_PORTAL_NAV",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0895",
+  "text": "write a short poem about lab server",
+  "intent": "GENERAL_CHAT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0896",
+  "text": "piroritise emails from the chairman",
+  "intent": "EMAIL_RULE",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0897",
+  "text": "explain what Ohm's law is",
+  "intent": "GENERAL_CHAT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0898",
+  "text": "Enter marks for ICE420 assignment 3",
+  "intent": "SHADSYNC_UPDATE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0899",
+  "text": "go to ct marks page in the portal",
+  "intent": "DIU_PORTAL_NAV",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0900",
+  "text": "any new emails",
+  "intent": "EMAIL_FETCH",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0901",
+  "text": "show my timetable for tomorrow",
+  "intent": "SCHEDULE_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0902",
+  "text": "department seminar er age amake janio",
+  "intent": "REMINDER_SET",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0903",
+  "text": "edit the section of ICE401 to B",
+  "intent": "DATA_EDIT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0904",
+  "text": "show my timetable for tonight",
+  "intent": "SCHEDULE_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0905",
+  "text": "show the course registraation page in the portal",
+  "intent": "DIU_PORTAL_NAV",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0906",
+  "text": "Mongolbar er class ta muche felo",
+  "intent": "DATA_DELETE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0907",
+  "text": "ICE420 er CO3 attainment koto?",
+  "intent": "SHADSYNC_QUERY",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0908",
+  "text": "suggest better action versb for HUM101 CLOs",
+  "intent": "BLOOM_CLO_MAP",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0909",
+  "text": "give me a report on your learning",
+  "intent": "MEMORY_STATUS",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0910",
+  "text": "move my Tuesday class to 9am",
+  "intent": "DATA_EDIT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0911",
+  "text": "ICE329 er CO1 attainment koto?",
+  "intent": "SHADSYNC_QUERY",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0912",
+  "text": "Draft a reply to the last email from the chaimran",
+  "intent": "EMAIL_DRAFT",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0913",
+  "text": "Sombar e 3:15pm e ekta class add koro",
+  "intent": "DATA_ADD",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0914",
+  "text": "ICE301 er class kokhon?",
+  "intent": "SCHEDULE_QUERY",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0915",
+  "text": "notify me before my ICE301 class",
+  "intent": "REMINDER_SET",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0916",
+  "text": "ekhon theke the local model use koro",
+  "intent": "MODEL_SWITCH",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0917",
+  "text": "correct Shoaib's ID in EEE1345",
+  "intent": "DATA_EDIT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0918",
+  "text": "dean er email ke priority dao",
+  "intent": "EMAIL_RULE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0919",
+  "text": "open DIU teachers portal pleease",
+  "intent": "PORTAL_OPEN",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0920",
+  "text": "set a reminder: submit the marks on Suday",
+  "intent": "REMINDER_SET",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0921",
+  "text": "brign up the DIU portal",
+  "intent": "PORTAL_OPEN",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0922",
+  "text": "chairman er email ke priority dao",
+  "intent": "EMAIL_RULE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0923",
+  "text": "explain what the Nyquist theorem is",
+  "intent": "GENERAL_CHAT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0924",
+  "text": "generate a lesson plan from this slides",
+  "intent": "BLOOM_GENERATE",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0925",
+  "text": "take me to the BLC websiite",
+  "intent": "PORTAL_OPEN",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0926",
+  "text": "erase section c of ice401",
+  "intent": "DATA_DELETE",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0927",
+  "text": "don't notify me abot work emails",
+  "intent": "EMAIL_RULE",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0928",
+  "text": "save a note: results meeting at noon",
+  "intent": "VAULT_SAVE",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0929",
+  "text": "outcome gular Bloom level ber koro",
+  "intent": "BLOOM_CLO_MAP",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0930",
+  "text": "Karim ke EEE1345 e enrol koro",
+  "intent": "DATA_ADD",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0931",
+  "text": "bring up attendance in the portal",
+  "intent": "DIU_PORTAL_NAV",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0932",
+  "text": "compose a polite email decliing the invitation",
+  "intent": "EMAIL_DRAFT",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0933",
+  "text": "how many classses do I have on Monday",
+  "intent": "SCHEDULE_QUERY",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0934",
+  "text": "help me write to the exam controller about the lab schedule change",
+  "intent": "EMAIL_DRAFT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0935",
+  "text": "store my portal password in the vault",
+  "intent": "VAULT_SAVE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0936",
+  "text": "record absent students for EEE1345 lecture 10",
+  "intent": "SHADSYNC_UPDATE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0937",
+  "text": "search my vault for signal processing",
+  "intent": "VAULT_SEARCH",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0938",
+  "text": "what is the capital of Japan",
+  "intent": "GENERAL_CHAT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0939",
+  "text": "what is the grade distribution of ICE205",
+  "intent": "DIU_PORTAL_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0940",
+  "text": "give me the grand total ranking for ICE2241",
+  "intent": "DIU_PORTAL_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0941",
+  "text": "hide advertisement emails from now on",
+  "intent": "EMAIL_RULE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0942",
+  "text": "Save this link: www.eample.edu/forms",
+  "intent": "VAULT_SAVE",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0943",
+  "text": "remind me about the department seminar on Wednesday",
+  "intent": "REMINDER_SET",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0944",
+  "text": "delete the MAT2137 class on Wednesday",
+  "intent": "DATA_DELETE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0945",
+  "text": "ignore all marketing emails",
+  "intent": "EMAIL_RULE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0946",
+  "text": "vault e OOP er note khuje dao",
+  "intent": "VAULT_SEARCH",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0947",
+  "text": "draft an email requesting extra time",
+  "intent": "EMAIL_DRAFT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0948",
+  "text": "Mim er ID ta thik koro",
+  "intent": "DATA_EDIT",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0949",
+  "text": "go to the DIU teachers protal",
+  "intent": "PORTAL_OPEN",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0950",
+  "text": "record absent students for ICE2241 lecture 14",
+  "intent": "SHADSYNC_UPDATE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0951",
+  "text": "upload kora pdf theke 2 ta question banao",
+  "intent": "BLOOM_GENERATE",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0952",
+  "text": "draft an email requesting the seminar slides",
+  "intent": "EMAIL_DRAFT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0953",
+  "text": "hide student emails from now on",
+  "intent": "EMAIL_RULE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0954",
+  "text": "show the course registrtion page in the portal",
+  "intent": "DIU_PORTAL_NAV",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0955",
+  "text": "how many classes do I have on Sunday",
+  "intent": "SCHEDULE_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0956",
+  "text": "amar ICE420 er CLO gula Bloom level e map koro",
+  "intent": "BLOOM_CLO_MAP",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0957",
+  "text": "student der ekta email likho extending the deadline niye",
+  "intent": "EMAIL_DRAFT",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0958",
+  "text": "amake porshu quiz grade korte mone koriye dio",
+  "intent": "REMINDER_SET",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0959",
+  "text": "bring up the DIU portl",
+  "intent": "PORTAL_OPEN",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0960",
+  "text": "reply to HR saying I will attend",
+  "intent": "EMAIL_DRAFT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0961",
+  "text": "open DIU teachers potal please",
+  "intent": "PORTAL_OPEN",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0962",
+  "text": "build a test paper from the syllabus pdf",
+  "intent": "BLOOM_GENERATE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0963",
+  "text": "create a class entry for Sunday 11 am",
+  "intent": "DATA_ADD",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0964",
+  "text": "stop showing me work mail",
+  "intent": "EMAIL_RULE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0965",
+  "text": "don't let me forget to grade the quizzes",
+  "intent": "REMINDER_SET",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0966",
+  "text": "navigate to the dashboard section of the portal",
+  "intent": "DIU_PORTAL_NAV",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0967",
+  "text": "Open the DIU portla",
+  "intent": "PORTAL_OPEN",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0968",
+  "text": "ICE2241 e ke ke fail korse?",
+  "intent": "DIU_PORTAL_QUERY",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0969",
+  "text": "show my timetable for by Thursday",
+  "intent": "SCHEDULE_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0970",
+  "text": "compose a polite emil declining the invitation",
+  "intent": "EMAIL_DRAFT",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0971",
+  "text": "staart the BLC portal",
+  "intent": "PORTAL_OPEN",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0972",
+  "text": "locate my note on recursion",
+  "intent": "VAULT_SEARCH",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0973",
+  "text": "tomar learning kemon cholche?",
+  "intent": "MEMORY_STATUS",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0974",
+  "text": "add a class on Wednesday at 11 am for ICE420",
+  "intent": "DATA_ADD",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0975",
+  "text": "remove the course BBA101",
+  "intent": "DATA_DELETE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0976",
+  "text": "only show newsletter emails until tomorrow",
+  "intent": "EMAIL_RULE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0977",
+  "text": "prioritise emails from the chairman",
+  "intent": "EMAIL_RULE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0978",
+  "text": "go to the DIU teachers porttal",
+  "intent": "PORTAL_OPEN",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0979",
+  "text": "open the portal's marks entry",
+  "intent": "DIU_PORTAL_NAV",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0980",
+  "text": "write down in the vault that results meeting at noon",
+  "intent": "VAULT_SAVE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0981",
+  "text": "can you help me understand entropy",
+  "intent": "GENERAL_CHAT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0982",
+  "text": "vault e signal processing er note khuje dao",
+  "intent": "VAULT_SEARCH",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0983",
+  "text": "respnd to this mail: I need more time",
+  "intent": "EMAIL_DRAFT",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0984",
+  "text": "amar somporke koto jano?",
+  "intent": "MEMORY_STATUS",
+  "tag": "banglish"
+ },
+ {
+  "id": "gen-0985",
+  "text": "compose a polite emaail declining the invitation",
+  "intent": "EMAIL_DRAFT",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0986",
+  "text": "Delete studnt Karim from ICE329",
+  "intent": "DATA_DELETE",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0987",
+  "text": "add Karim to my ICE329 list",
+  "intent": "DATA_ADD",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0988",
+  "text": "start marks entry for BBA101",
+  "intent": "SHADSYNC_UPDATE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0989",
+  "text": "look up the link I stored for prtal",
+  "intent": "VAULT_SEARCH",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0990",
+  "text": "keep this file sfely in the vault",
+  "intent": "VAULT_SAVE",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0991",
+  "text": "open DIU teachers portal pleaase",
+  "intent": "PORTAL_OPEN",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-0992",
+  "text": "from now on treat marketing emails as low priority",
+  "intent": "EMAIL_RULE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0993",
+  "text": "Delete student Mim from ICE415",
+  "intent": "DATA_DELETE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0994",
+  "text": "generate quiz questions on normalisation from the pdf",
+  "intent": "BLOOM_GENERATE",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0995",
+  "text": "open the portal's grade sheet",
+  "intent": "DIU_PORTAL_NAV",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0996",
+  "text": "can you help me understand the Nyquist theorem",
+  "intent": "GENERAL_CHAT",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0997",
+  "text": "how many got A+ in PHY1022",
+  "intent": "DIU_PORTAL_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0998",
+  "text": "What classes do I have on Monday?",
+  "intent": "SCHEDULE_QUERY",
+  "tag": "clean"
+ },
+ {
+  "id": "gen-0999",
+  "text": "how many students passed mat2137 this semester",
+  "intent": "DIU_PORTAL_QUERY",
+  "tag": "typo"
+ },
+ {
+  "id": "gen-1000",
+  "text": "how much have you learned about me",
+  "intent": "MEMORY_STATUS",
+  "tag": "typo"
+ }
+]

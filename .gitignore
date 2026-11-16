@@ -1,0 +1,31 @@
+.env
+*.db
+*.sqlite
+/build
+/dist
+portable.enc
+keychain-test.json
+/secrets
+node_modules
+api-keys.json
+*.log
+.DS_Store
+Thumbs.db
+
+# --- Added 2026-10-29 at git init ---
+# Real student data must never be committed (marks sheets, exports, rosters).
+*.xls
+*.xlsx
+*.csv
+*.db-wal
+*.db-shm
+# MarkItDown converter binary (654 MB, exceeds git hosting limits).
+# Rebuild from python/converter.py with PyInstaller.
+bin/*.exe
+# Local Claude Code permissions (machine-specific)
+.claude/settings.local.json
+# Eval data that contains real student names/IDs (QUALITY.md rule 1)
+eval/data/private/
+
+# eval caches (regenerable)
+eval/.cache/

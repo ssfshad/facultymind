@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FacultyMind — Schedule + ShadSync Preview</title>
+  <script>(function(){const t=localStorage.getItem('theme');if(t==='light')document.documentElement.setAttribute('data-theme','light');})();</script>
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/components.css">
+  <link rel="stylesheet" href="styles/shell.css">
+  <link rel="stylesheet" href="styles/schedule-shadsync.css">
+  <style>.screen{display:none;height:100%;overflow-y:auto;}.screen.active{display:block;} .tab-switch{position:fixed;top:4px;right:200px;z-index:99999;display:flex;gap:4px;-webkit-app-region:no-drag;} .tab-switch button{padding:4px 10px;border-radius:var(--radius-sm);border:1px solid var(--border-default);background:var(--bg-elevated);color:var(--text-secondary);font-size:11px;cursor:pointer;} .tab-switch button.active{background:var(--accent-primary);color:white;border-color:var(--accent-primary);}</style>
+</head>
+<body>
+  <div class="titlebar">
+    <div class="titlebar-left"><div class="titlebar-logo">FM</div><span class="titlebar-text">FacultyMind</span></div>
+    <div class="tab-switch"><button class="active" onclick="showScreen('schedule')">Schedule</button><button onclick="showScreen('shadsync')">ShadSync</button></div>
+    <div class="titlebar-drag"></div>
+    <div class="titlebar-controls"><button class="titlebar-btn">&#8211;</button><button class="titlebar-btn">&#9633;</button><button class="titlebar-btn close">&#10005;</button></div>
+  </div>
+
+  <div class="app-layout">
+    <nav class="sidebar">
+      <div class="sidebar-logo"><div class="sidebar-logo-mark">FM</div><span class="sidebar-logo-text">FacultyMind</span></div>
+      <ul class="sidebar-nav">
+        <li class="nav-item"><span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/></svg></span><span class="nav-label">DASH AI</span></li>
+        <li class="nav-item active"><span class="nav-icon"><svg viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="4" rx="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg></span><span class="nav-label">Schedule</span></li>
+        <li class="nav-item"><span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg></span><span class="nav-label">ShadSync OBE</span></li>
+      </ul>
+      <div class="sidebar-bottom"><div class="sidebar-avatar">S</div></div>
+    </nav>
+
+    <main class="content-area">
+
+      <!-- ═══ SCHEDULE SCREEN ═══ -->
+      <div class="screen active" id="screen-schedule">
+        <div class="page-header">
+          <h1>Smart Schedule Manager</h1>
+          <div class="header-actions"><button class="btn-primary btn-sm">+ Add Class</button></div>
+        </div>
+
+        <div class="week-grid">
+          <!-- Sunday -->
+          <div class="week-col"><div class="week-col-header today">Sun</div>
+            <div class="class-card"><div class="cc-code">ICE301</div><div class="cc-time">09:00 – 10:30</div><div class="cc-room">Room 301-B</div></div>
+            <div class="class-card color-info"><div class="cc-code">ICE420</div><div class="cc-time">11:00 – 12:30</div><div class="cc-room">Lab 4</div></div>
+          </div>
+          <!-- Monday -->
+          <div class="week-col"><div class="week-col-header">Mon</div>
+            <div class="class-card color-success"><div class="cc-code">ICE205</div><div class="cc-time">08:30 – 10:00</div><div class="cc-room">Room 205</div></div>
+          </div>
+          <!-- Tuesday -->
+          <div class="week-col"><div class="week-col-header">Tue</div>
+            <div class="class-card color-warning"><div class="cc-code">ICE401</div><div class="cc-time">14:00 – 15:30</div><div class="cc-room">Room 401</div></div>
+            <div class="class-card"><div class="cc-code">ICE301</div><div class="cc-time">16:00 – 17:30</div><div class="cc-room">Room 301-B</div></div>
+          </div>
+          <!-- Wednesday -->
+          <div class="week-col"><div class="week-col-header">Wed</div><div class="week-col-empty">—</div></div>
+          <!-- Thursday -->
+          <div class="week-col"><div class="week-col-header">Thu</div>
+            <div class="class-card color-info"><div class="cc-code">ICE420</div><div class="cc-time">09:00 – 10:30</div><div class="cc-room">Lab 4</div></div>
+          </div>
+          <!-- Friday -->
+          <div class="week-col"><div class="week-col-header">Fri</div><div class="week-col-empty">—</div></div>
+          <!-- Saturday -->
+          <div class="week-col"><div class="week-col-header">Sat</div><div class="week-col-empty">—</div></div>
+        </div>
+
+        <!-- Lesson Log -->
+        <div class="lesson-log-section">
+          <div class="divider"></div>
+          <div class="lesson-log-header">
+            <h2>Lesson Log</h2>
+            <button class="btn-secondary btn-sm">+ Log Lesson</button>
+          </div>
+
+          <div class="lesson-entry animate-fadeUp">
+            <div class="lesson-entry-header">
+              <div class="lesson-entry-meta"><span class="lesson-entry-code">ICE301</span><span class="lesson-entry-date">May 24, 2026</span></div>
+              <button class="btn-ghost">✏️</button>
+            </div>
+            <div class="lesson-entry-label">Covered</div>
+            <div class="lesson-entry-content">Nodal analysis with supernode — solved 3 examples from Boylestad Ch.4</div>
+            <div class="lesson-entry-label">Next</div>
+            <div class="lesson-entry-content muted">Mesh analysis and supermesh concept</div>
+          </div>
+
+          <div class="lesson-entry animate-fadeUp">
+            <div class="lesson-entry-header">
+              <div class="lesson-entry-meta"><span class="lesson-entry-code">ICE420</span><span class="lesson-entry-date">May 23, 2026</span></div>
+              <button class="btn-ghost">✏️</button>
+            </div>
+            <div class="lesson-entry-label">Covered</div>
+            <div class="lesson-entry-content">PIC18 Timer programming in Assembly — lab exercise on LED blink timing</div>
+            <div class="lesson-entry-label">Next</div>
+            <div class="lesson-entry-content muted">Serial port programming and USART configuration</div>
+          </div>
+
+          <div class="lesson-entry animate-fadeUp">
+            <div class="lesson-entry-header">
+              <div class="lesson-entry-meta"><span class="lesson-entry-code">ICE401</span><span class="lesson-entry-date">May 22, 2026</span></div>
+              <button class="btn-ghost">✏️</button>
+            </div>
+            <div class="lesson-entry-label">Covered</div>
+            <div class="lesson-entry-content">Flutter state management — Provider vs Riverpod comparison</div>
+            <div class="lesson-entry-label">Next</div>
+            <div class="lesson-entry-content muted">BLoC pattern implementation with practical example</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ═══ SHADSYNC SCREEN ═══ -->
+      <div class="screen" id="screen-shadsync">
+        <div class="page-header">
+          <h1>ShadSync OBE Engine</h1>
+          <div class="header-actions">
+            <select class="course-select"><option>ICE301</option><option>ICE420</option></select>
+            <button class="btn-primary btn-sm">Refresh Data</button>
+            <button class="btn-secondary btn-sm">Manage Data</button>
+            <button class="btn-secondary btn-sm">Export BAETE Report</button>
+          </div>
+        </div>
+
+        <div class="shadsync-grid">
+          <!-- CLO Attainment -->
+          <div class="shadsync-card">
+            <h3>CLO Attainment</h3>
+            <div class="clo-row"><span class="clo-label">CLO1</span><div class="clo-right"><div class="progress-bar"><div class="progress-fill warning" data-width="66.3"></div></div><span class="clo-percent warning" data-value="66.3">0%</span></div></div>
+            <div class="clo-row"><span class="clo-label">CLO2</span><div class="clo-right"><div class="progress-bar"><div class="progress-fill warning" data-width="67.9"></div></div><span class="clo-percent warning" data-value="67.9">0%</span></div></div>
+            <div class="clo-row"><span class="clo-label">CLO3</span><div class="clo-right"><div class="progress-bar"><div class="progress-fill warning" data-width="64.4"></div></div><span class="clo-percent warning" data-value="64.4">0%</span></div></div>
+            <div class="clo-row"><span class="clo-label">CLO4</span><div class="clo-right"><div class="progress-bar"><div class="progress-fill warning" data-width="65.7"></div></div><span class="clo-percent warning" data-value="65.7">0%</span></div></div>
+          </div>
+
+          <!-- CO & PO Attainment -->
+          <div class="shadsync-card">
+            <h3>CO & PO Attainment</h3>
+            <div class="co-po-grid">
+              <div class="co-po-col">
+                <h4>Course Outcomes</h4>
+                <div class="co-po-row"><span class="co-label">CO1</span><span class="co-value clo-percent warning" data-value="67.1">0%</span></div>
+                <div class="co-po-row"><span class="co-label">CO2</span><span class="co-value clo-percent warning" data-value="64.9">0%</span></div>
+              </div>
+              <div class="co-po-col">
+                <h4>Program Outcomes</h4>
+                <div class="co-po-row"><span class="co-label">PO1</span><span class="co-value clo-percent warning" data-value="66.2">0%</span></div>
+                <div class="co-po-row"><span class="co-label">PO2</span><span class="co-value clo-percent warning" data-value="65.8">0%</span></div>
+                <div class="co-po-row"><span class="co-label">PO3</span><span class="co-value clo-percent warning" data-value="64.9">0%</span></div>
+                <div class="co-po-row"><span class="co-label">PO5</span><span class="co-value clo-percent warning" data-value="66.0">0%</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- At-Risk Students -->
+        <div class="at-risk-card">
+          <h3>⚠ At-Risk Students</h3>
+          <div class="at-risk-empty">
+            <div class="check-icon">✓</div>
+            <p>No CLOs broadly failing standard thresholds.</p>
+          </div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <script>
+    // Screen switching
+    function showScreen(id) {
+      document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+      document.getElementById('screen-' + id).classList.add('active');
+      document.querySelectorAll('.tab-switch button').forEach(b => b.classList.remove('active'));
+      event.target.classList.add('active');
+      if (id === 'shadsync') animateShadSync();
+    }
+
+    // Progress bar + number count-up animation
+    function animateShadSync() {
+      // Progress bars
+      document.querySelectorAll('.progress-fill').forEach((bar, i) => {
+        const target = parseFloat(bar.dataset.width);
+        setTimeout(() => { bar.style.width = target + '%'; }, i * 80);
+      });
+
+      // Number count-up
+      document.querySelectorAll('.clo-percent[data-value]').forEach((el, i) => {
+        const target = parseFloat(el.dataset.value);
+        const duration = 800;
+        const start = performance.now();
+        setTimeout(() => {
+          function tick(now) {
+            const elapsed = now - start;
+            const progress = Math.min(elapsed / duration, 1);
+            // easeOutExpo
+            const eased = progress === 1 ? 1 : 1 - Math.pow(2, -10 * progress);
+            el.textContent = (target * eased).toFixed(1) + '%';
+            if (progress < 1) requestAnimationFrame(tick);
+          }
+          requestAnimationFrame(tick);
+        }, i * 80);
+      });
+    }
+
+    // Auto-animate on load if ShadSync is visible
+    setTimeout(() => {
+      if (document.getElementById('screen-shadsync').classList.contains('active')) animateShadSync();
+    }, 300);
+  </script>
+</body>
+</html>

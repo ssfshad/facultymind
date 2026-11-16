@@ -1,0 +1,123 @@
+/* ══════════════════════════════════════════════════════════════════════════
+   FACULTYMIND — BASE STYLES
+   Reset, global font, scrollbar, animations, theme transition
+   ══════════════════════════════════════════════════════════════════════════ */
+
+@import url('./theme.css');
+
+/* ── CSS Reset ───────────────────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ── Global Font ─────────────────────────────────────────────────────────── */
+html, body {
+  height: 100%;
+  overflow: hidden;
+  font-family: var(--font-family);
+  font-size: var(--font-base);
+  line-height: 1.6;
+  color: var(--text-primary);
+  background: var(--bg-base);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Scrollbar (Section 4.9 / Section 9) ─────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 99px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover);
+}
+
+/* ── Skeleton Shimmer (Section 9.1) ──────────────────────────────────────── */
+.skeleton {
+  background: linear-gradient(90deg,
+    var(--bg-elevated) 25%,
+    var(--bg-float) 50%,
+    var(--bg-elevated) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: var(--radius-sm);
+}
+
+@keyframes shimmer {
+  from { background-position: 200% 0; }
+  to   { background-position: -200% 0; }
+}
+
+/* ── Card Entrance Animation (Section 6.2) ───────────────────────────────── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeUp {
+  animation: fadeUp 240ms cubic-bezier(0.4, 0, 0.2, 1) both;
+  will-change: transform, opacity;
+}
+
+/* Stagger utility classes (60ms per card) */
+.animate-fadeUp:nth-child(1)  { animation-delay: 0ms; }
+.animate-fadeUp:nth-child(2)  { animation-delay: 60ms; }
+.animate-fadeUp:nth-child(3)  { animation-delay: 120ms; }
+.animate-fadeUp:nth-child(4)  { animation-delay: 180ms; }
+.animate-fadeUp:nth-child(5)  { animation-delay: 240ms; }
+.animate-fadeUp:nth-child(6)  { animation-delay: 300ms; }
+.animate-fadeUp:nth-child(7)  { animation-delay: 360ms; }
+.animate-fadeUp:nth-child(8)  { animation-delay: 420ms; }
+.animate-fadeUp:nth-child(9)  { animation-delay: 480ms; }
+.animate-fadeUp:nth-child(10) { animation-delay: 540ms; }
+
+/* ── Page/Route Transitions (Section 6.1) ────────────────────────────────── */
+@keyframes pageOut {
+  from { opacity: 1; transform: translateX(0); }
+  to   { opacity: 0; transform: translateX(-8px); }
+}
+
+@keyframes pageIn {
+  from { opacity: 0; transform: translateX(8px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+.page-enter {
+  animation: pageIn 180ms cubic-bezier(0.4, 0, 0.2, 1) both;
+  will-change: transform, opacity;
+}
+
+.page-exit {
+  animation: pageOut 180ms cubic-bezier(0.4, 0, 0.2, 1) both;
+  will-change: transform, opacity;
+}
+
+/* ── Theme Transition (Section 7.2) ──────────────────────────────────────── */
+html.theme-transitioning *,
+html.theme-transitioning *::before,
+html.theme-transitioning *::after {
+  transition: background-color 220ms ease, border-color 220ms ease, color 180ms ease !important;
+}
+
+/* Remove will-change after animation completes to free GPU memory */
+.animate-fadeUp.animated {
+  will-change: auto;
+}
+
+.page-enter.animated,
+.page-exit.animated {
+  will-change: auto;
+}

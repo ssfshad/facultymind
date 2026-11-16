@@ -1,0 +1,532 @@
+/* ── DIU Teachers Portal — embedded inside FacultyMind ───────────────── */
+
+/* Force light theme inside the portal — override global dark styles */
+#view-diu-portal input,
+#view-diu-portal select,
+#view-diu-portal textarea {
+  background: #fff !important;
+  color: #333 !important;
+  border-color: #ced4da !important;
+}
+
+#view-diu-portal input::placeholder {
+  color: #aaa !important;
+}
+
+#view-diu-portal {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* ── Layout ─────────────────────────────────────────────────────────── */
+.diu-layout {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  overflow: hidden;
+  background: #f0f2f5;
+}
+
+/* ── DIU Sidebar ─────────────────────────────────────────────────────── */
+.diu-sidebar {
+  width: 220px;
+  min-width: 220px;
+  background: #1a3464;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.3);
+}
+
+.diu-sidebar-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 18px 14px 16px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.diu-logo-badge {
+  width: 42px;
+  height: 42px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 11px;
+  color: #1a3464;
+  flex-shrink: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1;
+  text-align: center;
+}
+
+.diu-brand-text {
+  color: #fff;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.3;
+  font-family: Arial, sans-serif;
+}
+
+.diu-nav {
+  list-style: none;
+  padding: 8px 0;
+  margin: 0;
+  flex: 1;
+}
+
+.diu-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 11px 16px;
+  color: rgba(255,255,255,0.82);
+  cursor: pointer;
+  font-size: 13px;
+  font-family: Arial, sans-serif;
+  transition: background 0.15s, color 0.15s;
+  user-select: none;
+  border-left: 3px solid transparent;
+}
+
+.diu-nav-item:hover {
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+}
+
+.diu-nav-item.active {
+  background: rgba(255,255,255,0.14);
+  color: #fff;
+  border-left-color: #4da6ff;
+}
+
+.diu-nav-icon {
+  font-size: 15px;
+  width: 20px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.diu-nav-item.diu-stub {
+  opacity: 0.5;
+}
+
+.diu-nav-divider {
+  margin: 6px 0;
+  border: none;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* ── Content Area ────────────────────────────────────────────────────── */
+.diu-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: #f0f2f5;
+}
+
+.diu-topbar {
+  background: #fff;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #dee2e6;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+
+.diu-topbar h2 {
+  font-size: 17px;
+  font-weight: 700;
+  color: #1a3464;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.diu-course-select {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #555;
+  font-family: Arial, sans-serif;
+}
+
+.diu-course-select select {
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 5px 10px;
+  font-size: 13px;
+  color: #333 !important;
+  background: #fff !important;
+  cursor: pointer;
+  min-width: 180px;
+}
+
+.diu-section {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+/* ── Dashboard ───────────────────────────────────────────────────────── */
+.diu-dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.diu-stat-card {
+  background: #fff;
+  border-radius: 6px;
+  padding: 18px 20px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  border-left: 4px solid #1a3464;
+}
+
+.diu-stat-card .stat-label {
+  font-size: 12px;
+  color: #888;
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.diu-stat-card .stat-value {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a3464;
+  margin-top: 4px;
+  font-family: Arial, sans-serif;
+}
+
+.diu-stat-card .stat-sub {
+  font-size: 11px;
+  color: #aaa;
+  margin-top: 2px;
+  font-family: Arial, sans-serif;
+}
+
+.diu-stat-card.green  { border-left-color: #28a745; }
+.diu-stat-card.orange { border-left-color: #fd7e14; }
+.diu-stat-card.red    { border-left-color: #dc3545; }
+
+/* ── Card / Panel ────────────────────────────────────────────────────── */
+.diu-card {
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.diu-card-header {
+  background: #1a3464;
+  color: #fff;
+  padding: 10px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.diu-card-body {
+  padding: 16px;
+}
+
+/* ── Table ───────────────────────────────────────────────────────────── */
+.diu-table-wrap {
+  overflow-x: auto;
+}
+
+.diu-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+}
+
+.diu-table th {
+  background: #1a3464;
+  color: #fff;
+  padding: 8px 10px;
+  text-align: center;
+  font-weight: 600;
+  white-space: nowrap;
+  border: 1px solid #153060;
+  font-size: 11px;
+}
+
+.diu-table th.left { text-align: left; }
+
+.diu-table td {
+  padding: 6px 8px;
+  border: 1px solid #dee2e6;
+  text-align: center;
+  color: #333;
+  vertical-align: middle;
+}
+
+.diu-table td.left { text-align: left; }
+
+.diu-table tr:nth-child(even) td { background: #f8f9fa; }
+.diu-table tr:hover td { background: #e8f0fe; }
+
+.diu-table input[type="number"] {
+  width: 52px;
+  border: 1px solid #ced4da;
+  border-radius: 3px;
+  padding: 3px 4px;
+  text-align: center;
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+  background: #fff !important;
+  color: #333 !important;
+}
+
+.diu-table input[type="number"]:focus {
+  outline: none;
+  border-color: #1a3464;
+  box-shadow: 0 0 0 2px rgba(26,52,100,0.15);
+}
+
+.diu-table td.auto-calc {
+  background: #e8f4f8 !important;
+  font-weight: 600;
+  color: #1a3464;
+}
+
+.diu-table tr:hover td.auto-calc { background: #d0ebf5 !important; }
+
+/* ── Grade Badges ────────────────────────────────────────────────────── */
+.diu-grade {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-weight: 700;
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+}
+
+.grade-Ap  { background: #d4edda; color: #155724; }
+.grade-A   { background: #d4edda; color: #155724; }
+.grade-Am  { background: #d4edda; color: #155724; }
+.grade-Bp  { background: #cce5ff; color: #004085; }
+.grade-B   { background: #cce5ff; color: #004085; }
+.grade-Bm  { background: #cce5ff; color: #004085; }
+.grade-Cp  { background: #fff3cd; color: #856404; }
+.grade-C   { background: #fff3cd; color: #856404; }
+.grade-D   { background: #ffe5b4; color: #7d4a00; }
+.grade-F   { background: #f8d7da; color: #721c24; }
+
+/* ── Attendance ───────────────────────────────────────────────────────── */
+.diu-att-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.diu-att-header input[type="date"] {
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 6px 10px;
+  font-size: 13px;
+  font-family: Arial, sans-serif;
+  color: #333 !important;
+  background: #fff !important;
+}
+
+.att-present  { background: #d4edda !important; }
+.att-absent   { background: #f8d7da !important; }
+
+.att-toggle {
+  padding: 4px 12px;
+  border-radius: 3px;
+  border: 1px solid #ced4da;
+  cursor: pointer;
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+  transition: all 0.15s;
+}
+
+.att-toggle.present { background: #28a745; color: #fff; border-color: #28a745; }
+.att-toggle.absent  { background: #dc3545; color: #fff; border-color: #dc3545; }
+
+/* ── Buttons ─────────────────────────────────────────────────────────── */
+.diu-btn {
+  padding: 7px 18px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+  transition: opacity 0.15s;
+}
+
+.diu-btn:hover { opacity: 0.87; }
+.diu-btn-primary { background: #1a3464; color: #fff; }
+.diu-btn-success { background: #28a745; color: #fff; }
+.diu-btn-outline { background: #fff; color: #1a3464; border: 1px solid #1a3464; }
+
+/* ── Grade Sheet (Result) ────────────────────────────────────────────── */
+.diu-grade-sheet {
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  padding: 24px 28px;
+  font-family: Arial, sans-serif;
+}
+
+.diu-gs-header {
+  text-align: center;
+  margin-bottom: 16px;
+  border-bottom: 2px solid #1a3464;
+  padding-bottom: 12px;
+}
+
+.diu-gs-header h1 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a3464;
+  margin: 0 0 4px;
+}
+
+.diu-gs-header h2 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.diu-gs-meta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border: 1px solid #dee2e6;
+  margin-bottom: 16px;
+  font-size: 12px;
+}
+
+.diu-gs-meta-cell {
+  padding: 5px 10px;
+  border-bottom: 1px solid #dee2e6;
+  border-right: 1px solid #dee2e6;
+  display: flex;
+  gap: 6px;
+}
+
+.diu-gs-meta-cell strong { color: #333; min-width: 90px; }
+.diu-gs-meta-cell span   { color: #555; }
+
+.diu-gs-status {
+  text-align: right;
+  font-size: 12px;
+  font-weight: 700;
+  color: #28a745;
+  margin-bottom: 8px;
+}
+
+.diu-gs-summary {
+  margin-top: 12px;
+  padding: 8px 12px;
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  font-size: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.diu-gs-summary strong { color: #333; }
+
+.diu-gs-actions {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+/* ── Form ────────────────────────────────────────────────────────────── */
+.diu-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.diu-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.diu-form-group label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #555;
+  font-family: Arial, sans-serif;
+}
+
+.diu-form-group input,
+.diu-form-group select {
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 7px 10px;
+  font-size: 13px;
+  font-family: Arial, sans-serif;
+  color: #333 !important;
+  background: #fff !important;
+}
+
+.diu-form-group input:focus,
+.diu-form-group select:focus {
+  outline: none;
+  border-color: #1a3464;
+  box-shadow: 0 0 0 2px rgba(26,52,100,0.12);
+}
+
+/* ── Stub / Coming Soon ──────────────────────────────────────────────── */
+.diu-stub-msg {
+  text-align: center;
+  padding: 60px 20px;
+  color: #888;
+  font-family: Arial, sans-serif;
+}
+
+.diu-stub-msg .stub-icon { font-size: 48px; margin-bottom: 12px; }
+.diu-stub-msg h3 { font-size: 16px; color: #555; margin: 0 0 8px; }
+.diu-stub-msg p  { font-size: 13px; margin: 0; }
+
+/* ── Toast ───────────────────────────────────────────────────────────── */
+#diu-toast {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: #1a3464;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-family: Arial, sans-serif;
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.25s;
+  pointer-events: none;
+}
+
+#diu-toast.show { opacity: 1; }
+#diu-toast.success { background: #28a745; }
+#diu-toast.error   { background: #dc3545; }

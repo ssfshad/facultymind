@@ -1,0 +1,85 @@
+{
+  "course": {
+    "code": "ice301",
+    "name": "Object Oriented Programming",
+    "section": "A",
+    "semester": "Spring 2026",
+    "department": "Computer Science & Engineering",
+    "university": "Daffodil International University (DIU)"
+  },
+  "clos": [
+    { "code": "CLO1", "description": "Understand and explain core OOP concepts including encapsulation, inheritance, and polymorphism.", "bloom_level": "C2" },
+    { "code": "CLO2", "description": "Apply OOP principles to design and implement Java programs.", "bloom_level": "C3" },
+    { "code": "CLO3", "description": "Analyze software design patterns and evaluate their applicability.", "bloom_level": "C4" },
+    { "code": "CLO4", "description": "Design and evaluate class hierarchies for real-world systems.", "bloom_level": "C5" }
+  ],
+  "cos": [
+    { "code": "CO1", "description": "Demonstrate proficiency in OOP programming concepts.", "clo_map": {"CLO1": 0.5, "CLO2": 0.5} },
+    { "code": "CO2", "description": "Apply design principles to build structured software systems.", "clo_map": {"CLO3": 0.6, "CLO4": 0.4} }
+  ],
+  "pos": [
+    { "code": "PO1", "description": "Engineering Knowledge", "category": "BAETE", "co_map": {"CO1": 0.6, "CO2": 0.4} },
+    { "code": "PO2", "description": "Problem Analysis", "category": "BAETE", "co_map": {"CO1": 0.4, "CO2": 0.6} },
+    { "code": "PO3", "description": "Design Solutions", "category": "BAETE", "co_map": {"CO2": 1.0} },
+    { "code": "PO5", "description": "Modern Tool Usage", "category": "BAETE", "co_map": {"CO1": 0.5, "CO2": 0.5} }
+  ],
+  "assessment": {
+    "weights": { "q1": 0.1, "q2": 0.1, "midterm": 0.2, "final": 0.4, "assignment": 0.1, "lab": 0.1 },
+    "max_marks": { "q1": 10, "q2": 10, "midterm": 20, "final": 40, "assignment": 10, "lab": 10 },
+    "clo_map": {
+      "CLO1": { "q1": 1.0, "midterm": 0.5 },
+      "CLO2": { "q2": 1.0, "lab": 1.0, "assignment": 0.5 },
+      "CLO3": { "midterm": 0.5, "final": 0.5 },
+      "CLO4": { "final": 0.5, "assignment": 0.5 }
+    },
+    "threshold": 60
+  },
+  "students": [
+    { "token": "S001", "name": "Rahman",    "marks": { "q1": 9, "q2": 8, "midterm": 17, "final": 35, "assignment": 9, "lab": 9 }, "attendance_pct": 96 },
+    { "token": "S002", "name": "Hossain",   "marks": { "q1": 10, "q2": 9, "midterm": 18, "final": 37, "assignment": 10, "lab": 10 }, "attendance_pct": 98 },
+    { "token": "S003", "name": "Islam",     "marks": { "q1": 6, "q2": 5, "midterm": 12, "final": 22, "assignment": 7, "lab": 7 }, "attendance_pct": 78 },
+    { "token": "S004", "name": "Ahmed",     "marks": { "q1": 8, "q2": 9, "midterm": 16, "final": 33, "assignment": 8, "lab": 9 }, "attendance_pct": 88 },
+    { "token": "S005", "name": "Begum",     "marks": { "q1": 5, "q2": 4, "midterm": 10, "final": 18, "assignment": 6, "lab": 6 }, "attendance_pct": 71 },
+    { "token": "S006", "name": "Khatun",    "marks": { "q1": 7, "q2": 7, "midterm": 14, "final": 28, "assignment": 8, "lab": 8 }, "attendance_pct": 85 },
+    { "token": "S007", "name": "Karim",     "marks": { "q1": 4, "q2": 4, "midterm": 9, "final": 16, "assignment": 5, "lab": 5 }, "attendance_pct": 68 },
+    { "token": "S008", "name": "Akter",     "marks": { "q1": 8, "q2": 8, "midterm": 15, "final": 30, "assignment": 8, "lab": 8 }, "attendance_pct": 90 },
+    { "token": "S009", "name": "Sultana",   "marks": { "q1": 5, "q2": 5, "midterm": 11, "final": 20, "assignment": 6, "lab": 6 }, "attendance_pct": 74 },
+    { "token": "S010", "name": "Miah",      "marks": { "q1": 9, "q2": 8, "midterm": 16, "final": 32, "assignment": 9, "lab": 9 }, "attendance_pct": 92 },
+    { "token": "S011", "name": "Chowdhury", "marks": { "q1": 7, "q2": 6, "midterm": 13, "final": 26, "assignment": 7, "lab": 7 }, "attendance_pct": 82 },
+    { "token": "S012", "name": "Biswas",    "marks": { "q1": 6, "q2": 6, "midterm": 12, "final": 24, "assignment": 7, "lab": 7 }, "attendance_pct": 79 },
+    { "token": "S013", "name": "Sarkar",    "marks": { "q1": 8, "q2": 7, "midterm": 15, "final": 29, "assignment": 8, "lab": 8 }, "attendance_pct": 87 },
+    { "token": "S014", "name": "Mondol",    "marks": { "q1": 5, "q2": 5, "midterm": 10, "final": 19, "assignment": 6, "lab": 6 }, "attendance_pct": 72 },
+    { "token": "S015", "name": "Paul",      "marks": { "q1": 9, "q2": 9, "midterm": 17, "final": 34, "assignment": 9, "lab": 9 }, "attendance_pct": 94 },
+    { "token": "S016", "name": "Das",       "marks": { "q1": 4, "q2": 3, "midterm": 8, "final": 15, "assignment": 5, "lab": 4 }, "attendance_pct": 65 },
+    { "token": "S017", "name": "Roy",       "marks": { "q1": 7, "q2": 7, "midterm": 14, "final": 27, "assignment": 8, "lab": 7 }, "attendance_pct": 84 },
+    { "token": "S018", "name": "Moni",      "marks": { "q1": 5, "q2": 4, "midterm": 10, "final": 19, "assignment": 6, "lab": 6 }, "attendance_pct": 73 },
+    { "token": "S019", "name": "Reza",      "marks": { "q1": 4, "q2": 3, "midterm": 8, "final": 14, "assignment": 5, "lab": 4 }, "attendance_pct": 62 },
+    { "token": "S020", "name": "Parveen",   "marks": { "q1": 5, "q2": 5, "midterm": 11, "final": 18, "assignment": 6, "lab": 5 }, "attendance_pct": 70 },
+    { "token": "S021", "name": "Noor",      "marks": { "q1": 8, "q2": 8, "midterm": 15, "final": 31, "assignment": 8, "lab": 8 }, "attendance_pct": 89 },
+    { "token": "S022", "name": "Kabir",     "marks": { "q1": 6, "q2": 6, "midterm": 13, "final": 25, "assignment": 7, "lab": 7 }, "attendance_pct": 80 },
+    { "token": "S023", "name": "Jahan",     "marks": { "q1": 7, "q2": 7, "midterm": 14, "final": 28, "assignment": 8, "lab": 8 }, "attendance_pct": 86 },
+    { "token": "S024", "name": "Ullah",     "marks": { "q1": 9, "q2": 8, "midterm": 16, "final": 33, "assignment": 9, "lab": 8 }, "attendance_pct": 91 },
+    { "token": "S025", "name": "Bhuiyan",   "marks": { "q1": 6, "q2": 5, "midterm": 12, "final": 23, "assignment": 7, "lab": 6 }, "attendance_pct": 77 },
+    { "token": "S026", "name": "Sikder",    "marks": { "q1": 5, "q2": 4, "midterm": 10, "final": 19, "assignment": 6, "lab": 5 }, "attendance_pct": 71 },
+    { "token": "S027", "name": "Talukder",  "marks": { "q1": 8, "q2": 8, "midterm": 15, "final": 30, "assignment": 8, "lab": 8 }, "attendance_pct": 88 },
+    { "token": "S028", "name": "Haider",    "marks": { "q1": 7, "q2": 6, "midterm": 13, "final": 26, "assignment": 7, "lab": 7 }, "attendance_pct": 83 },
+    { "token": "S029", "name": "Mamun",     "marks": { "q1": 9, "q2": 9, "midterm": 17, "final": 34, "assignment": 9, "lab": 9 }, "attendance_pct": 93 },
+    { "token": "S030", "name": "Faruk",     "marks": { "q1": 4, "q2": 4, "midterm": 9, "final": 17, "assignment": 5, "lab": 5 }, "attendance_pct": 67 },
+    { "token": "S031", "name": "Nasrin",    "marks": { "q1": 8, "q2": 7, "midterm": 15, "final": 29, "assignment": 8, "lab": 8 }, "attendance_pct": 86 },
+    { "token": "S032", "name": "Halim",     "marks": { "q1": 6, "q2": 6, "midterm": 12, "final": 24, "assignment": 7, "lab": 6 }, "attendance_pct": 78 },
+    { "token": "S033", "name": "Asma",      "marks": { "q1": 7, "q2": 7, "midterm": 14, "final": 27, "assignment": 8, "lab": 7 }, "attendance_pct": 85 },
+    { "token": "S034", "name": "Rubel",     "marks": { "q1": 5, "q2": 5, "midterm": 11, "final": 21, "assignment": 6, "lab": 6 }, "attendance_pct": 73 },
+    { "token": "S035", "name": "Shirin",    "marks": { "q1": 9, "q2": 8, "midterm": 16, "final": 32, "assignment": 9, "lab": 9 }, "attendance_pct": 90 }
+  ],
+  "schedule": [
+    { "day_of_week": 1, "start_time": "08:00", "end_time": "09:30", "room": "701", "zoom_link": "https://diu.zoom.us/j/demo301", "course_code": "ice301" },
+    { "day_of_week": 2, "start_time": "10:00", "end_time": "11:30", "room": "702", "zoom_link": "https://diu.zoom.us/j/demo401", "course_code": "ICE401" },
+    { "day_of_week": 3, "start_time": "13:00", "end_time": "14:30", "room": "Lab3", "zoom_link": "", "course_code": "ice301" },
+    { "day_of_week": 4, "start_time": "09:00", "end_time": "10:30", "room": "603", "zoom_link": "", "course_code": "ICE205" },
+    { "day_of_week": 5, "start_time": "11:00", "end_time": "12:00", "room": "Faculty Office 201", "zoom_link": "", "course_code": "Office Hours" }
+  ],
+  "lesson_log": [
+    { "course_code": "ice301", "date": "2026-05-01", "topic_covered": "Inheritance and Method Overriding", "topic_next": "Polymorphism and Interface Implementation", "notes": "" },
+    { "course_code": "ICE401", "date": "2026-05-02", "topic_covered": "Stack and Queue ADTs", "topic_next": "Linked List Implementation", "notes": "" }
+  ]
+}

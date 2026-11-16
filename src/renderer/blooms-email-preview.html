@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FacultyMind — Bloom's + Email Preview</title>
+  <script>(function(){const t=localStorage.getItem('theme');if(t==='light')document.documentElement.setAttribute('data-theme','light');})();</script>
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/components.css">
+  <link rel="stylesheet" href="styles/shell.css">
+  <link rel="stylesheet" href="styles/blooms-email.css">
+  <style>.screen{display:none;height:100%;overflow-y:auto;}.screen.active{display:block;} .tab-switch{position:fixed;top:4px;right:200px;z-index:99999;display:flex;gap:4px;-webkit-app-region:no-drag;} .tab-switch button{padding:4px 10px;border-radius:var(--radius-sm);border:1px solid var(--border-default);background:var(--bg-elevated);color:var(--text-secondary);font-size:11px;cursor:pointer;} .tab-switch button.active{background:var(--accent-primary);color:white;border-color:var(--accent-primary);}</style>
+</head>
+<body>
+  <div class="titlebar"><div class="titlebar-left"><div class="titlebar-logo">FM</div><span class="titlebar-text">FacultyMind</span></div><div class="tab-switch"><button class="active" onclick="showScreen('blooms')">Bloom's</button><button onclick="showScreen('email')">Email</button></div><div class="titlebar-drag"></div><div class="titlebar-controls"><button class="titlebar-btn">&#8211;</button><button class="titlebar-btn">&#9633;</button><button class="titlebar-btn close">&#10005;</button></div></div>
+
+  <div class="app-layout">
+    <nav class="sidebar">
+      <div class="sidebar-logo"><div class="sidebar-logo-mark">FM</div><span class="sidebar-logo-text">FacultyMind</span></div>
+      <ul class="sidebar-nav">
+        <li class="nav-item"><span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/></svg></span><span class="nav-label">DASH AI</span></li>
+        <li class="nav-item"><span class="nav-icon"><svg viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="4" rx="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg></span><span class="nav-label">Schedule</span></li>
+        <li class="nav-item active"><span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg></span><span class="nav-label">Bloom's Engine</span></li>
+        <li class="nav-item"><span class="nav-icon"><svg viewBox="0 0 24 24"><polyline points="22 12 16 12 14 15 10 15 8 12 2 12"/><path d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/></svg></span><span class="nav-label">Email Intel</span></li>
+      </ul>
+      <div class="sidebar-bottom"><div class="sidebar-avatar">S</div></div>
+    </nav>
+
+    <main class="content-area">
+
+      <!-- ═══ BLOOM'S ENGINE ═══ -->
+      <div class="screen active" id="screen-blooms">
+        <div class="blooms-tabs">
+          <button class="blooms-tab"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>Lesson Plan</button>
+          <button class="blooms-tab"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>CLO Mapper</button>
+          <button class="blooms-tab active"><svg viewBox="0 0 24 24"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>Knowledge Base</button>
+          <button class="blooms-tab"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>Syllabus</button>
+        </div>
+
+        <div class="blooms-stats-bar">
+          975 records <span class="dot-sep">·</span> 975 verified <span class="dot-sep">·</span> 1 course
+        </div>
+
+        <!-- Import section -->
+        <div class="blooms-import-card">
+          <h4>Import Exam Questions</h4>
+          <input type="text" placeholder="Course code (e.g. EEE1245)" style="margin-bottom:var(--space-2);">
+          <div class="drop-zone">
+            <div class="drop-icon">⬆</div>
+            <div class="drop-text">Drop exam question images here (PNG, JPG) or click to select</div>
+          </div>
+          <div class="import-btn-row">
+            <button class="btn-primary">Parse & Import Selected</button>
+            <button class="btn-secondary">📁 Scan Folder</button>
+          </div>
+          <div class="import-hint">💡 Put all exam images in one folder, click Scan Folder to process them all at once.</div>
+        </div>
+
+        <!-- Knowledge Base -->
+        <div class="kb-section">
+          <div class="divider"></div>
+          <div class="kb-header">
+            <h3>Knowledge Base</h3>
+            <div class="kb-header-actions">
+              <button class="btn-primary btn-sm">✓ Verify All</button>
+              <button class="btn-destructive btn-sm">Clear All</button>
+              <select class="course-select" style="min-width:120px;"><option>All courses</option><option>ICE301</option><option>EEE1245</option></select>
+            </div>
+          </div>
+
+          <div class="kb-entry animate-fadeUp">
+            <div class="kb-entry-text">Design a deterministic finite automata (DFA) that accepts strings over {a, b} where every a is immediately followed by b.</div>
+            <div class="kb-entry-tags">
+              <span class="bloom-chip c6">C6 Create</span>
+              <span class="badge badge-default">ICE301</span>
+              <span class="badge badge-default">design</span>
+              <span class="badge badge-success">✓ Verified</span>
+            </div>
+            <div class="kb-entry-actions"><button class="btn-ghost btn-sm">Unverify</button><button class="btn-destructive btn-sm">Delete</button></div>
+          </div>
+
+          <div class="kb-entry animate-fadeUp">
+            <div class="kb-entry-text">Explain the function of each bit in the TOCON register of a PIC18 microcontroller.</div>
+            <div class="kb-entry-tags">
+              <span class="bloom-chip c2">C2 Understand</span>
+              <span class="badge badge-default">ICE420</span>
+              <span class="badge badge-default">explain</span>
+              <span class="badge badge-success">✓ Verified</span>
+            </div>
+            <div class="kb-entry-actions"><button class="btn-ghost btn-sm">Unverify</button><button class="btn-destructive btn-sm">Delete</button></div>
+          </div>
+
+          <div class="kb-entry animate-fadeUp">
+            <div class="kb-entry-text">Implement a local database caching service using the SQLite package to handle offline-first data retention.</div>
+            <div class="kb-entry-tags">
+              <span class="bloom-chip c3">C3 Apply</span>
+              <span class="badge badge-default">ICE431</span>
+              <span class="badge badge-default">implement</span>
+              <span class="badge badge-success">✓ Verified</span>
+            </div>
+            <div class="kb-entry-actions"><button class="btn-ghost btn-sm">Unverify</button><button class="btn-destructive btn-sm">Delete</button></div>
+          </div>
+
+          <div class="kb-entry animate-fadeUp">
+            <div class="kb-entry-text">Contrast the architectural responsibilities and state mutations when comparing the BLoC pattern against Riverpod.</div>
+            <div class="kb-entry-tags">
+              <span class="bloom-chip c4">C4 Analyze</span>
+              <span class="badge badge-default">ICE431</span>
+              <span class="badge badge-default">contrast</span>
+              <span class="badge badge-success">✓ Verified</span>
+            </div>
+            <div class="kb-entry-actions"><button class="btn-ghost btn-sm">Unverify</button><button class="btn-destructive btn-sm">Delete</button></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ═══ EMAIL INTEL ═══ -->
+      <div class="screen" id="screen-email">
+        <div class="email-screen">
+          <!-- Gmail connection card -->
+          <div class="gmail-card">
+            <div class="gmail-card-layout">
+              <div class="gmail-avatar">?</div>
+              <div class="gmail-info">
+                <div class="gmail-title">Not connected</div>
+                <div class="gmail-sub">Connect Gmail to see your account</div>
+              </div>
+              <div class="gmail-status">
+                <span class="badge badge-warning"><span class="pulse-dot-sm"></span> Checking Gmail...</span>
+                <span class="badge badge-success">✓ Local DB Connected</span>
+              </div>
+            </div>
+            <p class="gmail-hint">Gmail access is needed to sync your emails. Authorize locally to begin fetching and AI categorizing.</p>
+            <button class="btn-primary gmail-connect-btn">✉️ Connect Gmail Account</button>
+          </div>
+
+          <!-- Smart Inbox -->
+          <div class="inbox-header">
+            <h2><svg viewBox="0 0 24 24"><polyline points="22 12 16 12 14 15 10 15 8 12 2 12"/><path d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/></svg>Smart Inbox</h2>
+            <div style="display:flex;gap:var(--space-2);">
+              <button class="btn-ghost btn-sm">↻ Refresh</button>
+              <button class="btn-ghost btn-sm" onclick="document.getElementById('email-empty').style.display='none';document.getElementById('email-list').style.display='block';">Show Demo Emails</button>
+            </div>
+          </div>
+
+          <!-- Empty state -->
+          <div class="empty-state" id="email-empty">
+            <div class="empty-icon">🔕</div>
+            <div class="empty-title">No emails yet</div>
+            <div class="empty-desc">Connect your Gmail above, or click Refresh to fetch the latest emails and run AI categorization.</div>
+          </div>
+
+          <!-- Populated state (hidden by default) -->
+          <div id="email-list" style="display:none;">
+            <div class="email-item animate-fadeUp">
+              <div class="email-avatar">AR</div>
+              <div class="email-body">
+                <div class="email-row1"><span class="email-sender">Abhirup Sarker</span><span class="email-subject">— Re: ICE2345 Final Exam Schedule Change</span></div>
+                <div class="email-preview">Sir, I wanted to confirm the updated exam date for Digital Communication. The students have been notified...</div>
+              </div>
+              <div class="email-meta"><span class="email-time">2h ago</span><span class="badge badge-info">Admin</span></div>
+            </div>
+
+            <div class="email-item animate-fadeUp">
+              <div class="email-avatar" style="background:var(--color-danger-subtle);color:var(--color-danger);">MR</div>
+              <div class="email-body">
+                <div class="email-row1"><span class="email-sender">Md. Rahman (Student)</span><span class="email-subject">— Request for Assignment Extension</span></div>
+                <div class="email-preview">Dear Sir, I am writing to request a 2-day extension for the ICE301 assignment due to medical reasons...</div>
+              </div>
+              <div class="email-meta"><span class="email-time">5h ago</span><span class="badge badge-primary">Student</span></div>
+            </div>
+
+            <div class="email-item animate-fadeUp">
+              <div class="email-avatar" style="background:var(--color-warning-subtle);color:var(--color-warning);">DIU</div>
+              <div class="email-body">
+                <div class="email-row1"><span class="email-sender">DIU Admin Office</span><span class="email-subject">— Faculty Meeting Notice: May 28</span></div>
+                <div class="email-preview">All faculty members are requested to attend the departmental meeting on May 28 at 3:00 PM in Room 501...</div>
+              </div>
+              <div class="email-meta"><span class="email-time">1d ago</span><span class="badge badge-warning">Urgent</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <script>
+    function showScreen(id) {
+      document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+      document.getElementById('screen-' + id).classList.add('active');
+      document.querySelectorAll('.tab-switch button').forEach(b => b.classList.remove('active'));
+      event.target.classList.add('active');
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,184 @@
+{
+ "model": "phi4-mini",
+ "at": "2026-11-11T10:03:42.802Z",
+ "routing": {
+  "n": 328,
+  "correct": 251,
+  "accuracy": 0.7652439024390244,
+  "byTag": {
+   "clean": "136/163",
+   "typo": "65/81",
+   "banglish": "50/84"
+  },
+  "medianMs": 2940,
+  "freshCalls": 328
+ },
+ "entities": {
+  "n": 50,
+  "correct": 41,
+  "accuracy": 0.82,
+  "byIntent": {
+   "REMINDER_SET": {
+    "n": 14,
+    "ok": 12
+   },
+   "VAULT_SAVE": {
+    "n": 10,
+    "ok": 8
+   },
+   "VAULT_SEARCH": {
+    "n": 8,
+    "ok": 5
+   },
+   "SHADSYNC_QUERY": {
+    "n": 8,
+    "ok": 7
+   },
+   "MODEL_SWITCH": {
+    "n": 6,
+    "ok": 5
+   },
+   "PORTAL_OPEN": {
+    "n": 4,
+    "ok": 4
+   }
+  },
+  "medianMs": 2608,
+  "failures": [
+   "\"don't let me forget to upload the syllabus on Sunday\": datetime=undefined",
+   "\"please remind me to grade the quizzes tonight\": datetime=undefined",
+   "\"store my wifi password in the vault, it is Tiger2026\": password=undefined",
+   "\"save my router login in the vault: user admin password Blue77\": password=\"admin password Blue77\"",
+   "\"where is the syllabus file I saved\": query=undefined lacks syllabus",
+   "\"look up the link I stored for the library\": query=undefined lacks library",
+   "\"vault e antenna design er note khuje dao\": query=undefined lacks antenna",
+   "\"is CLO4 attained in HUM101\": course_code=undefined",
+   "\"use GPT-4o from now on\": model=\"GPT-4o\""
+  ]
+ },
+ "explain": {
+  "n": 8,
+  "passedAll": 8,
+  "jsonValid": 8,
+  "allWeakCovered": 8,
+  "explainedFineClos": 0,
+  "scenariosWithMadeUpNumbers": 0,
+  "madeUpNumbers": 0,
+  "medianMs": 5417,
+  "detail": [
+   {
+    "id": "exp-1-one-weak-midterm",
+    "ok": true,
+    "json": true,
+    "weak": [
+     "CLO2"
+    ],
+    "missing": [],
+    "extra": [],
+    "unsupported": [],
+    "unknownClo": [],
+    "actionsOk": true,
+    "ms": 5417
+   },
+   {
+    "id": "exp-2-two-weak",
+    "ok": true,
+    "json": true,
+    "weak": [
+     "CLO1",
+     "CLO4"
+    ],
+    "missing": [],
+    "extra": [],
+    "unsupported": [],
+    "unknownClo": [],
+    "actionsOk": true,
+    "ms": 7587
+   },
+   {
+    "id": "exp-3-none-weak",
+    "ok": true,
+    "json": true,
+    "weak": [],
+    "missing": [],
+    "extra": [],
+    "unsupported": [],
+    "unknownClo": [],
+    "actionsOk": true,
+    "ms": 1813
+   },
+   {
+    "id": "exp-4-borderline-share",
+    "ok": true,
+    "json": true,
+    "weak": [
+     "CLO2"
+    ],
+    "missing": [],
+    "extra": [],
+    "unsupported": [],
+    "unknownClo": [],
+    "actionsOk": true,
+    "ms": 5444
+   },
+   {
+    "id": "exp-5-all-weak",
+    "ok": true,
+    "json": true,
+    "weak": [
+     "CLO1",
+     "CLO2",
+     "CLO3"
+    ],
+    "missing": [],
+    "extra": [],
+    "unsupported": [],
+    "unknownClo": [],
+    "actionsOk": true,
+    "ms": 11462
+   },
+   {
+    "id": "exp-6-small-class",
+    "ok": true,
+    "json": true,
+    "weak": [
+     "CLO3"
+    ],
+    "missing": [],
+    "extra": [],
+    "unsupported": [],
+    "unknownClo": [],
+    "actionsOk": true,
+    "ms": 5204
+   },
+   {
+    "id": "exp-7-single-assessment",
+    "ok": true,
+    "json": true,
+    "weak": [
+     "CLO2"
+    ],
+    "missing": [],
+    "extra": [],
+    "unsupported": [],
+    "unknownClo": [],
+    "actionsOk": true,
+    "ms": 4662
+   },
+   {
+    "id": "exp-8-attendance",
+    "ok": true,
+    "json": true,
+    "weak": [
+     "CLO1"
+    ],
+    "missing": [],
+    "extra": [],
+    "unsupported": [],
+    "unknownClo": [],
+    "actionsOk": true,
+    "ms": 4371
+   }
+  ]
+ }
+}

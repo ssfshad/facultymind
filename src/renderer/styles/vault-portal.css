@@ -1,0 +1,500 @@
+/* ══════════════════════════════════════════════════════════════════════════
+   FACULTYMIND — VAULT + PORTAL + DIU PORTAL SCREENS
+   Section 5.7 + 5.8 + 5.9 of FacultyMind_UI_Redesign_Prompt.md
+   ══════════════════════════════════════════════════════════════════════════ */
+
+/* ── 5.7 Local Vault ─────────────────────────────────────────────────────── */
+.vault-layout {
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Categories sidebar */
+.vault-sidebar {
+  width: 200px;
+  min-width: 200px;
+  background: var(--bg-surface);
+  border-right: 1px solid var(--border-subtle);
+  padding: var(--space-4) var(--space-3);
+  display: flex;
+  flex-direction: column;
+}
+
+.vault-nav-item {
+  height: 32px;
+  padding: 0 var(--space-2);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  cursor: pointer;
+  transition: var(--transition-base);
+  background: transparent;
+  color: var(--text-secondary);
+  border: none;
+  width: 100%;
+  text-align: left;
+  font-family: var(--font-family);
+  font-size: var(--font-sm);
+}
+
+.vault-nav-item:hover {
+  background: var(--sidebar-item-hover);
+  color: var(--text-primary);
+}
+
+.vault-nav-item.active {
+  background: var(--sidebar-item-active);
+  color: var(--accent-primary);
+  font-weight: 500;
+}
+
+.vault-nav-item .v-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.vault-nav-item .v-count {
+  margin-left: auto;
+  font-size: var(--font-xs);
+  color: var(--text-tertiary);
+}
+
+.vault-sidebar-bottom {
+  margin-top: auto;
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--border-subtle);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+/* Vault right panel */
+.vault-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.vault-topbar {
+  padding: var(--space-4) var(--space-5);
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  border-bottom: 1px solid var(--border-subtle);
+  flex-shrink: 0;
+}
+
+.vault-topbar h2 {
+  font-size: var(--font-lg);
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.vault-count-badge {
+  background: var(--bg-elevated);
+  color: var(--text-secondary);
+  border-radius: var(--radius-full);
+  padding: 2px 10px;
+  font-size: var(--font-xs);
+  font-weight: 600;
+}
+
+.vault-search {
+  width: 220px;
+  position: relative;
+  margin-left: auto;
+}
+
+.vault-search input {
+  padding-left: 32px;
+  padding-right: 48px;
+  width: 100%;
+}
+
+.vault-search .search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-tertiary);
+  font-size: 14px;
+}
+
+.vault-search .search-kbd {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: 3px;
+  padding: 1px 5px;
+  font-size: 10px;
+  font-family: var(--font-mono);
+  color: var(--text-tertiary);
+}
+
+/* Vault stats row */
+.vault-stats {
+  display: flex;
+  gap: 1px;
+  background: var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+  flex-shrink: 0;
+}
+
+.vault-stat {
+  flex: 1;
+  background: var(--bg-surface);
+  padding: 12px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.vault-stat .v-stat-val {
+  font-size: var(--font-lg);
+  font-weight: 700;
+  color: var(--text-primary);
+  font-variant-numeric: tabular-nums;
+}
+
+.vault-stat .v-stat-label {
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+/* Vault item grid */
+.vault-grid {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--space-5);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: var(--space-4);
+  align-content: start;
+}
+
+.vault-item {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-lg);
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  transition: var(--transition-base);
+}
+
+.vault-item:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+  border-color: var(--border-strong);
+}
+
+.vault-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.vault-item-name {
+  font-size: var(--font-sm);
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.vault-item-content {
+  font-size: var(--font-xs);
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.vault-item-password {
+  font-family: var(--font-mono);
+  font-size: var(--font-sm);
+  color: var(--text-primary);
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.vault-item-url {
+  font-size: var(--font-xs);
+  color: var(--accent-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.vault-item-footer {
+  margin-top: auto;
+}
+
+/* ── 5.8 Quick Portal ────────────────────────────────────────────────────── */
+.portal-screen {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.portal-tabs {
+  background: var(--bg-surface);
+  padding: 0 28px;
+  border-bottom: 1px solid var(--border-subtle);
+  height: 48px;
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.portal-tab {
+  padding: 10px 16px;
+  font-size: var(--font-base);
+  color: var(--text-secondary);
+  border: none;
+  background: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  transition: var(--transition-base);
+  font-family: var(--font-family);
+}
+
+.portal-tab:hover { color: var(--text-primary); }
+.portal-tab.active { color: var(--accent-primary); border-bottom-color: var(--accent-primary); font-weight: 500; }
+
+.portal-nav-bar {
+  height: 36px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+  margin: var(--space-4) 28px 0;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex-shrink: 0;
+}
+
+.portal-nav-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  padding: 4px;
+  border-radius: var(--radius-sm);
+  transition: var(--transition-fast);
+  font-size: 14px;
+}
+
+.portal-nav-btn:hover { background: var(--card-bg); color: var(--text-primary); }
+
+.portal-url {
+  flex: 1;
+  font-size: var(--font-xs);
+  color: var(--text-tertiary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 var(--space-2);
+}
+
+.portal-iframe-wrap {
+  flex: 1;
+  margin: 0 28px 28px;
+  border: 1px solid var(--border-subtle);
+  border-top: none;
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+  overflow: hidden;
+}
+
+.portal-iframe-wrap iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* ── 5.9 DIU Teachers Portal ─────────────────────────────────────────────── */
+.diu-layout {
+  display: flex;
+  height: 100%;
+}
+
+.diu-sidebar {
+  width: 200px;
+  min-width: 200px;
+  background: rgba(25, 35, 60, 0.95);
+  border-right: 1px solid var(--border-subtle);
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+[data-theme="light"] .diu-sidebar {
+  background: rgba(245, 248, 255, 0.98);
+}
+
+.diu-sidebar-header {
+  padding: 0 16px 16px;
+  border-bottom: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.diu-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #1e3a5f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.diu-sidebar-header span {
+  font-size: var(--font-xs);
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+.diu-nav {
+  flex: 1;
+  padding: var(--space-3) var(--space-2);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  list-style: none;
+}
+
+.diu-nav-item {
+  height: 34px;
+  padding: 0 var(--space-3);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  cursor: pointer;
+  transition: var(--transition-base);
+  background: transparent;
+  color: rgba(255,255,255,0.6);
+  border: none;
+  width: 100%;
+  text-align: left;
+  font-family: var(--font-family);
+  font-size: var(--font-sm);
+}
+
+[data-theme="light"] .diu-nav-item { color: rgba(10,10,20,0.6); }
+
+.diu-nav-item:hover { background: rgba(255,255,255,0.08); color: rgba(255,255,255,0.9); }
+[data-theme="light"] .diu-nav-item:hover { background: rgba(0,0,0,0.04); color: rgba(10,10,20,0.9); }
+
+.diu-nav-item.active { background: rgba(20, 184, 166,0.2); color: white; font-weight: 500; }
+[data-theme="light"] .diu-nav-item.active { background: rgba(20, 184, 166,0.1); color: #4f46e5; }
+
+.diu-nav-item.logout { color: var(--color-danger); margin-top: auto; }
+.diu-nav-item.logout:hover { background: var(--color-danger-subtle); }
+
+/* DIU Content Panel — always white */
+.diu-content {
+  flex: 1;
+  background: #ffffff;
+  color: #111827;
+  overflow-y: auto;
+  padding: 28px 32px;
+}
+
+.diu-content h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+}
+
+.diu-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.diu-stat-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 16px 20px;
+}
+
+.diu-stat-card .diu-stat-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #6b7280;
+  letter-spacing: 0.05em;
+}
+
+.diu-stat-card .diu-stat-value {
+  font-size: 32px;
+  font-weight: 700;
+  color: #111827;
+  margin-top: 4px;
+  font-variant-numeric: tabular-nums;
+}
+
+.diu-stat-card .diu-stat-sub {
+  font-size: 12px;
+  color: #9ca3af;
+  margin-top: 2px;
+}
+
+/* Colored top borders for DIU stats */
+.diu-stat-card.blue   { border-top: 3px solid #3b82f6; }
+.diu-stat-card.green  { border-top: 3px solid #22c55e; }
+.diu-stat-card.red    { border-top: 3px solid #ef4444; }
+.diu-stat-card.orange { border-top: 3px solid #f59e0b; }
+
+/* DIU Table */
+.diu-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 24px;
+  font-size: 13px;
+}
+
+.diu-table thead tr {
+  background: #1e3a5f;
+  color: white;
+}
+
+.diu-table th {
+  padding: 10px 14px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.diu-table td {
+  padding: 10px 14px;
+  border-bottom: 1px solid #e5e7eb;
+  color: #374151;
+}
+
+.diu-table tbody tr:nth-child(even) {
+  background: #f9fafb;
+}

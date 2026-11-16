@@ -1,0 +1,106 @@
+[
+  {
+    "id": "A-basic",
+    "note": "3 students; CLO1=q1, CLO2=final, CLO3=q1+final. Hand-computed (exact fractions, rounded once at the end).",
+    "threshold": 60,
+    "max_marks": { "q1": 10, "final": 50 },
+    "clo_map": { "CLO1": { "q1": 1 }, "CLO2": { "final": 1 }, "CLO3": { "q1": 1, "final": 1 } },
+    "cos": { "CO1": { "CLO1": 1, "CLO2": 1 }, "CO2": { "CLO2": 2, "CLO3": 1 } },
+    "pos": { "PO1": { "CO1": 1, "CO2": 1 } },
+    "students": [ { "q1": 10, "final": 50 }, { "q1": 5, "final": 25 }, { "q1": 8, "final": 20 } ],
+    "expected": {
+      "clo": { "CLO1": { "avg": 76.7, "below_count": 1, "below_threshold": false },
+               "CLO2": { "avg": 63.3, "below_count": 2, "below_threshold": true },
+               "CLO3": { "avg": 65.6, "below_count": 2, "below_threshold": true } },
+      "co": { "CO1": { "avg": 70.0, "below_threshold": false }, "CO2": { "avg": 64.1, "below_threshold": false } },
+      "po": { "PO1": { "avg": 67.0 } }
+    }
+  },
+  {
+    "id": "B-ungraded-student-ignored",
+    "note": "Same as A plus an enrolled student with no marks row: results must not change.",
+    "threshold": 60,
+    "max_marks": { "q1": 10, "final": 50 },
+    "clo_map": { "CLO1": { "q1": 1 }, "CLO2": { "final": 1 }, "CLO3": { "q1": 1, "final": 1 } },
+    "cos": { "CO1": { "CLO1": 1, "CLO2": 1 }, "CO2": { "CLO2": 2, "CLO3": 1 } },
+    "pos": { "PO1": { "CO1": 1, "CO2": 1 } },
+    "students": [ { "q1": 10, "final": 50 }, { "q1": 5, "final": 25 }, { "q1": 8, "final": 20 }, { "ungraded": true } ],
+    "expected": {
+      "clo": { "CLO1": { "avg": 76.7, "below_count": 1, "below_threshold": false },
+               "CLO2": { "avg": 63.3, "below_count": 2, "below_threshold": true },
+               "CLO3": { "avg": 65.6, "below_count": 2, "below_threshold": true } },
+      "co": { "CO1": { "avg": 70.0, "below_threshold": false }, "CO2": { "avg": 64.1, "below_threshold": false } },
+      "po": { "PO1": { "avg": 67.0 } }
+    }
+  },
+  {
+    "id": "C-weighted-assessments",
+    "note": "CLO1 = 2*q1 + 1*final, max 70. Percentages 100, 50, 51.43.",
+    "threshold": 60,
+    "max_marks": { "q1": 10, "final": 50 },
+    "clo_map": { "CLO1": { "q1": 2, "final": 1 } },
+    "cos": {},
+    "pos": {},
+    "students": [ { "q1": 10, "final": 50 }, { "q1": 5, "final": 25 }, { "q1": 8, "final": 20 } ],
+    "expected": { "clo": { "CLO1": { "avg": 67.1, "below_count": 2, "below_threshold": true } }, "co": {}, "po": {} }
+  },
+  {
+    "id": "D-threshold-50",
+    "note": "Same marks as A with the course threshold at 50%: a student on exactly 50% is NOT below.",
+    "threshold": 50,
+    "max_marks": { "q1": 10, "final": 50 },
+    "clo_map": { "CLO1": { "q1": 1 }, "CLO2": { "final": 1 }, "CLO3": { "q1": 1, "final": 1 } },
+    "cos": {},
+    "pos": {},
+    "students": [ { "q1": 10, "final": 50 }, { "q1": 5, "final": 25 }, { "q1": 8, "final": 20 } ],
+    "expected": { "clo": { "CLO1": { "avg": 76.7, "below_count": 0, "below_threshold": false },
+                           "CLO2": { "avg": 63.3, "below_count": 1, "below_threshold": false },
+                           "CLO3": { "avg": 65.6, "below_count": 1, "below_threshold": false } }, "co": {}, "po": {} }
+  },
+  {
+    "id": "E-no-students-no-data",
+    "note": "CO/PO with nothing to aggregate report null (no data), never 0%.",
+    "threshold": 60,
+    "max_marks": {},
+    "clo_map": {},
+    "clos": ["CLO1"],
+    "cos": { "CO1": { "CLO1": 1 } },
+    "pos": { "PO1": { "CO1": 1 } },
+    "students": [],
+    "expected": { "clo": {}, "co": { "CO1": { "avg": null, "below_threshold": false } }, "po": { "PO1": { "avg": null } } }
+  },
+  {
+    "id": "F-everyone-below",
+    "note": "20/30/40 of 100, threshold 60: all below, CLO, CO and PO all fail.",
+    "threshold": 60,
+    "max_marks": { "final": 100 },
+    "clo_map": { "CLO1": { "final": 1 } },
+    "cos": { "CO1": { "CLO1": 1 } },
+    "pos": { "PO1": { "CO1": 1 } },
+    "students": [ { "final": 20 }, { "final": 30 }, { "final": 40 } ],
+    "expected": { "clo": { "CLO1": { "avg": 30.0, "below_count": 3, "below_threshold": true } },
+                  "co": { "CO1": { "avg": 30.0, "below_threshold": true } }, "po": { "PO1": { "avg": 30.0 } } }
+  },
+  {
+    "id": "G-boundary-exactly-threshold",
+    "note": "30/50 = exactly 60%: not below the 60% threshold.",
+    "threshold": 60,
+    "max_marks": { "final": 50 },
+    "clo_map": { "CLO1": { "final": 1 } },
+    "cos": {},
+    "pos": {},
+    "students": [ { "final": 30 }, { "final": 30 }, { "final": 30 } ],
+    "expected": { "clo": { "CLO1": { "avg": 60.0, "below_count": 0, "below_threshold": false } }, "co": {}, "po": {} }
+  },
+  {
+    "id": "H-one-student-above-and-40-percent-rule",
+    "note": "5 students, 2 below (40% exactly): course-level 'below' needs MORE than 40%, so false.",
+    "threshold": 60,
+    "max_marks": { "final": 100 },
+    "clo_map": { "CLO1": { "final": 1 } },
+    "cos": {},
+    "pos": {},
+    "students": [ { "final": 50 }, { "final": 55 }, { "final": 60 }, { "final": 80 }, { "final": 100 } ],
+    "expected": { "clo": { "CLO1": { "avg": 69.0, "below_count": 2, "below_threshold": false } }, "co": {}, "po": {} }
+  }
+]

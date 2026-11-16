@@ -1,0 +1,39 @@
+[
+ { "id": "exp-1-one-weak-midterm", "course": { "code": "ICE415", "name": "Microwave Engineering" }, "threshold": 60,
+   "clos": [
+     { "code": "CLO1", "avg": 78.4, "below_count": 2, "graded": 31, "assessments": [ { "name": "Quiz", "avg_pct": 82.0, "max": 15 }, { "name": "Attendance", "avg_pct": 95.0, "max": 7 } ] },
+     { "code": "CLO2", "avg": 52.3, "below_count": 17, "graded": 31, "assessments": [ { "name": "Midterm", "avg_pct": 41.5, "max": 25 }, { "name": "Assignment", "avg_pct": 70.0, "max": 5 } ] },
+     { "code": "CLO3", "avg": 71.0, "below_count": 5, "graded": 31, "assessments": [ { "name": "Presentation", "avg_pct": 74.0, "max": 8 }, { "name": "Final", "avg_pct": 69.0, "max": 40 } ] } ] },
+ { "id": "exp-2-two-weak", "course": { "code": "ICE301", "name": "Object Oriented Programming" }, "threshold": 60,
+   "clos": [
+     { "code": "CLO1", "avg": 49.8, "below_count": 19, "graded": 31, "assessments": [ { "name": "Quiz", "avg_pct": 38.2, "max": 15 }, { "name": "Midterm", "avg_pct": 55.0, "max": 25 } ] },
+     { "code": "CLO2", "avg": 74.5, "below_count": 4, "graded": 31, "assessments": [ { "name": "Assignment", "avg_pct": 80.0, "max": 10 }, { "name": "Lab", "avg_pct": 72.0, "max": 20 } ] },
+     { "code": "CLO3", "avg": 69.2, "below_count": 6, "graded": 31, "assessments": [ { "name": "Presentation", "avg_pct": 71.0, "max": 8 } ] },
+     { "code": "CLO4", "avg": 56.9, "below_count": 15, "graded": 31, "assessments": [ { "name": "Final", "avg_pct": 52.4, "max": 40 }, { "name": "Lab", "avg_pct": 63.5, "max": 10 } ] } ] },
+ { "id": "exp-3-none-weak", "course": { "code": "EEE1345", "name": "Electrical Circuits" }, "threshold": 60,
+   "clos": [
+     { "code": "CLO1", "avg": 72.6, "below_count": 5, "graded": 40, "assessments": [ { "name": "Quiz", "avg_pct": 75.0, "max": 10 }, { "name": "Midterm", "avg_pct": 70.5, "max": 25 } ] },
+     { "code": "CLO2", "avg": 68.1, "below_count": 8, "graded": 40, "assessments": [ { "name": "Final", "avg_pct": 66.0, "max": 40 } ] },
+     { "code": "CLO3", "avg": 77.9, "below_count": 3, "graded": 40, "assessments": [ { "name": "Lab", "avg_pct": 81.0, "max": 20 } ] } ] },
+ { "id": "exp-4-borderline-share", "course": { "code": "MAT2137", "name": "Engineering Mathematics" }, "threshold": 60,
+   "clos": [
+     { "code": "CLO1", "avg": 70.2, "below_count": 6, "graded": 31, "assessments": [ { "name": "Quiz", "avg_pct": 73.0, "max": 10 } ] },
+     { "code": "CLO2", "avg": 61.8, "below_count": 15, "graded": 31, "assessments": [ { "name": "Midterm", "avg_pct": 64.0, "max": 25 }, { "name": "Assignment", "avg_pct": 52.5, "max": 10 } ] } ] },
+ { "id": "exp-5-all-weak", "course": { "code": "CSE221", "name": "Algorithms" }, "threshold": 60,
+   "clos": [
+     { "code": "CLO1", "avg": 41.2, "below_count": 26, "graded": 35, "assessments": [ { "name": "Quiz", "avg_pct": 36.0, "max": 10 }, { "name": "Midterm", "avg_pct": 44.0, "max": 25 } ] },
+     { "code": "CLO2", "avg": 47.5, "below_count": 22, "graded": 35, "assessments": [ { "name": "Assignment", "avg_pct": 49.0, "max": 10 }, { "name": "Final", "avg_pct": 46.5, "max": 40 } ] },
+     { "code": "CLO3", "avg": 55.0, "below_count": 17, "graded": 35, "assessments": [ { "name": "Lab", "avg_pct": 55.0, "max": 20 } ] } ] },
+ { "id": "exp-6-small-class", "course": { "code": "HUM101", "name": "ICT Economics and Accounting" }, "threshold": 60,
+   "clos": [
+     { "code": "CLO1", "avg": 66.1, "below_count": 3, "graded": 12, "assessments": [ { "name": "Quiz", "avg_pct": 68.0, "max": 10 } ] },
+     { "code": "CLO3", "avg": 57.5, "below_count": 6, "graded": 12, "assessments": [ { "name": "Midterm", "avg_pct": 55.0, "max": 25 }, { "name": "Presentation", "avg_pct": 62.0, "max": 8 } ] } ] },
+ { "id": "exp-7-single-assessment", "course": { "code": "ICE205", "name": "Digital Logic Design" }, "threshold": 60,
+   "clos": [
+     { "code": "CLO1", "avg": 69.4, "below_count": 7, "graded": 28, "assessments": [ { "name": "Quiz", "avg_pct": 71.0, "max": 10 } ] },
+     { "code": "CLO2", "avg": 58.0, "below_count": 11, "graded": 28, "assessments": [ { "name": "Final", "avg_pct": 54.0, "max": 50 }, { "name": "Quiz", "avg_pct": 71.0, "max": 10 }, { "name": "Assignment", "avg_pct": 80.0, "max": 10 } ] } ] },
+ { "id": "exp-8-attendance", "course": { "code": "BBA101", "name": "Engineering Project Management" }, "threshold": 60,
+   "clos": [
+     { "code": "CLO1", "avg": 55.3, "below_count": 14, "graded": 40, "assessments": [ { "name": "Attendance", "avg_pct": 48.0, "max": 10 }, { "name": "Quiz", "avg_pct": 60.1, "max": 10 }, { "name": "Midterm", "avg_pct": 57.2, "max": 20 } ] },
+     { "code": "CLO2", "avg": 73.8, "below_count": 5, "graded": 40, "assessments": [ { "name": "Final", "avg_pct": 74.0, "max": 40 } ] } ] }
+]
